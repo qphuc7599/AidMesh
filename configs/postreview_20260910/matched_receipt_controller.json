@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "declaredAt": "2026-09-10T01:20:00+07:00",
+  "scope": "Prospective post-review local-controller matrix",
+  "seeds": {"start": 95101, "count": 30},
+  "bootstrapResamples": 20000,
+  "horizonHours": 6,
+  "bandwidthBps": 32768,
+  "copyAllowance": 4,
+  "receiptFraction": 0.2,
+  "loadFactors": [0.65, 0.85, 0.95],
+  "partitionHours": [0, 2],
+  "invalidPriorityFractions": [0, 0.1],
+  "policies": ["fifo", "edf", "receipt_priority"],
+  "receiptWireBytesPerCopy": 2048,
+  "backgroundWireBytesPerCopy": [4096, 8192, 16384],
+  "receiptTtlHours": 2,
+  "backgroundTtlHours": 6,
+  "primaryEndpoint": "receipt median end-to-end delay",
+  "decisionRule": "paired seed-cluster 95% bootstrap upper endpoint for receipt_priority minus FIFO is below zero",
+  "matching": "Identical admitted packets, bytes, copies, arrivals, deadlines and service capacity for all policies; invalid priority packets fail authentication before queue admission."
+}

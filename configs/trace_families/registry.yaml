@@ -1,0 +1,42 @@
+registry_id: INDEPENDENT_TRACE_FAMILY_Q1_20260718
+seeds: [7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308]
+cap_fractions: [0.10, 0.20, 0.40, 0.80]
+calibration_fraction: 0.40
+buffer_bytes: 98304
+
+# Primary inference treats the dataset family, not each context, as the
+# external-validity unit. The three SocioPatterns contexts therefore receive
+# equal total weight to the one UMass DieselNet family.
+contexts:
+  - family: sociopatterns
+    context: invs13
+    path: external/sociopatterns/normalized_slots/invs13
+    profile: primary_20s_slot
+    primary: true
+  - family: sociopatterns
+    context: lh10
+    path: external/sociopatterns/normalized_slots/lh10
+    profile: primary_20s_slot
+    primary: true
+  - family: sociopatterns
+    context: sfhh
+    path: external/sociopatterns/normalized_slots/sfhh
+    profile: primary_20s_slot
+    primary: true
+  - family: umass_dieselnet
+    context: dieselnet05
+    path: external/umass_dieselnet/normalized/dieselnet05
+    profile: primary_1s_observed_transfer
+    primary: true
+
+  # Predeclared interpretation sensitivity for the transfer-log event window.
+  - family: umass_dieselnet
+    context: dieselnet05_w5
+    path: external/umass_dieselnet/normalized/dieselnet05_w5
+    profile: sensitivity_5s
+    primary: false
+  - family: umass_dieselnet
+    context: dieselnet05_w10
+    path: external/umass_dieselnet/normalized/dieselnet05_w10
+    profile: sensitivity_10s
+    primary: false

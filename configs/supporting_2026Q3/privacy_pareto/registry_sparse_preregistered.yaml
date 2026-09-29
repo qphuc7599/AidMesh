@@ -1,0 +1,34 @@
+schema_version: 2.0.0
+campaign_id: privacy_sparse_cover_preregistered_20260724
+preregistration: docs/PREREG_EXTENSION_P1_V2_20260724.md
+input_root: raw/confirmatory
+scenario_id: CONF_CORE_W08_P24
+sampling_mode: all_core_runs_paired_workload_transform
+expected_seeds_per_method: 50
+expected_methods:
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+  - online_only
+rare_category_max_frequency: 2
+slot_widths_h:
+  - 4
+  - 8
+  - 16
+workload_profiles:
+  - name: observed
+    keep_fraction: 1.0
+    time_stretch: 1
+    pad_bytes: 2048
+    dummy_min_batch: 32
+    cover_empty_slots: false
+    cover_boundary_slots: 0
+  - name: sparse_cover
+    keep_fraction: 0.10
+    time_stretch: 4
+    pad_bytes: 2048
+    dummy_min_batch: 32
+    cover_empty_slots: true
+    cover_boundary_slots: 1
+

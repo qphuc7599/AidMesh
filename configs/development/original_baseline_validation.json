@@ -1,0 +1,64 @@
+{
+  "scope": "Eligibility for original protocol confirmatory experiments; component tests cannot grant eligibility",
+  "baselines": {
+    "SnappyAdapted": {
+      "source": "https://www.ndss-symposium.org/wp-content/uploads/2020/02/24049-paper.pdf",
+      "implementation": "aidmesh/protocol/snappy_reference.py",
+      "status": "connected_approval_and_accounting_component_validated",
+      "eligible": false,
+      "evidence": [
+        "results/baseline_validation_20260928/snappy/summary.json"
+      ],
+      "boundary": "The reconstruction executes majority BLS approval, the customer's final signature, field binding, and literal Algorithms 3/4 accounting. It is a connected component validation, not the authors' original contract or an authorization-to-receipt comparator.",
+      "remaining": ["original contract differential validation", "merchant-specific statekeeper collateral lifecycle", "resolve literal Algorithm 4 equal-value conflict behavior", "connected-only matched issuance/approval/settlement costs"]
+    },
+    "DPDRM": {
+      "source": "https://doi.org/10.1016/j.jnca.2018.03.007",
+      "status": "primary_mechanism_reviewed_but_no_executable_reference_profile",
+      "eligible": false,
+      "boundary": "DPDRM evaluates Ge-PRoPHET inventory groupcasting and time-bounded resource queries in The ONE; it does not define AidMesh's authorization-to-receipt endpoint.",
+      "remaining": ["authors' The ONE scenario and code", "complete group-delivery predictability update and aging defaults", "inventory refresh and query/response deadlines", "energy state model", "reference vectors or author implementation"]
+    },
+    "CSAR": {
+      "source": "https://doi.org/10.1016/j.adhoc.2020.102095",
+      "status": "primary_mechanism_reviewed_but_no_executable_reference_profile",
+      "eligible": false,
+      "boundary": "CSAR selects among DTN routing protocols from recent delivery/energy performance; it does not implement voucher authorization, recovery, or receipt settlement.",
+      "remaining": ["authors' The ONE scenario and code", "complete selector weights and calibration procedure", "performance-history window and update schedule", "candidate protocol parameter settings", "energy accounting", "reference vectors or author implementation"]
+    },
+    "CoconutOnline": {
+      "implementation": "aidmesh/protocol/coconut_online.py",
+      "status": "unit_token_crypto_adapter_and_prospective_matched_protocol_model_validated",
+      "eligible": true,
+      "evidence": [
+        "results/baseline_validation_20260928/coconut/summary.json",
+        "results/matched_protocol_baselines_20260910/summary.json"
+      ],
+      "boundary": "Eligible for the post-review matched protocol-model comparison; not a per-request full-cryptography network replay or the historical frozen registry.",
+      "remaining": ["independent multi-host or field validation"]
+    },
+    "FirstSeenDTN": {
+      "status": "matched_protocol_model_with_same_exogenous_world_and_receipt_endpoint",
+      "eligible": true,
+      "evidence": ["results/matched_protocol_baselines_20260910/summary.json"],
+      "boundary": "Eligible as an unsafe availability control in the post-review state-transition study; it has no privacy or cryptographic issuance claim.",
+      "remaining": ["independent network implementation validation"]
+    },
+    "BinarySprayWait": {
+      "implementation": "aidmesh/simulator/dtn.py",
+      "status": "matched_synthetic_routing_component",
+      "eligible": false,
+      "remaining": ["original full network population/site/loss registry", "protocol-level receipt settlement endpoint validation"]
+    },
+    "GiniPenalized": {
+      "status": "not_source_validated",
+      "eligible": false,
+      "remaining": ["fixed source objective and penalty tuning rule", "independent optimum checks", "matched allocator registry"]
+    },
+    "A-DREAM": {
+      "status": "not_source_validated",
+      "eligible": false,
+      "remaining": ["original algorithm and parameter validation", "matched allocator registry"]
+    }
+  }
+}

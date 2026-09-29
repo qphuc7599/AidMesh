@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aidmesh.example/schemas/manifest.schema.json",
+  "title": "AidMesh preregistration freeze manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "freeze_timestamp_utc", "source_tree_hash", "dependency_lock_hash", "crypto_profile", "scenario_hash", "seed_hash", "analysis_hash", "phase", "deviations"],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "freeze_timestamp_utc": {"type": "string", "format": "date-time"},
+    "git_commit": {"type": ["string", "null"]},
+    "source_tree_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "dependency_lock_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "crypto_profile": {"enum": ["P0_REFERENCE_DISCLOSURE", "P1_EXACT_PRIVATE", "P2_VERIFIER_ADAPTER"]},
+    "crypto_gate_passed": {"type": "boolean"},
+    "scenario_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "seed_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "analysis_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "phase": {"enum": ["development", "tuning", "confirmatory", "external", "stress"]},
+    "primary_estimands": {"type": "array", "items": {"type": "string"}},
+    "decision_rules": {"type": "array", "items": {"type": "string"}},
+    "deviations": {"type": "array", "items": {"type": "object"}}
+  }
+}
+

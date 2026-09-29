@@ -1,0 +1,22 @@
+{
+  "name": "aidmesh-zk-artifact",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Pinned Circom 2 and snarkjs toolchain for the AidMesh P1 profile",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "circom2": "0.2.23",
+    "circomlib": "2.0.5",
+    "circomlibjs": "0.1.7",
+    "snarkjs": "0.7.6"
+  },
+  "overrides": {
+    "underscore": "1.13.8",
+    "ws": "8.21.0"
+  },
+  "scripts": {
+    "zk:compile": "node scripts/compile-zk.mjs",
+    "zk:inputs": "node scripts/generate-zk-inputs.mjs",
+    "zk:info": "snarkjs r1cs info zk/build/aidmesh_voucher.r1cs"
+  }
+}

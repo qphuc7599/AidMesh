@@ -1,0 +1,46 @@
+registry_id: CATR_POWER_SWEEP_20260822_V1
+design_status: frozen_after_confirmatory_abstention_and_before_power_sweep_outcomes
+relationship_to_primary: post-confirmatory mechanistic sensitivity, never labeled untouched
+seed: 9501
+request_multipliers: [1, 2, 4, 8]
+cap_fractions: [0.15, 0.60]
+quorum_availabilities: [0.25, 0.90]
+calibration_fraction: 0.40
+policies: [optimized_static, adatransfer, conservative_transfer, catr]
+hypotheses:
+  s1_detection_power:
+    estimand: fraction of conservative-policy decisions with positive causal margin
+    prediction: nondecreasing with request multiplier under shifting demand
+  s2_selector_value:
+    estimand: conservative-transfer completion delta versus optimized-static
+    prediction: positive under shifting demand at multiplier 8
+  s3_certificate_cost:
+    estimand: CATR minus conservative-transfer completion at matched cells
+    interpretation: isolates terminal-certificate and reclaim path cost
+  s4_safety:
+    estimand: risk-cap and conservation violations
+    prediction: zero in every rights-policy row
+contexts:
+  - {family: asturies_wildfires, context: asturies_wf01_r200, path: external/asturies_wildfires/normalized/asturies_wf01_r200}
+  - {family: asturies_wildfires, context: asturies_wf03_r200, path: external/asturies_wildfires/normalized/asturies_wf03_r200}
+  - {family: asturies_wildfires, context: asturies_wf04_r200, path: external/asturies_wildfires/normalized/asturies_wf04_r200}
+  - {family: asturies_wildfires, context: asturies_wf05_r200, path: external/asturies_wildfires/normalized/asturies_wf05_r200}
+  - {family: asturies_wildfires, context: asturies_wf06_r200, path: external/asturies_wildfires/normalized/asturies_wf06_r200}
+  - {family: asturies_wildfires, context: asturies_wf07_r200, path: external/asturies_wildfires/normalized/asturies_wf07_r200}
+  - {family: asturies_wildfires, context: asturies_wf09_r200, path: external/asturies_wildfires/normalized/asturies_wf09_r200}
+  - {family: asturies_wildfires, context: asturies_wf10_r200, path: external/asturies_wildfires/normalized/asturies_wf10_r200}
+  - {family: asturies_wildfires, context: asturies_wf12_r200, path: external/asturies_wildfires/normalized/asturies_wf12_r200}
+  - {family: asturies_wildfires, context: asturies_wf13_r200, path: external/asturies_wildfires/normalized/asturies_wf13_r200}
+  - {family: asturies_wildfires, context: asturies_wf14_r200, path: external/asturies_wildfires/normalized/asturies_wf14_r200}
+  - {family: asturies_wildfires, context: asturies_wf15_r200, path: external/asturies_wildfires/normalized/asturies_wf15_r200}
+  - {family: asturies_wildfires, context: asturies_wf16_r200, path: external/asturies_wildfires/normalized/asturies_wf16_r200}
+  - {family: asturies_wildfires, context: asturies_wf18_r200, path: external/asturies_wildfires/normalized/asturies_wf18_r200}
+  - {family: asturies_wildfires, context: asturies_wf20_r200, path: external/asturies_wildfires/normalized/asturies_wf20_r200}
+  - {family: asturies_wildfires, context: asturies_wf21_r200, path: external/asturies_wildfires/normalized/asturies_wf21_r200}
+  - {family: asturies_wildfires, context: asturies_wf22_r200, path: external/asturies_wildfires/normalized/asturies_wf22_r200}
+  - {family: asturies_wildfires, context: asturies_wf23_r200, path: external/asturies_wildfires/normalized/asturies_wf23_r200}
+  - {family: asturies_wildfires, context: asturies_wf24_r200, path: external/asturies_wildfires/normalized/asturies_wf24_r200}
+  - {family: asturies_wildfires, context: asturies_wf26_r200, path: external/asturies_wildfires/normalized/asturies_wf26_r200}
+  - {family: asturies_wildfires, context: asturies_wf28_r200, path: external/asturies_wildfires/normalized/asturies_wf28_r200}
+  - {family: asturies_wildfires, context: asturies_wf29_r200, path: external/asturies_wildfires/normalized/asturies_wf29_r200}
+  - {family: asturies_wildfires, context: asturies_wf30_r200, path: external/asturies_wildfires/normalized/asturies_wf30_r200}

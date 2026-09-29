@@ -1,0 +1,174 @@
+theory AidMeshSemanticAuthorization
+begin
+
+builtins: hashing
+
+/*
+  Unbounded symbolic core of AidMesh semantic authorization.
+
+  K=4, q=3, f=1 is represented by one Byzantine witness (whose share is
+  adversary-controlled and omitted) plus h1,h2,h3. Every q=3 certificate must
+  contain at least two of those three honest witnesses. The three Quorum rules
+  enumerate exactly those honest intersections. WReady is linear durable
+  persist-before-sign state.
+*/
+
+rule NewClaim:
+  [ Fr(~domain), Fr(~nullifier), Fr(~receipt), Fr(~right), Fr(~owner) ]
+  --[ Claim(~domain, ~nullifier, ~receipt) ]->
+  [ WReady('h1', ~domain, ~nullifier),
+    WReady('h2', ~domain, ~nullifier),
+    WReady('h3', ~domain, ~nullifier),
+    TWReady('h1', ~domain, ~right, ~owner, 'n0'),
+    TWReady('h2', ~domain, ~right, ~owner, 'n0'),
+    TWReady('h3', ~domain, ~right, ~owner, 'n0'),
+    SettlementOpen(~domain, ~nullifier),
+    RightState(~domain, ~nullifier, ~right, ~owner, 'n0'),
+    Out(<~domain, ~nullifier, ~receipt, ~owner>) ]
+
+rule HonestWitnessFirstSign:
+  [ WReady(w, domain, nullifier), In(receipt) ]
+  --[ HonestSign(w, domain, nullifier, receipt) ]->
+  [ !WDecision(w, domain, nullifier, receipt),
+    !HonestShare(w, domain, nullifier, receipt) ]
+
+rule HonestWitnessIdempotentReplay:
+  [ !WDecision(w, domain, nullifier, receipt) ]
+  --[ HonestReplay(w, domain, nullifier, receipt) ]->
+  [ !HonestShare(w, domain, nullifier, receipt) ]
+
+rule HonestTransitionFirstSign:
+  [ TWReady(w, domain, right, owner, nonce), In(destination) ]
+  --[ HonestTransitionSign(w, domain, right, owner, destination, nonce) ]->
+  [ !TWDecision(w, domain, right, owner, destination, nonce),
+    !HonestTransitionShare(w, domain, right, owner, destination, nonce) ]
+
+rule HonestTransitionIdempotentReplay:
+  [ !TWDecision(w, domain, right, owner, destination, nonce) ]
+  --[ HonestTransitionReplay(w, domain, right, owner, destination, nonce) ]->
+  [ !HonestTransitionShare(w, domain, right, owner, destination, nonce) ]
+
+rule QuorumH1H2:
+  [ !HonestShare('h1', domain, nullifier, receipt),
+    !HonestShare('h2', domain, nullifier, receipt) ]
+  --[ QuorumCertificate(domain, nullifier, receipt) ]->
+  [ !QuorumAuthorized(domain, nullifier, receipt) ]
+
+rule QuorumH1H3:
+  [ !HonestShare('h1', domain, nullifier, receipt),
+    !HonestShare('h3', domain, nullifier, receipt) ]
+  --[ QuorumCertificate(domain, nullifier, receipt) ]->
+  [ !QuorumAuthorized(domain, nullifier, receipt) ]
+
+rule QuorumH2H3:
+  [ !HonestShare('h2', domain, nullifier, receipt),
+    !HonestShare('h3', domain, nullifier, receipt) ]
+  --[ QuorumCertificate(domain, nullifier, receipt) ]->
+  [ !QuorumAuthorized(domain, nullifier, receipt) ]
+
+rule SettleQuorumFirstValidWins:
+  [ SettlementOpen(domain, nullifier),
+    !QuorumAuthorized(domain, nullifier, receipt) ]
+  --[ Settled(domain, nullifier, receipt, 'quorum') ]->
+  [ !SettlementWinner(domain, nullifier, receipt) ]
+
+/*
+  A right state is a single linear ownership object. A transition consumes the
+  previous owner/nonce state. The transition-certificate premise abstracts
+  successful verification of a domain-separated q=3 certificate; its concrete
+  certificate construction is the same honest-pair intersection above.
+*/
+rule CertifyRightTransitionH1H2:
+  [ !HonestTransitionShare('h1', domain, right, owner, destination, nonce),
+    !HonestTransitionShare('h2', domain, right, owner, destination, nonce) ]
+  --[ RightTransitionCertificate(domain, right, owner, destination, nonce) ]->
+  [ !TransitionAuthorized(domain, right, owner, destination, nonce) ]
+
+rule CertifyRightTransitionH1H3:
+  [ !HonestTransitionShare('h1', domain, right, owner, destination, nonce),
+    !HonestTransitionShare('h3', domain, right, owner, destination, nonce) ]
+  --[ RightTransitionCertificate(domain, right, owner, destination, nonce) ]->
+  [ !TransitionAuthorized(domain, right, owner, destination, nonce) ]
+
+rule CertifyRightTransitionH2H3:
+  [ !HonestTransitionShare('h2', domain, right, owner, destination, nonce),
+    !HonestTransitionShare('h3', domain, right, owner, destination, nonce) ]
+  --[ RightTransitionCertificate(domain, right, owner, destination, nonce) ]->
+  [ !TransitionAuthorized(domain, right, owner, destination, nonce) ]
+
+rule TransferRight:
+  [ Fr(~next),
+    RightState(domain, nullifier, right, owner, nonce),
+    !TransitionAuthorized(domain, right, owner, destination, nonce) ]
+  --[ RightTransition(domain, right, owner, destination, nonce) ]->
+  [ RightState(domain, nullifier, right, destination, ~next),
+    TWReady('h1', domain, right, destination, ~next),
+    TWReady('h2', domain, right, destination, ~next),
+    TWReady('h3', domain, right, destination, ~next) ]
+
+rule CrashDurableRight:
+  [ RightState(domain, nullifier, right, owner, nonce) ]
+  --[ Crash(domain, right, nonce) ]->
+  [ DurableRight(domain, nullifier, right, owner, nonce) ]
+
+rule RecoverDurableRight:
+  [ DurableRight(domain, nullifier, right, owner, nonce) ]
+  --[ Recover(domain, right, nonce) ]->
+  [ RightState(domain, nullifier, right, owner, nonce) ]
+
+rule SettleRightFirstValidWins:
+  [ SettlementOpen(domain, nullifier),
+    RightState(domain, nullifier, right, site, nonce),
+    In(receipt) ]
+  --[ RightSpent(domain, right, nonce),
+      Settled(domain, nullifier, receipt, 'right') ]->
+  [ !SettlementWinner(domain, nullifier, receipt),
+    !SpentRight(domain, right, nonce) ]
+
+lemma executable_quorum:
+  exists-trace
+  "Ex domain nullifier receipt #i.
+     Settled(domain, nullifier, receipt, 'quorum') @ i"
+
+lemma executable_right_transfer:
+  exists-trace
+  "Ex domain right owner destination nonce #i.
+     RightTransition(domain, right, owner, destination, nonce) @ i"
+
+lemma honest_witness_non_equivocation:
+  "All w domain nullifier receipt1 receipt2 #i #j.
+     HonestSign(w, domain, nullifier, receipt1) @ i
+     & HonestSign(w, domain, nullifier, receipt2) @ j
+     ==> receipt1 = receipt2"
+
+lemma quorum_certificate_non_conflict:
+  "All domain nullifier receipt1 receipt2 #i #j.
+     QuorumCertificate(domain, nullifier, receipt1) @ i
+     & QuorumCertificate(domain, nullifier, receipt2) @ j
+     ==> receipt1 = receipt2"
+
+lemma settlement_first_valid_wins:
+  "All domain nullifier receipt1 receipt2 mode1 mode2 #i #j.
+     Settled(domain, nullifier, receipt1, mode1) @ i
+     & Settled(domain, nullifier, receipt2, mode2) @ j
+     ==> #i = #j & receipt1 = receipt2 & mode1 = mode2"
+
+lemma transition_certificate_non_conflict [use_induction]:
+  "All domain right owner destination1 destination2 nonce #i #j.
+     RightTransitionCertificate(domain, right, owner, destination1, nonce) @ i
+     & RightTransitionCertificate(domain, right, owner, destination2, nonce) @ j
+     ==> destination1 = destination2"
+
+lemma right_single_spend [use_induction]:
+  "All domain right nonce1 nonce2 #i #j.
+     RightSpent(domain, right, nonce1) @ i
+     & RightSpent(domain, right, nonce2) @ j
+     ==> #i = #j & nonce1 = nonce2"
+
+lemma cross_domain_replay_separation:
+  "All domain1 domain2 nullifier receipt mode1 mode2 #i #j.
+     Settled(domain1, nullifier, receipt, mode1) @ i
+     & Settled(domain2, nullifier, receipt, mode2) @ j
+     ==> domain1 = domain2"
+
+end

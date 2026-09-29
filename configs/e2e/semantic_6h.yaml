@@ -1,0 +1,21 @@
+registry_id: TDSC_SEMANTIC_E2E_6H_20260822_V1
+profile: aidmesh-voucher-p1-groth16-bn128-domain-v2-tagged
+domain_tags: zk/domain_tags.json
+compiler:
+  version: 0.8.36
+  evm_version: prague
+  optimizer: true
+contexts: [invs13, dieselnet05, ene5ai]
+seeds: [8601, 8602]
+methods: [static_rights, transferable_rights]
+cap_fractions: [0.10, 0.80]
+witness_regimes: [quorum, fallback]
+calibration_fraction: 0.40
+buffer_bytes: 98304
+copy_budget: 8
+receipt_bytes: 2048
+fallback_window: 6
+value: 1
+proof_workers: 1
+voucher_sample_per_context: 2
+sampling_strategy: stable-hash-v1

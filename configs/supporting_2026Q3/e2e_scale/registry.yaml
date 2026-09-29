@@ -1,0 +1,15 @@
+registry_id: SUPPORTING_E2E_SCALE_2026Q3
+contexts: [invs13, lh10, sfhh]
+seeds: [7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308]
+methods: [static_rights, transferable_rights]
+cap_fractions: [0.10, 0.20, 0.40, 0.80]
+witness_regimes: [quorum, fallback]
+calibration_fraction: 0.40
+buffer_bytes: 98304
+copy_budget: 8
+receipt_bytes: 2048
+fallback_window: 6
+value: 1
+proof_workers: 1
+voucher_sample_per_context: 24
+sampling_strategy: stable-hash-v1

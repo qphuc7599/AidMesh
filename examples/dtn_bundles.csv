@@ -1,0 +1,4 @@
+bundle_id,source,destination,created_us,ttl_us,size_bytes,risk_score
+b-001,site-0,contract,0,7200000000,1024,0.9
+b-002,site-1,contract,1200000000,7200000000,1024,0.6
+b-003,site-0,contract,3000000000,7200000000,2048,0.8

@@ -1,0 +1,60 @@
+theory AidMeshClosedReceiptBridge
+begin
+builtins: signing
+
+/* Cryptographic export submodel only. Release authorization and terminal
+   agreement are preconditions, NOT proved by this model. Durable linear
+   Pending abstracts the SQLite claim. Context includes chain and contracts. */
+rule Configure:
+  [ Fr(~sk), Fr(~context) ]
+  --> [ !Key(~sk, ~context), Out(<pk(~sk), ~context>) ]
+
+rule Claim:
+  [ !Key(sk, context), Fr(~slot), Fr(~intent) ]
+  --[ Claimed(context, ~slot, ~intent) ]->
+  [ Pending(sk, context, ~slot, ~intent), Out(<~slot, ~intent>) ]
+
+rule Close:
+  [ Pending(sk, context, slot, intent), Fr(~ack) ]
+  --[ Invoked(context, slot), Closed(context, slot, intent, ~ack) ]->
+  [ !ClosedRow(sk, context, slot, intent, ~ack) ]
+
+rule Ambiguous:
+  [ Pending(sk, context, slot, intent) ]
+  --[ Invoked(context, slot), Ambiguous(context, slot) ]->
+  [ Locked(context, slot) ]
+
+rule Export:
+  let message = <'ClosedReceipt', context, slot, intent, ack>
+  in
+  [ !ClosedRow(sk, context, slot, intent, ack) ]
+  --[ Exported(context, slot, intent, ack) ]->
+  [ Out(<message, sign(message, sk)>) ]
+
+rule Receive:
+  let message = <'ClosedReceipt', context, slot, intent, ack>
+  in
+  [ !Key(sk, context), In(<message, sign(message, sk)>) ]
+  --[ Received(context, slot, intent, ack) ]->
+  [ ]
+
+lemma executable_receipt:
+  exists-trace
+  "Ex context slot intent ack #i. Received(context, slot, intent, ack) @ i"
+
+lemma export_requires_closed:
+  "All context slot intent ack #i. Exported(context, slot, intent, ack) @ i
+   ==> (Ex #j. Closed(context, slot, intent, ack) @ j & j < i)"
+
+lemma authenticated_receipt_requires_closed:
+  "All context slot intent ack #i. Received(context, slot, intent, ack) @ i
+   ==> (Ex #j. Closed(context, slot, intent, ack) @ j & j < i)"
+
+lemma no_receipt_after_ambiguous:
+  "All context slot #i. Ambiguous(context, slot) @ i
+   ==> not (Ex intent ack #j. Received(context, slot, intent, ack) @ j)"
+
+lemma actuator_at_most_once:
+  "All context slot #i #j. Invoked(context, slot) @ i
+   & Invoked(context, slot) @ j ==> #i = #j"
+end

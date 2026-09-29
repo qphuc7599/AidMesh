@@ -1,0 +1,41 @@
+schema_version: 2.0.0
+scenario_id: CONF_WIT_09
+phase: confirmatory
+seed: 8160
+analysis_horizon_us: 259200000000
+population:
+  beneficiaries: 1000
+  sites: 24
+  risk_cells: 4
+  groups: 20
+  categories: 5
+quorum:
+  K: 7
+  q: 5
+  registered_f: 2
+  safe_label: true
+  witness_availability: 0.9
+  timeout_us: 10000000
+network:
+  mobility_family: staff_ferry
+  partition_us: 86400000000
+  bandwidth_bps: 256000
+  buffer_bytes: 52428800
+  loss: 0.05
+  loss_model: iid
+adversary:
+  beneficiary_fraction: 0.15
+  byzantine_witnesses: 2
+  relay_drop_fraction: 0.1
+fallback:
+  enabled: true
+  total_rights: 400
+  placement: equal
+  transfer_enabled: true
+  window_us: 21600000000
+routing:
+  method: risk_priority
+  copy_allowance: 4
+  payload_bytes: 1536
+  padding_bucket_bytes: 2048
+  ttl_us: 43200000000

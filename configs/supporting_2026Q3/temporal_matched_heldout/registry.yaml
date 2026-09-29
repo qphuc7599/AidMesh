@@ -1,0 +1,16 @@
+schema_version: 1.0.0
+campaign_id: supporting_temporal_matched_heldout_2026Q3
+preregistration: docs/SUPPORTING_PREREG_2026Q3.md
+seed_start: 8000
+seeds: 20
+methods:
+  - online_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+scenarios:
+  - configs/confirmatory/core_w08_p24.yaml
+  - configs/confirmatory/wit_06.yaml
+  - configs/confirmatory/part_06h.yaml
+  - configs/confirmatory/part_48h.yaml
+trace_contacts:
+  default: external/sociopatterns/normalized_slots/invs13/contacts.csv

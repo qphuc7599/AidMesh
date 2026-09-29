@@ -1,0 +1,265 @@
+theory AidMeshV3Composition
+begin
+
+builtins: hashing
+
+/*
+  AidMesh protocol-V2 symbolic core.
+
+  For K=4, q=3, f=1, one Byzantine share is adversary-controlled and omitted.
+  Every q=3 certificate must therefore intersect at least two of h1,h2,h3.
+  The three certificate rules enumerate those honest intersections.  Linear
+  WReady/TReady facts model durable persist-before-sign state.  Cryptographic
+  primitive soundness, bytecode, storage firmware, and physical sensors remain
+  outside this symbolic model.
+*/
+
+rule NewRelease:
+  [ Fr(~domain), Fr(~epoch), Fr(~nullifier), Fr(~proofhash), Fr(~site),
+    Fr(~value), Fr(~releaseid), Fr(~skeleton), Fr(~right), Fr(~nonce) ]
+  --[ ReleaseClaim(~domain, ~epoch, ~nullifier) ]->
+  [ RightOwned(~domain, ~right, ~site, ~nonce),
+    WReady('h1', ~domain, ~epoch, ~nullifier),
+    WReady('h2', ~domain, ~epoch, ~nullifier),
+    WReady('h3', ~domain, ~epoch, ~nullifier),
+    SiteReady(~domain, ~epoch, ~nullifier, ~site),
+    SettlementOpen(~domain, ~epoch, ~nullifier),
+    Out(<~proofhash, ~site, ~value, ~releaseid, ~skeleton>),
+    Out(<~domain, ~epoch, ~nullifier, ~proofhash, ~site, ~value,
+         ~releaseid, ~skeleton, 'fallback'>) ]
+
+rule HonestIntentFirstSign:
+  [ WReady(w, domain, epoch, nullifier),
+    In(<proofhash, site, value, releaseid, skeleton>) ]
+  --[ HonestIntentSign(w, domain, epoch, nullifier,
+        <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+         site, value, releaseid, skeleton>) ]->
+  [ !WDecision(w, domain, epoch, nullifier,
+        <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+         site, value, releaseid, skeleton>),
+    !HonestIntentShare(w, domain, epoch, nullifier,
+        <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+         site, value, releaseid, skeleton>) ]
+
+rule HonestIntentIdempotentReplay:
+  [ !WDecision(w, domain, epoch, nullifier, intent) ]
+  --[ HonestIntentReplay(w, domain, epoch, nullifier, intent) ]->
+  [ !HonestIntentShare(w, domain, epoch, nullifier, intent) ]
+
+rule AuthorizeH1H2:
+  [ !HonestIntentShare('h1', domain, epoch, nullifier, intent),
+    !HonestIntentShare('h2', domain, epoch, nullifier, intent) ]
+  --[ AuthorizationCertificate(domain, epoch, nullifier, intent) ]->
+  [ !Authorized(domain, epoch, nullifier, intent) ]
+
+rule AuthorizeH1H3:
+  [ !HonestIntentShare('h1', domain, epoch, nullifier, intent),
+    !HonestIntentShare('h3', domain, epoch, nullifier, intent) ]
+  --[ AuthorizationCertificate(domain, epoch, nullifier, intent) ]->
+  [ !Authorized(domain, epoch, nullifier, intent) ]
+
+rule AuthorizeH2H3:
+  [ !HonestIntentShare('h2', domain, epoch, nullifier, intent),
+    !HonestIntentShare('h3', domain, epoch, nullifier, intent) ]
+  --[ AuthorizationCertificate(domain, epoch, nullifier, intent) ]->
+  [ !Authorized(domain, epoch, nullifier, intent) ]
+
+/* Fallback authorization may bind a path-specific intent without a witness
+   certificate.  It still competes for the same linear release slot. */
+rule AuthorizeFallback:
+  [ In(<domain, epoch, nullifier, proofhash, site, value,
+        releaseid, skeleton, 'fallback'>),
+    RightOwned(domain, right, site, nonce) ]
+  --[ RightSpent(domain, right, site, nonce, releaseid),
+      FallbackDebit(domain, epoch, nullifier, site, releaseid, right),
+      FallbackAuthorization(domain, epoch, nullifier,
+        <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+         site, value, releaseid, skeleton>) ]->
+  [ !Authorized(domain, epoch, nullifier,
+        <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+         site, value, releaseid, skeleton>) ]
+
+rule PersistReleaseIntent:
+  let intent = <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+                site, value, releaseid, skeleton>
+  in
+  [ SiteReady(domain, epoch, nullifier, site),
+    !Authorized(domain, epoch, nullifier,
+      <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+       site, value, releaseid, skeleton>) ]
+  --[ ReleaseIntentPersisted(domain, epoch, nullifier, site, intent) ]->
+  [ ReleasePending(domain, epoch, nullifier, site, intent) ]
+
+rule HandoffSuccess:
+  [ ReleasePending(domain, epoch, nullifier, site, intent), Fr(~evidence) ]
+  --[ HandoffInvoked(domain, epoch, nullifier, site, intent),
+      HandoffClosed(domain, epoch, nullifier, site, intent, ~evidence) ]->
+  [ ReleaseClosed(domain, epoch, nullifier, site, intent, ~evidence),
+    Out(~evidence) ]
+
+rule HandoffAmbiguous:
+  [ ReleasePending(domain, epoch, nullifier, site, intent), Fr(~fault) ]
+  --[ HandoffInvoked(domain, epoch, nullifier, site, intent),
+      HandoffLockedAmbiguous(domain, epoch, nullifier, site, intent, ~fault) ]->
+  [ ReleaseAmbiguous(domain, epoch, nullifier, site, intent, ~fault) ]
+
+rule SettleAuthorizationFirstValidWins:
+  [ SettlementOpen(domain, epoch, nullifier),
+    ReleaseClosed(domain, epoch, nullifier, site, intent, evidence) ]
+  --[ Settled(domain, epoch, nullifier,
+        <'ReceiptV2', domain, epoch, nullifier, intent, evidence>) ]->
+  [ !SettlementWinner(domain, epoch, nullifier,
+        <'ReceiptV2', domain, epoch, nullifier, intent, evidence>) ]
+
+rule NewTransfer:
+  [ RightOwned(domain, right, source, nonce), Fr(~transfer), Fr(~destination) ]
+  --[ TransferCreated(domain, ~transfer, right, source, ~destination) ]->
+  [ TReady('h1', domain, ~transfer),
+    TReady('h2', domain, ~transfer),
+    TReady('h3', domain, ~transfer),
+    InTransit(domain, ~transfer, right, source, ~destination),
+    Out(<domain, ~transfer, right, source, ~destination>) ]
+
+rule HonestTerminalFirstSign:
+  [ TReady(w, domain, transfer), In(decision) ]
+  --[ HonestTerminalSign(w, domain, transfer, decision) ]->
+  [ !TDecision(w, domain, transfer, decision),
+    !HonestTerminalShare(w, domain, transfer, decision) ]
+
+rule HonestTerminalIdempotentReplay:
+  [ !TDecision(w, domain, transfer, decision) ]
+  --[ HonestTerminalReplay(w, domain, transfer, decision) ]->
+  [ !HonestTerminalShare(w, domain, transfer, decision) ]
+
+rule TerminalH1H2:
+  [ !HonestTerminalShare('h1', domain, transfer, decision),
+    !HonestTerminalShare('h2', domain, transfer, decision) ]
+  --[ TerminalCertificate(domain, transfer, decision) ]->
+  [ !TerminalAuthorized(domain, transfer, decision) ]
+
+rule TerminalH1H3:
+  [ !HonestTerminalShare('h1', domain, transfer, decision),
+    !HonestTerminalShare('h3', domain, transfer, decision) ]
+  --[ TerminalCertificate(domain, transfer, decision) ]->
+  [ !TerminalAuthorized(domain, transfer, decision) ]
+
+rule TerminalH2H3:
+  [ !HonestTerminalShare('h2', domain, transfer, decision),
+    !HonestTerminalShare('h3', domain, transfer, decision) ]
+  --[ TerminalCertificate(domain, transfer, decision) ]->
+  [ !TerminalAuthorized(domain, transfer, decision) ]
+
+rule ApplyAccept:
+  [ InTransit(domain, transfer, right, source, destination),
+    !TerminalAuthorized(domain, transfer, 'accept'), Fr(~nonce) ]
+  --[ TerminalApplied(domain, transfer, 'accept', right, destination) ]->
+  [ RightOwned(domain, right, destination, ~nonce) ]
+
+rule ApplyReclaim:
+  [ InTransit(domain, transfer, right, source, destination),
+    !TerminalAuthorized(domain, transfer, 'reclaim'), Fr(~nonce) ]
+  --[ TerminalApplied(domain, transfer, 'reclaim', right, source) ]->
+  [ RightOwned(domain, right, source, ~nonce) ]
+
+rule NewRight:
+  [ Fr(~domain), Fr(~right), Fr(~owner), Fr(~nonce) ]
+  --[ RightIssued(~domain, ~right, ~owner, ~nonce) ]->
+  [ RightOwned(~domain, ~right, ~owner, ~nonce) ]
+
+rule SpendRight:
+  [ RightOwned(domain, right, owner, nonce), In(receipt) ]
+  --[ RightSpent(domain, right, owner, nonce, receipt) ]->
+  [ !SpentRight(domain, right, nonce) ]
+
+lemma executable_authorized_release:
+  exists-trace
+  "Ex domain epoch nullifier site intent evidence #i.
+     HandoffClosed(domain, epoch, nullifier, site, intent, evidence) @ i"
+
+lemma executable_ambiguous_lock:
+  exists-trace
+  "Ex domain epoch nullifier site intent fault #i.
+     HandoffLockedAmbiguous(domain, epoch, nullifier, site, intent, fault) @ i"
+
+lemma executable_terminal_accept:
+  exists-trace
+  "Ex domain transfer right destination #i.
+     TerminalApplied(domain, transfer, 'accept', right, destination) @ i"
+
+lemma executable_terminal_reclaim:
+  exists-trace
+  "Ex domain transfer right source #i.
+     TerminalApplied(domain, transfer, 'reclaim', right, source) @ i"
+
+lemma honest_intent_non_equivocation:
+  "All w domain epoch nullifier intent1 intent2 #i #j.
+     HonestIntentSign(w, domain, epoch, nullifier, intent1) @ i
+     & HonestIntentSign(w, domain, epoch, nullifier, intent2) @ j
+     ==> intent1 = intent2"
+
+lemma authorization_certificate_non_conflict:
+  "All domain epoch nullifier intent1 intent2 #i #j.
+     AuthorizationCertificate(domain, epoch, nullifier, intent1) @ i
+     & AuthorizationCertificate(domain, epoch, nullifier, intent2) @ j
+     ==> intent1 = intent2"
+
+lemma automatic_actuator_at_most_once_per_slot [use_induction]:
+  "All domain epoch nullifier site intent1 intent2 #i #j.
+     HandoffInvoked(domain, epoch, nullifier, site, intent1) @ i
+     & HandoffInvoked(domain, epoch, nullifier, site, intent2) @ j
+     ==> #i = #j & intent1 = intent2"
+
+lemma terminal_certificate_non_conflict:
+  "All domain transfer decision1 decision2 #i #j.
+     TerminalCertificate(domain, transfer, decision1) @ i
+     & TerminalCertificate(domain, transfer, decision2) @ j
+     ==> decision1 = decision2"
+
+lemma terminal_application_exclusive [use_induction]:
+  "All domain transfer decision1 decision2 right1 right2 owner1 owner2 #i #j.
+     TerminalApplied(domain, transfer, decision1, right1, owner1) @ i
+     & TerminalApplied(domain, transfer, decision2, right2, owner2) @ j
+     ==> #i = #j & decision1 = decision2 & right1 = right2 & owner1 = owner2"
+
+lemma settlement_first_valid_wins [use_induction]:
+  "All domain epoch nullifier receipt1 receipt2 #i #j.
+     Settled(domain, epoch, nullifier, receipt1) @ i
+     & Settled(domain, epoch, nullifier, receipt2) @ j
+     ==> #i = #j & receipt1 = receipt2"
+
+lemma right_single_spend [use_induction]:
+  "All domain right owner1 owner2 nonce1 nonce2 receipt1 receipt2 #i #j.
+     RightSpent(domain, right, owner1, nonce1, receipt1) @ i
+     & RightSpent(domain, right, owner2, nonce2, receipt2) @ j
+     ==> #i = #j & owner1 = owner2 & nonce1 = nonce2 & receipt1 = receipt2"
+
+lemma cross_domain_receipt_separation:
+  "All domain1 domain2 epoch1 epoch2 nullifier receipt #i #j.
+     Settled(domain1, epoch1, nullifier, receipt) @ i
+     & Settled(domain2, epoch2, nullifier, receipt) @ j
+     ==> domain1 = domain2"
+
+
+lemma executable_fallback_settlement:
+  exists-trace
+  "Ex domain epoch nullifier site releaseid right receipt #i #j.
+     FallbackDebit(domain, epoch, nullifier, site, releaseid, right) @ i
+     & Settled(domain, epoch, nullifier, receipt) @ j & i < j
+     & not (Ex d t r a b #k. TransferCreated(d, t, r, a, b) @ k)
+     & not (Ex d e n intent #k. AuthorizationCertificate(d, e, n, intent) @ k)"
+
+lemma fallback_authorization_has_debit:
+  "All domain epoch nullifier proofhash site value releaseid skeleton #i.
+     FallbackAuthorization(domain, epoch, nullifier,
+       <'AuthorizationIntentV1', domain, epoch, nullifier, proofhash,
+        site, value, releaseid, skeleton>) @ i
+     ==> (Ex right. FallbackDebit(domain, epoch, nullifier, site, releaseid, right) @ i)"
+
+lemma settlement_has_closed_handoff:
+  "All domain epoch nullifier intent evidence #i.
+     Settled(domain, epoch, nullifier,
+       <'ReceiptV2', domain, epoch, nullifier, intent, evidence>) @ i
+     ==> (Ex site #j.
+       HandoffClosed(domain, epoch, nullifier, site, intent, evidence) @ j & j < i)"
+
+end

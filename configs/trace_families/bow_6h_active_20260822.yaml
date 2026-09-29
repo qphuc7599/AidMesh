@@ -1,0 +1,58 @@
+registry_id: TDSC_BOW_6H_ACTIVE_GATE_20260822_V2
+
+# Post-diagnostic extension.  V1 revealed that the deliberately conservative
+# confidence gate was effectively inert.  V2 retains the reserve and causal
+# target update but uses a calibration-prefix expected-value gate.  Fresh
+# overlay seeds prevent reusing the outcomes that exposed the V1 failure.
+seeds: [8801, 8802, 8803, 8804, 8805, 8806, 8807, 8808, 8809, 8810, 8811, 8812, 8813, 8814, 8815, 8816, 8817, 8818, 8819, 8820]
+factorial_seeds: [8901, 8902, 8903]
+cap_fractions: [0.10, 0.20, 0.40, 0.80]
+quorum_availabilities: [0.35, 0.65, 0.90]
+calibration_fraction: 0.40
+buffer_bytes: 98304
+bootstrap_repetitions: 2000
+adatransfer_gate_mode: expected_value
+
+contexts:
+  - family: sociopatterns
+    context: invs13
+    path: external/sociopatterns/normalized_slots/invs13
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: sociopatterns
+    context: lh10
+    path: external/sociopatterns/normalized_slots/lh10
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: sociopatterns
+    context: sfhh
+    path: external/sociopatterns/normalized_slots/sfhh
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: umass_dieselnet
+    context: dieselnet05
+    path: external/umass_dieselnet/normalized/dieselnet05
+    profile: primary_1s_observed_transfer
+    primary: true
+    factorial: true
+  - family: umass_dieselnet
+    context: dieselnet05_w5
+    path: external/umass_dieselnet/normalized/dieselnet05_w5
+    profile: sensitivity_5s
+    primary: true
+    factorial: false
+  - family: umass_dieselnet
+    context: dieselnet05_w10
+    path: external/umass_dieselnet/normalized/dieselnet05_w10
+    profile: sensitivity_10s
+    primary: true
+    factorial: false
+  - family: ene5ai
+    context: ene5ai
+    path: external/ene5ai/normalized/ene5ai
+    profile: direct_wifi_1s_observed_capacity_lower_bound
+    primary: true
+    factorial: true

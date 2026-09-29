@@ -1,0 +1,370 @@
+schema_version: 1.0.0
+registry_id: POSTREVIEW_ORIGINAL_REPLAY_20260910
+freeze_status: FROZEN
+claims:
+  primary_questions:
+  - RQ1
+  - RQ2
+  decision_rules:
+  - Report every registered comparison, including negative and boundary results.
+  - Reject any run with a manifest or event-schema validation failure.
+  - Do not infer external validity beyond the registered scenario families and traces.
+  - A completion claim requires the Holm-adjusted p-value below 0.05 AND the paired BCa lower bound above
+    the meaningful-effect margin of +0.05 completion.
+  - Any honest-site exposure above the registered cap, conflicting safe-domain quorum certificate, or
+    risk-conservation failure invalidates the affected claim regardless of averages.
+  - CONF_WIT_06 and CONF_PART_60H are registered boundary scenarios; their results are reported as failure-envelope
+    evidence, not suppressed.
+  - RQ5 (P1 Groth16/EVM parity and cost) and RQ6 (privacy batching Pareto) are executed by their registered
+    stand-alone benches; the simulator matrix carries RQ1/RQ2. RQ6 privacy batching is computed over this
+    registry's CONF_CORE_W08_P24 raw event logs with the pre-registered 8h/2048B/hide-all profile and
+    dummy_min_batch=32.
+  - 'RQ2 frontier hypervolume: per-seed 2-D hypervolume over the cap grid {100,200,400,800} with exposure
+    normalized by 800 and reference point (exposure=1, completion=0), compared pairwise between transferable
+    and static placement per quorum family.'
+  - This post-review campaign preserves every original scenario, method, seed count, comparison, endpoint,
+    practical margin and multiplicity rule.
+  - The replay is a reproducibility check and cannot become a new holdout; the second registry uses disjoint
+    Monte Carlo seeds and is opened once after local freeze.
+  - Raw negative, null, failed and boundary cells remain in coverage and analysis.
+approval:
+  owner: T.-D. Tran; local prospective specification before execution
+  date_utc: '2026-09-10'
+  meaningful_effect_statement: 'For RQ1, the smallest practically meaningful effect is a +0.05 absolute
+    increase in paired deadline-completion rate versus the online-only baseline at an unchanged registered
+    risk cap; intervals whose lower bound is below +0.05 are reported as inconclusive-or-negative. For
+    RQ2, transferable placement is meaningfully better than static placement only if the paired frontier-hypervolume
+    difference over the registered cap grid has a 95% BCa lower bound above zero and no conservation or
+    cap violation occurs. Safety endpoints (conflicting certificates, exposure above cap) have no averaging:
+    a single violation falsifies the associated claim.'
+scenarios:
+- config: configs/confirmatory/core_w08_p24.yaml
+  seed_start: 8000
+  seed_count: 50
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/wit_06.yaml
+  seed_start: 8100
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/wit_07.yaml
+  seed_start: 8130
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/wit_09.yaml
+  seed_start: 8160
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/part_06h.yaml
+  seed_start: 8200
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/part_48h.yaml
+  seed_start: 8230
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/part_60h.yaml
+  seed_start: 8260
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/adv_05.yaml
+  seed_start: 8300
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/adv_30.yaml
+  seed_start: 8330
+  seed_count: 30
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+- config: configs/confirmatory/frontier/front_c100_k04q03.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c200_k04q03.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c400_k04q03.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c800_k04q03.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c100_k07q05.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c200_k07q05.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c400_k07q05.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c800_k07q05.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c100_k10q07.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c200_k10q07.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c400_k10q07.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+- config: configs/confirmatory/frontier/front_c800_k10q07.yaml
+  seed_start: 8400
+  seed_count: 25
+  methods:
+  - online_only
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+analysis:
+  confidence_level: 0.95
+  bootstrap_resamples: 20000
+  permutation_resamples: 20000
+  multiplicity: holm
+  comparisons:
+  - id: RQ1_TRANSFER_VS_ONLINE_CORE
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    - non_home_completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_RMST_TRANSFER_VS_ONLINE_CORE
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - rmst_hours
+    alternative: less
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_QUORUM_VS_ONLINE_CORE
+    treatment: aidmesh_quorum_only
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_STATIC_VS_ONLINE_CORE
+    treatment: aidmesh_static_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_SAFETY_TRANSFER_VS_FIRSTSEEN_CORE
+    treatment: aidmesh_transferable_rights
+    control: first_seen_dtn
+    metrics:
+    - duplicate_exposure
+    alternative: less
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_COMPLETION_TRANSFER_VS_FIRSTSEEN_CORE
+    treatment: aidmesh_transferable_rights
+    control: first_seen_dtn
+    metrics:
+    - completion_rate
+    alternative: two-sided
+    scenarios:
+    - CONF_CORE_W08_P24
+  - id: RQ1_TRANSFER_VS_ONLINE_WIT06_BOUNDARY
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: two-sided
+    scenarios:
+    - CONF_WIT_06
+  - id: RQ1_TRANSFER_VS_ONLINE_WIT07
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_WIT_07
+  - id: RQ1_TRANSFER_VS_ONLINE_WIT09
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_WIT_09
+  - id: RQ1_TRANSFER_VS_ONLINE_P06
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_PART_06H
+  - id: RQ1_TRANSFER_VS_ONLINE_P48
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_PART_48H
+  - id: RQ1_TRANSFER_VS_ONLINE_P60_BOUNDARY
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: two-sided
+    scenarios:
+    - CONF_PART_60H
+  - id: RQ1_TRANSFER_VS_ONLINE_ADV05
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_ADV_05
+  - id: RQ1_TRANSFER_VS_ONLINE_ADV30
+    treatment: aidmesh_transferable_rights
+    control: online_only
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_ADV_30
+  - id: RQ2_TRANSFER_VS_STATIC_TIGHT_CAPS
+    treatment: aidmesh_transferable_rights
+    control: aidmesh_static_rights
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - FRONT_C100_K04Q03
+    - FRONT_C100_K07Q05
+    - FRONT_C100_K10Q07
+    - FRONT_C200_K04Q03
+    - FRONT_C200_K07Q05
+    - FRONT_C200_K10Q07
+  - id: RQ2_EXPOSURE_TRANSFER_VS_STATIC_TIGHT_CAPS
+    treatment: aidmesh_transferable_rights
+    control: aidmesh_static_rights
+    metrics:
+    - exposure_cap_ratio
+    alternative: two-sided
+    scenarios:
+    - FRONT_C100_K04Q03
+    - FRONT_C100_K07Q05
+    - FRONT_C100_K10Q07
+    - FRONT_C200_K04Q03
+    - FRONT_C200_K07Q05
+    - FRONT_C200_K10Q07
+  - id: RQ2_TRANSFER_VS_STATIC_CORE
+    treatment: aidmesh_transferable_rights
+    control: aidmesh_static_rights
+    metrics:
+    - completion_rate
+    alternative: greater
+    scenarios:
+    - CONF_CORE_W08_P24

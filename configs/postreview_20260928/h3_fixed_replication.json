@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "declaredAt": "2026-09-28T05:00:00+07:00",
+  "profile": "fixed-size disjoint-seed H3 replication",
+  "developmentEvidence": "results/strong_allocation_20260910_v6/runs.jsonl",
+  "developmentSeedClusters": 30,
+  "developmentMeanUtilityLoss": 0.027950807681406904,
+  "developmentSdUtilityLoss": 0.017617381777206568,
+  "sampleSizeRationale": "640 fresh seed clusters provide approximately 90% normal-approximation power for a one-sided alpha=0.05 test of mean loss below 0.03 when the true mean is 0.028; the run is fixed-size and is not extended according to interim outcomes.",
+  "seedStart": 200001,
+  "seedCount": 640,
+  "groups": 12,
+  "categories": 3,
+  "demandSkew": [0.2, 1.0, 5.0],
+  "stockSufficiency": [0.35, 0.6, 0.9],
+  "methods": [
+    "full-box-leximin-then-weighted-utility",
+    "weighted-utility-optimum-then-leximin",
+    "progressive-fill",
+    "equal-share",
+    "demand-proportional",
+    "utility-only"
+  ],
+  "primaryFairnessComparators": [
+    "progressive-fill",
+    "equal-share",
+    "demand-proportional",
+    "utility-only"
+  ],
+  "primaryFairnessEndpoint": "minimum_normalized_service",
+  "primaryEfficiencyEndpoint": "seed-aggregate weighted-utility relative loss",
+  "utilityLossMargin": 0.03,
+  "alpha": 0.05,
+  "bootstrapReplicates": 50000,
+  "bootstrapSeed": 20260928,
+  "decisionRule": "H3 replication passes only if the one-sided 95% seed-cluster bootstrap upper bound for utility loss is at most 0.03 and every two-sided 95% paired seed-cluster interval for the minimum-service contrast is strictly above zero.",
+  "estimand": "Each seed is one independent cluster; the nine skew-by-supply settings are paired repeated conditions within seed.",
+  "stoppingRule": "Run exactly 640 fresh seeds. Retain failures and do not add seeds after inspecting outcomes.",
+  "scope": "Prospectively specified post-review replication; independent of the 30-seed development campaign and historical holdout."
+}

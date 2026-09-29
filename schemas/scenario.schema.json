@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aidmesh.example/schemas/scenario.schema.json",
+  "title": "AidMesh scenario v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "scenario_id", "phase", "seed", "population", "quorum", "network", "adversary", "fallback", "routing", "analysis_horizon_us"],
+  "properties": {
+    "schema_version": {"const": "2.0.0"},
+    "scenario_id": {"type": "string", "pattern": "^[A-Z0-9_-]{3,64}$"},
+    "phase": {"enum": ["development", "tuning", "confirmatory", "external", "stress"]},
+    "seed": {"type": "integer", "minimum": 0, "maximum": 2147483647},
+    "analysis_horizon_us": {"type": "integer", "minimum": 1},
+    "population": {
+      "type": "object", "additionalProperties": false,
+      "required": ["beneficiaries", "sites", "risk_cells", "groups", "categories"],
+      "properties": {
+        "beneficiaries": {"type": "integer", "minimum": 2},
+        "sites": {"type": "integer", "minimum": 2},
+        "risk_cells": {"type": "integer", "minimum": 1},
+        "groups": {"type": "integer", "minimum": 1},
+        "categories": {"type": "integer", "minimum": 1}
+      }
+    },
+    "quorum": {
+      "type": "object", "additionalProperties": false,
+      "required": ["K", "q", "registered_f", "safe_label", "witness_availability", "timeout_us"],
+      "properties": {
+        "K": {"type": "integer", "minimum": 1, "maximum": 64},
+        "q": {"type": "integer", "minimum": 1, "maximum": 64},
+        "registered_f": {"type": "integer", "minimum": 0, "maximum": 63},
+        "safe_label": {"type": "boolean"},
+        "witness_availability": {"type": "number", "minimum": 0, "maximum": 1},
+        "timeout_us": {"type": "integer", "minimum": 1}
+      }
+    },
+    "network": {
+      "type": "object", "additionalProperties": false,
+      "required": ["mobility_family", "partition_us", "bandwidth_bps", "buffer_bytes", "loss", "loss_model"],
+      "properties": {
+        "mobility_family": {"enum": ["clustered", "staff_ferry", "sparse", "trace"]},
+        "partition_us": {"type": "integer", "minimum": 0},
+        "bandwidth_bps": {"type": "integer", "minimum": 1},
+        "buffer_bytes": {"type": "integer", "minimum": 1},
+        "loss": {"type": "number", "minimum": 0, "maximum": 1},
+        "loss_model": {"enum": ["iid", "bursty", "correlated"]}
+      }
+    },
+    "adversary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["beneficiary_fraction", "byzantine_witnesses", "relay_drop_fraction"],
+      "properties": {
+        "beneficiary_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+        "byzantine_witnesses": {"type": "integer", "minimum": 0},
+        "relay_drop_fraction": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    },
+    "fallback": {
+      "type": "object", "additionalProperties": false,
+      "required": ["enabled", "total_rights", "placement", "transfer_enabled", "window_us"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "total_rights": {"type": "integer", "minimum": 0},
+        "placement": {"enum": ["equal", "demand", "adaptive"]},
+        "transfer_enabled": {"type": "boolean"},
+        "window_us": {"type": "integer", "minimum": 1}
+      }
+    },
+    "routing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["method", "copy_allowance", "payload_bytes", "padding_bucket_bytes", "ttl_us"],
+      "properties": {
+        "method": {"enum": ["online_only", "first_seen", "fifo", "spray_wait", "risk_priority", "oracle"]},
+        "copy_allowance": {"type": "integer", "minimum": 1},
+        "payload_bytes": {"type": "integer", "minimum": 1},
+        "padding_bucket_bytes": {"type": "integer", "minimum": 0},
+        "ttl_us": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}
+

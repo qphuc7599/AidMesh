@@ -1,0 +1,153 @@
+theory AidMeshRecoveryViewRefinement
+begin
+
+/*
+  Focused symbolic refinement of the terminal-recovery slot for K=4,q=3,f=1.
+  A quorum certificate necessarily contains two of h1,h2,h3, so certificate
+  rules enumerate the possible honest intersections.  The old proposal is
+  fixed to accept only to keep the model finite; the unsafe control adds a
+  view-1 reclaim proposal after an accept prepare certificate.
+*/
+
+rule NewSlot:
+  [ Fr(~domain), Fr(~slot) ]
+  --[ SlotCreated(~domain, ~slot) ]->
+  [ OldReady('h1', ~domain, ~slot),
+    OldReady('h2', ~domain, ~slot),
+    OldReady('h3', ~domain, ~slot),
+    LeaderToken(~domain, ~slot),
+    ActuatorSlot(~domain, ~slot),
+    SettlementOpen(~domain, ~slot) ]
+
+rule OldLeaderProposal:
+  [ LeaderToken(domain, slot) ]
+  --[ Proposal(domain, slot, 'v0', 'accept') ]->
+  [ !ProposalFact(domain, slot, 'v0', 'accept') ]
+
+rule PrepareOld:
+  [ OldReady(w, domain, slot),
+    !ProposalFact(domain, slot, 'v0', 'accept') ]
+  --[ Prepared(w, domain, slot, 'v0', 'accept') ]->
+  [ !PreparedFact(w, domain, slot, 'v0', 'accept'),
+    ReportReady(w, domain, slot) ]
+
+rule CertificateOldH1H2:
+  [ !PreparedFact('h1', domain, slot, 'v0', value),
+    !PreparedFact('h2', domain, slot, 'v0', value) ]
+  --[ Certificate(domain, slot, 'v0', value) ]->
+  [ !CertificateFact(domain, slot, 'v0', value) ]
+
+rule CertificateOldH1H3:
+  [ !PreparedFact('h1', domain, slot, 'v0', value),
+    !PreparedFact('h3', domain, slot, 'v0', value) ]
+  --[ Certificate(domain, slot, 'v0', value) ]->
+  [ !CertificateFact(domain, slot, 'v0', value) ]
+
+rule CertificateOldH2H3:
+  [ !PreparedFact('h2', domain, slot, 'v0', value),
+    !PreparedFact('h3', domain, slot, 'v0', value) ]
+  --[ Certificate(domain, slot, 'v0', value) ]->
+  [ !CertificateFact(domain, slot, 'v0', value) ]
+
+rule EnterNewView:
+  [ ReportReady(w, domain, slot),
+    !PreparedFact(w, domain, slot, 'v0', value) ]
+  --[ ViewChangeReport(w, domain, slot, 'v1', 'v0', value) ]->
+  [ !Report(w, domain, slot, 'v1', 'v0', value),
+    NewReady(w, domain, slot) ]
+
+/* The three rules are the implementation's highest-prepared selection for
+   every possible honest intersection of a q=3 view-change quorum. */
+rule SafeNewProposalH1H2:
+  [ !Report('h1', domain, slot, 'v1', 'v0', value),
+    !Report('h2', domain, slot, 'v1', 'v0', value) ]
+  --[ HighestPreparedSelected(domain, slot, 'v1', 'v0', value),
+      Proposal(domain, slot, 'v1', value) ]->
+  [ !ProposalFact(domain, slot, 'v1', value) ]
+
+rule SafeNewProposalH1H3:
+  [ !Report('h1', domain, slot, 'v1', 'v0', value),
+    !Report('h3', domain, slot, 'v1', 'v0', value) ]
+  --[ HighestPreparedSelected(domain, slot, 'v1', 'v0', value),
+      Proposal(domain, slot, 'v1', value) ]->
+  [ !ProposalFact(domain, slot, 'v1', value) ]
+
+rule SafeNewProposalH2H3:
+  [ !Report('h2', domain, slot, 'v1', 'v0', value),
+    !Report('h3', domain, slot, 'v1', 'v0', value) ]
+  --[ HighestPreparedSelected(domain, slot, 'v1', 'v0', value),
+      Proposal(domain, slot, 'v1', value) ]->
+  [ !ProposalFact(domain, slot, 'v1', value) ]
+
+rule PrepareNew:
+  [ NewReady(w, domain, slot),
+    !ProposalFact(domain, slot, 'v1', value) ]
+  --[ Prepared(w, domain, slot, 'v1', value) ]->
+  [ !PreparedFact(w, domain, slot, 'v1', value) ]
+
+rule CertificateNewH1H2:
+  [ !PreparedFact('h1', domain, slot, 'v1', value),
+    !PreparedFact('h2', domain, slot, 'v1', value) ]
+  --[ Certificate(domain, slot, 'v1', value) ]->
+  [ !CertificateFact(domain, slot, 'v1', value) ]
+
+rule CertificateNewH1H3:
+  [ !PreparedFact('h1', domain, slot, 'v1', value),
+    !PreparedFact('h3', domain, slot, 'v1', value) ]
+  --[ Certificate(domain, slot, 'v1', value) ]->
+  [ !CertificateFact(domain, slot, 'v1', value) ]
+
+rule CertificateNewH2H3:
+  [ !PreparedFact('h2', domain, slot, 'v1', value),
+    !PreparedFact('h3', domain, slot, 'v1', value) ]
+  --[ Certificate(domain, slot, 'v1', value) ]->
+  [ !CertificateFact(domain, slot, 'v1', value) ]
+
+rule CommitActuateClose:
+  [ ActuatorSlot(domain, slot),
+    !CertificateFact(domain, slot, view, value), Fr(~evidence) ]
+  --[ CommitObserved(domain, slot, view, value),
+      Actuated(domain, slot, value),
+      ClosedReceipt(domain, slot, value, ~evidence) ]->
+  [ Closed(domain, slot, value, ~evidence) ]
+
+rule SettleClosed:
+  [ SettlementOpen(domain, slot),
+    Closed(domain, slot, value, evidence) ]
+  --[ Settled(domain, slot, value, evidence) ]->
+  [ !Winner(domain, slot, value, evidence) ]
+
+lemma executable_view_change:
+  exists-trace
+  "Ex domain slot #i #j.
+     Certificate(domain, slot, 'v0', 'accept') @ i
+     & Certificate(domain, slot, 'v1', 'accept') @ j"
+
+lemma certificates_do_not_conflict:
+  "All domain slot view1 view2 value1 value2 #i #j.
+     Certificate(domain, slot, view1, value1) @ i
+     & Certificate(domain, slot, view2, value2) @ j
+     ==> value1 = value2"
+
+lemma new_view_preserves_highest_prepared:
+  "All domain slot value #i.
+     Proposal(domain, slot, 'v1', value) @ i
+     ==> value = 'accept'"
+
+lemma actuation_requires_prior_certificate:
+  "All domain slot value #i.
+     Actuated(domain, slot, value) @ i
+     ==> (Ex view #j. Certificate(domain, slot, view, value) @ j & j < i)"
+
+lemma actuator_at_most_once:
+  "All domain slot value1 value2 #i #j.
+     Actuated(domain, slot, value1) @ i
+     & Actuated(domain, slot, value2) @ j
+     ==> #i = #j & value1 = value2"
+
+lemma settlement_requires_closed_receipt:
+  "All domain slot value evidence #i.
+     Settled(domain, slot, value, evidence) @ i
+     ==> (Ex #j. ClosedReceipt(domain, slot, value, evidence) @ j & j < i)"
+
+end

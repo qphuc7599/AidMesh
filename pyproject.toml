@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aidmesh-research"
+version = "0.1.0"
+description = "Reproducible research artifact for risk-limited private aid redemption under network partitions"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = { text = "Apache-2.0" }
+authors = [{ name = "AidMesh Research Team" }]
+dependencies = [
+  "cbor2>=5.6,<6",
+  "cryptography>=44,<50",
+  "jsonschema>=4.23,<5",
+  "lifelines>=0.30,<0.31",
+  "matplotlib>=3.10,<4",
+  "networkx>=3.4,<4",
+  "numpy>=2.1,<3",
+  "pandas>=2.2,<4",
+  "pyarrow>=18,<24",
+  "pydantic>=2.10,<3",
+  "pypdf>=6.2,<7",
+  "PyYAML>=6,<7",
+  "scipy>=1.15,<2",
+  "seaborn>=0.13,<0.14",
+  "simpy>=4.1,<5",
+  "statsmodels>=0.14,<0.15",
+  "sympy>=1.14,<2",
+]
+
+[project.optional-dependencies]
+evm = [
+  "eth-tester[py-evm]>=0.13.0b1,<0.14",
+  "py-solc-x>=2.0,<3",
+  "web3>=7.8,<8",
+]
+crypto = ["py-ecc>=8,<9"]
+dev = [
+  "hypothesis>=6.120,<7",
+  "pytest>=9.0.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+aidmesh = "aidmesh.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["aidmesh*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+markers = [
+  "slow: long-running confirmatory or stress experiment",
+  "evm: requires the local EVM toolchain",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

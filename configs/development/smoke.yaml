@@ -1,0 +1,42 @@
+schema_version: 2.0.0
+scenario_id: DEV_SMOKE_SAFE
+phase: development
+seed: 7
+analysis_horizon_us: 86400000000
+population:
+  beneficiaries: 120
+  sites: 6
+  risk_cells: 2
+  groups: 6
+  categories: 3
+quorum:
+  K: 7
+  q: 5
+  registered_f: 2
+  safe_label: true
+  witness_availability: 0.8
+  timeout_us: 10000000
+network:
+  mobility_family: staff_ferry
+  partition_us: 21600000000
+  bandwidth_bps: 256000
+  buffer_bytes: 52428800
+  loss: 0.05
+  loss_model: iid
+adversary:
+  beneficiary_fraction: 0.05
+  byzantine_witnesses: 2
+  relay_drop_fraction: 0.1
+fallback:
+  enabled: true
+  total_rights: 80
+  placement: equal
+  transfer_enabled: true
+  window_us: 21600000000
+routing:
+  method: risk_priority
+  copy_allowance: 4
+  payload_bytes: 1536
+  padding_bucket_bytes: 2048
+  ttl_us: 43200000000
+

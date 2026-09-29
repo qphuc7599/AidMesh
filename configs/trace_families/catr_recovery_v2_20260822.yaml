@@ -1,0 +1,20 @@
+registry_id: CATR_RECOVERY_V2_20260822
+design_status: frozen_before_v2_outcomes
+relationship_to_primary: post-confirmatory corrective replication after split-prepare deadlock
+base_registry: configs/trace_families/catr_confirmatory_20260822.yaml
+seed: 9601
+policies:
+  - optimized_static
+  - adatransfer
+  - reclaimable_transfer
+  - reclaimable_transfer_v2
+hypotheses:
+  r1_terminalization:
+    estimand: final locked rights v2 divided by v1
+    success: ratio below 0.75
+  r2_reclaim:
+    estimand: certified reclaims v2 minus v1
+    success: positive
+  r3_safety:
+    estimand: cap violations and conservation failures
+    success: zero

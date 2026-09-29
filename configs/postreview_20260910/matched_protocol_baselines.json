@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0",
+  "declaredAt": "2026-09-10T01:15:00+07:00",
+  "scope": "Prospective post-review matched protocol-model extension; independent of the frozen confirmatory registry",
+  "seedStart": 94101,
+  "seedCount": 30,
+  "bootstrapResamples": 20000,
+  "methods": [
+    "coconut_online",
+    "first_seen_dtn",
+    "aidmesh_quorum_only",
+    "aidmesh_transferable_rights"
+  ],
+  "scenarios": [
+    "configs/confirmatory/part_06h.yaml",
+    "configs/confirmatory/core_w08_p24.yaml",
+    "configs/confirmatory/part_48h.yaml",
+    "configs/confirmatory/part_60h.yaml",
+    "configs/confirmatory/wit_06.yaml",
+    "configs/confirmatory/wit_07.yaml",
+    "configs/confirmatory/wit_09.yaml",
+    "configs/confirmatory/adv_05.yaml",
+    "configs/confirmatory/adv_30.yaml"
+  ],
+  "primaryContrast": {
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate",
+    "meaningfulMargin": 0.05,
+    "decisionRule": "lower endpoint of the paired seed-cluster 95% bootstrap CI exceeds 0.05"
+  },
+  "safetyRules": [
+    "no risk conservation failure",
+    "no conflicting safe-domain quorum certificate",
+    "duplicate exposure does not exceed the issued fallback-risk cap"
+  ],
+  "worldMatching": "Request, attack, witness, delivery and contact draws are keyed by scenario and seed, never by method label.",
+  "componentCalibration": "Coconut-Online uses the separately executed Coconut unit-token adapter; the network study reuses its exact online first-redemption transition rather than repeating cryptography per simulated request."
+}

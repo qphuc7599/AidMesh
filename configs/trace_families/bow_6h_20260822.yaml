@@ -1,0 +1,58 @@
+registry_id: TDSC_BOW_6H_20260822_V1
+
+# The primary campaign was already launched with all 20 seeds.  The six-hour
+# profile keeps those settings here so that its merged output remains directly
+# comparable, while trimming only factorial replication and resampling cost.
+seeds: [8601, 8602, 8603, 8604, 8605, 8606, 8607, 8608, 8609, 8610, 8611, 8612, 8613, 8614, 8615, 8616, 8617, 8618, 8619, 8620]
+factorial_seeds: [8701, 8702, 8703]
+cap_fractions: [0.10, 0.20, 0.40, 0.80]
+quorum_availabilities: [0.35, 0.65, 0.90]
+calibration_fraction: 0.40
+buffer_bytes: 98304
+bootstrap_repetitions: 2000
+
+# Five factorial contexts still span all three independent trace families.
+# All 128 cells and all six policies are retained: 5*3*128*6 = 11,520 rows.
+contexts:
+  - family: sociopatterns
+    context: invs13
+    path: external/sociopatterns/normalized_slots/invs13
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: sociopatterns
+    context: lh10
+    path: external/sociopatterns/normalized_slots/lh10
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: sociopatterns
+    context: sfhh
+    path: external/sociopatterns/normalized_slots/sfhh
+    profile: primary_20s_slot
+    primary: true
+    factorial: true
+  - family: umass_dieselnet
+    context: dieselnet05
+    path: external/umass_dieselnet/normalized/dieselnet05
+    profile: primary_1s_observed_transfer
+    primary: true
+    factorial: true
+  - family: umass_dieselnet
+    context: dieselnet05_w5
+    path: external/umass_dieselnet/normalized/dieselnet05_w5
+    profile: sensitivity_5s
+    primary: true
+    factorial: false
+  - family: umass_dieselnet
+    context: dieselnet05_w10
+    path: external/umass_dieselnet/normalized/dieselnet05_w10
+    profile: sensitivity_10s
+    primary: true
+    factorial: false
+  - family: ene5ai
+    context: ene5ai
+    path: external/ene5ai/normalized/ene5ai
+    profile: direct_wifi_1s_observed_capacity_lower_bound
+    primary: true
+    factorial: true

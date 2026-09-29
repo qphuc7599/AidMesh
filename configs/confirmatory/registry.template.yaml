@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+registry_id: CONFIRMATORY_TEMPLATE
+freeze_status: DRAFT
+claims:
+  primary_questions: [RQ1, RQ2, RQ5, RQ6]
+  decision_rules:
+    - "Report every registered comparison, including negative results."
+    - "Reject any run with a manifest or event-schema validation failure."
+    - "Do not infer external validity beyond the registered trace environments."
+approval:
+  owner: PENDING_MANUAL_RESEARCH_DECISION
+  date_utc: PENDING_MANUAL_RESEARCH_DECISION
+  meaningful_effect_statement: PENDING_MANUAL_RESEARCH_DECISION
+scenarios:
+  - config: configs/confirmatory/core_safe_template.yaml
+    seed_start: 8000
+    seed_count: 50
+    methods:
+      - online_only
+      - aidmesh_quorum_only
+      - aidmesh_static_rights
+      - aidmesh_transferable_rights
+      - first_seen_dtn
+analysis:
+  confidence_level: 0.95
+  bootstrap_resamples: 20000
+  permutation_resamples: 20000
+  multiplicity: holm
+  comparisons:
+    - id: RQ1_TRANSFERABLE_VS_ONLINE
+      treatment: aidmesh_transferable_rights
+      control: online_only
+      metrics: [completion_rate, non_home_completion_rate]
+      alternative: greater
+    - id: RQ1_RMST_TRANSFERABLE_VS_ONLINE
+      treatment: aidmesh_transferable_rights
+      control: online_only
+      metrics: [rmst_hours]
+      alternative: less
+    - id: RQ2_TRANSFERABLE_VS_STATIC
+      treatment: aidmesh_transferable_rights
+      control: aidmesh_static_rights
+      metrics: [completion_rate]
+      alternative: greater
+    - id: RQ2_EXPOSURE_TRANSFERABLE_VS_STATIC
+      treatment: aidmesh_transferable_rights
+      control: aidmesh_static_rights
+      metrics: [exposure_cap_ratio]
+      alternative: less

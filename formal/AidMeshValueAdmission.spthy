@@ -1,0 +1,53 @@
+theory AidMeshValueAdmission
+begin
+
+/* Symbolic admission submodel. An approved denomination serial is a linear
+   resource. Assignment binds its exact value and one hidden-holder token.
+   P1 knowledge/soundness is abstracted by possession of HolderReady. */
+
+rule ApproveEntitlement:
+  [ Fr(~campaign), Fr(~serial), Fr(~value) ]
+  --[ Approved(~campaign, ~serial, ~value) ]->
+  [ !ApprovedRow(~campaign, ~serial, ~value),
+    Available(~campaign, ~serial, ~value) ]
+
+rule AssignEntitlement:
+  [ Available(campaign, serial, value), Fr(~holder) ]
+  --[ Assigned(campaign, serial, ~holder, value) ]->
+  [ !HolderEntitlement(campaign, serial, ~holder, value),
+    HolderReady(campaign, serial, ~holder, value) ]
+
+rule ProveAndUse:
+  [ !HolderEntitlement(campaign, serial, holder, value),
+    HolderReady(campaign, serial, holder, value) ]
+  --[ AuthorizedUse(campaign, serial, holder, value) ]->
+  [ ]
+
+lemma executable_value_use:
+  exists-trace
+  "Ex campaign serial holder value #i.
+     AuthorizedUse(campaign, serial, holder, value) @ i"
+
+lemma assigned_requires_approval:
+  "All campaign serial holder value #i.
+     Assigned(campaign, serial, holder, value) @ i
+     ==> (Ex #j. Approved(campaign, serial, value) @ j & j < i)"
+
+lemma use_requires_exact_assignment:
+  "All campaign serial holder value #i.
+     AuthorizedUse(campaign, serial, holder, value) @ i
+     ==> (Ex #j. Assigned(campaign, serial, holder, value) @ j & j < i)"
+
+lemma serial_assigned_once:
+  "All campaign serial holder1 holder2 value1 value2 #i #j.
+     Assigned(campaign, serial, holder1, value1) @ i
+     & Assigned(campaign, serial, holder2, value2) @ j
+     ==> #i = #j & holder1 = holder2 & value1 = value2"
+
+lemma assigned_value_is_immutable:
+  "All campaign serial holder1 holder2 value1 value2 #i #j.
+     Assigned(campaign, serial, holder1, value1) @ i
+     & AuthorizedUse(campaign, serial, holder2, value2) @ j
+     ==> holder1 = holder2 & value1 = value2"
+
+end

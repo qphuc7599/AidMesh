@@ -1,0 +1,15 @@
+schema_version: 1
+analysis_id: frontier_practical_effect_sensitivity_20260723
+status: retrospective_sensitivity_not_preregistered
+reason: >
+  The frozen RQ2 rule required a 95% BCa lower bound above zero but did not
+  define a non-zero practically meaningful frontier effect. This amendment was
+  created after the confirmatory results existed and therefore must not be
+  described as preregistered or confirmatory.
+normalized_hypervolume_margin: 0.01
+interpretation: one_percent_of_registered_normalized_reference_area
+decision_rule: ci_lower_strictly_greater_than_margin_and_no_safety_violation
+inputs:
+  controlled_quorum: results/confirmatory/frontier/frontier_hypervolume_contrasts.csv
+  heldout_context: results/upgrade_20260718/heldout_temporal_frontier/heldout_temporal_contrasts.csv
+  independent_family: results/confirmatory/independent_trace_family_20260718/family_contrasts.csv

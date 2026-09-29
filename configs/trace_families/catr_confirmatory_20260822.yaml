@@ -1,0 +1,88 @@
+registry_id: CATR_ASTURIES_CONFIRMATORY_20260822_V1
+design_status: frozen_before_any_aidmesh_outcome_on_asturies
+family_manifest: external/asturies_wildfires/normalized/family_manifest.json
+upstream_commit: 6180235cfd63dbd78fdd4cb5eda9cc9e97ac21fe
+primary_seeds: [9201, 9202, 9203, 9204]
+factorial_seeds: [9301, 9302]
+cap_fractions: [0.15, 0.60]
+quorum_availabilities: [0.25, 0.90]
+calibration_fraction: 0.40
+conservative_protection_fraction: 0.10
+factorial_chunk_cells: 16
+declared_runtime_ceiling_hours: 10
+primary_policies:
+  - quorum_only
+  - equal_static
+  - optimized_static
+  - robust_static
+  - periodic_sync
+  - adatransfer
+  - reclaimable_transfer
+  - catr
+factorial_policies:
+  - optimized_static
+  - robust_static
+  - periodic_sync
+  - adatransfer
+  - reclaimable_transfer
+  - catr
+factor_order:
+  - demand_drift
+  - cap_tightness
+  - witness_availability
+  - transfer_reliability
+  - contact_predictability
+  - buffer_provisioning
+  - cross_class_traffic
+  - recovery_timing
+hypotheses:
+  h1_stable_noninferiority:
+    estimand: family-balanced paired completion-rate delta, CATR minus optimized-static
+    subset: demand_drift equals stable
+    margin: -0.01
+    success: lower simultaneous 95 percent confidence bound exceeds margin
+  h2_shifting_superiority:
+    estimand: family-balanced paired completion-rate delta, CATR minus optimized-static
+    subset: demand_drift equals shifting
+    margin: 0.0
+    success: lower simultaneous 95 percent confidence bound exceeds margin
+  h3_stranding_reduction:
+    estimand: aggregate final locked rights, CATR divided by AdaTransfer
+    success: ratio at most 0.25
+  h4_safety:
+    estimand: risk cap violations and rights conservation failures
+    success: zero violations and zero failures for every rights policy row
+analysis:
+  alpha: 0.05
+  bootstrap_repetitions: 5000
+  bootstrap_unit: wildfire incident, retaining all seeds and factorial cells
+  multiple_comparisons: Holm correction over h1 through h3
+  regime_classes:
+    harmful: paired completion delta below -0.01
+    neutral: absolute paired completion delta at most 0.01
+    beneficial: paired completion delta above 0.01
+  exclusions: none after campaign start
+contexts:
+  - {family: asturies_wildfires, context: asturies_wf01_r200, path: external/asturies_wildfires/normalized/asturies_wf01_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf03_r200, path: external/asturies_wildfires/normalized/asturies_wf03_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf04_r200, path: external/asturies_wildfires/normalized/asturies_wf04_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf05_r200, path: external/asturies_wildfires/normalized/asturies_wf05_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf06_r200, path: external/asturies_wildfires/normalized/asturies_wf06_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf07_r200, path: external/asturies_wildfires/normalized/asturies_wf07_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf09_r200, path: external/asturies_wildfires/normalized/asturies_wf09_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf10_r200, path: external/asturies_wildfires/normalized/asturies_wf10_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf12_r200, path: external/asturies_wildfires/normalized/asturies_wf12_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf13_r200, path: external/asturies_wildfires/normalized/asturies_wf13_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf14_r200, path: external/asturies_wildfires/normalized/asturies_wf14_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf15_r200, path: external/asturies_wildfires/normalized/asturies_wf15_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf16_r200, path: external/asturies_wildfires/normalized/asturies_wf16_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf18_r200, path: external/asturies_wildfires/normalized/asturies_wf18_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf20_r200, path: external/asturies_wildfires/normalized/asturies_wf20_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf21_r200, path: external/asturies_wildfires/normalized/asturies_wf21_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf22_r200, path: external/asturies_wildfires/normalized/asturies_wf22_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf23_r200, path: external/asturies_wildfires/normalized/asturies_wf23_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf24_r200, path: external/asturies_wildfires/normalized/asturies_wf24_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf26_r200, path: external/asturies_wildfires/normalized/asturies_wf26_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf28_r200, path: external/asturies_wildfires/normalized/asturies_wf28_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf29_r200, path: external/asturies_wildfires/normalized/asturies_wf29_r200, profile: incident_gps_r200_coalesced}
+  - {family: asturies_wildfires, context: asturies_wf30_r200, path: external/asturies_wildfires/normalized/asturies_wf30_r200, profile: incident_gps_r200_coalesced}

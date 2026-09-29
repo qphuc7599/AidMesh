@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "declaredAt": "2026-09-28T05:03:00+07:00",
+  "sourceContract": "source/review_and_origin/paper_original_elsevier.tex, original H3",
+  "campaignRegistry": "configs/postreview_20260928/h3_fixed_replication.json",
+  "seedCount": 640,
+  "repeatedConditionsPerSeed": 9,
+  "target": "full-box-leximin-then-weighted-utility",
+  "fairnessComparators": ["utility-only", "demand-proportional"],
+  "efficiencyComparator": "utility-only",
+  "fairnessEndpoint": "minimum_normalized_service",
+  "efficiencyEndpoint": "seed-aggregate fulfilled units relative loss",
+  "margin": 0.03,
+  "bootstrapReplicates": 50000,
+  "bootstrapSeed": 20260929,
+  "decisionRule": "The inherited original H3 is supported only if both two-sided 95% seed-cluster bootstrap lower bounds for minimum-service improvement are above zero and the one-sided 95% seed-cluster bootstrap upper bound for fulfilled-unit loss is at most 0.03.",
+  "stoppingRule": "Use exactly the 640 fresh seeds of the already frozen campaign; do not add, remove, or replace seeds after outcomes.",
+  "analysisStatus": "frozen before any outcome from the valid post-declaration campaign was inspected"
+}

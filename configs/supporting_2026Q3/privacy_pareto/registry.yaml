@@ -1,0 +1,18 @@
+schema_version: 1.0.0
+campaign_id: supporting_privacy_pareto_2026Q3
+preregistration: docs/SUPPORTING_PREREG_2026Q3.md
+input_root: raw/confirmatory
+scenario_id: CONF_CORE_W08_P24
+sampling_mode: all_core_runs
+expected_seeds_per_method: 50
+expected_methods:
+  - aidmesh_quorum_only
+  - aidmesh_static_rights
+  - aidmesh_transferable_rights
+  - first_seen_dtn
+  - online_only
+rare_category_max_frequency: 2
+slot_widths_h:
+  - 4
+  - 8
+  - 16
