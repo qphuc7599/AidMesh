@@ -10,7 +10,7 @@
     },
     "aidmesh-source-2026-10-17.zip": {
       "files": 709,
-      "uncompressed_bytes": 12225020
+      "uncompressed_bytes": 12225037
     },
     "aidmesh-final-evidence-2026-10-17.zip": {
       "files": 20875,
@@ -416700,8 +416700,8 @@
     {
       "path": ".gitattributes",
       "archive": "aidmesh-source-2026-10-17.zip",
-      "bytes": 278,
-      "sha256": "8238e373b1a6285ec2c30da88e29be8a646b67ead8dada64fc98b0113c4e7185"
+      "bytes": 295,
+      "sha256": "34b5b43ca40dbdc50d81ea78ffae98e761806ea45dfa72197a293b873dd34aee"
     },
     {
       "path": ".github/workflows/ci.yml",

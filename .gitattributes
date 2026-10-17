@@ -13,3 +13,4 @@
 results/** -text
 external/** -text
 artifacts/** -text
+figures/** -text
