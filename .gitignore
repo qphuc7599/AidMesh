@@ -57,6 +57,9 @@ keystore/
 *.png
 *.pdf
 *.svg
+!figures/results/*.pdf
+!figures/results/*.png
+!figures/results/*.svg
 results/**/shards/
 results/**/replay_raw/
 results/**/holdout_raw/

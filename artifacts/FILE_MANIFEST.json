@@ -9,8 +9,8 @@
       "uncompressed_bytes": 187078941
     },
     "aidmesh-source-2026-10-17.zip": {
-      "files": 694,
-      "uncompressed_bytes": 11015550
+      "files": 709,
+      "uncompressed_bytes": 12225020
     },
     "aidmesh-final-evidence-2026-10-17.zip": {
       "files": 20875,
@@ -416712,8 +416712,8 @@
     {
       "path": ".gitignore",
       "archive": "aidmesh-source-2026-10-17.zip",
-      "bytes": 758,
-      "sha256": "f6d82a7e8566cad09bd781be4e712ffb9a92b50feb63427c04a5451827da8f8b"
+      "bytes": 827,
+      "sha256": "dd571116d43bef4f0e9713843eae43f4eac1d4c3cd8122c2f983c3a3f01aed2a"
     },
     {
       "path": ".zenodo.json",
@@ -416760,8 +416760,8 @@
     {
       "path": "README.md",
       "archive": "aidmesh-source-2026-10-17.zip",
-      "bytes": 7897,
-      "sha256": "da07d36d404fb2eb8d23a1d960145dfde268a653224112379920a5ead92a9188"
+      "bytes": 8143,
+      "sha256": "bccf602476c05be4a0c43c81bc562cc4d4ddb08aa77f010ac1f939e361a91432"
     },
     {
       "path": "aidmesh/__init__.py",
@@ -417516,8 +417516,8 @@
     {
       "path": "artifacts/RELEASE_SCOPE.json",
       "archive": "aidmesh-source-2026-10-17.zip",
-      "bytes": 14543,
-      "sha256": "f663fdf9517738fd3307e1bccc9ef41803e44fb8fbcf9e80d36940a97ad16a57"
+      "bytes": 18766,
+      "sha256": "033bc426c291fb3aa106976237ef13fd2c578f0fa177f1498544d85d4c8bf60a"
     },
     {
       "path": "artifacts/SOURCE_PROVENANCE.json",
@@ -418262,6 +418262,96 @@
       "archive": "aidmesh-source-2026-10-17.zip",
       "bytes": 2061,
       "sha256": "4e170a5d98ddbf7221137849ab5cbaf0581678cc1e7817a23103e8c59778834d"
+    },
+    {
+      "path": "figures/results/allocation_evidence.pdf",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 50816,
+      "sha256": "327409ffe12d4f1f1f6f46f5488e9960d702295493b8615823d494bb499b861d"
+    },
+    {
+      "path": "figures/results/allocation_evidence.png",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 130774,
+      "sha256": "9b5c5118a6de38d1f90e96739d21ab37f5b468e18204d2f0e39bde955759141f"
+    },
+    {
+      "path": "figures/results/allocation_evidence.svg",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 25097,
+      "sha256": "527b5501abac47b881efe4d109ef7a2185683b38b21e7088ca32090f2d855b4c"
+    },
+    {
+      "path": "figures/results/h1_operating_envelope.pdf",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 54632,
+      "sha256": "ecb6f1e99354833bbfef5a4201d3ca3f21cffbddbdc25117edfc11e1bd73d76d"
+    },
+    {
+      "path": "figures/results/h1_operating_envelope.png",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 175950,
+      "sha256": "18580fe8d4832468c5dc4e3548ad99779a2fa75bb80a9e5d223b4e2f26d56a82"
+    },
+    {
+      "path": "figures/results/h1_operating_envelope.svg",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 34491,
+      "sha256": "9d613abc8ebe092d530c8818d4b672063e24738f3ac72ef7b0dfbab2bf8a0241"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.pdf",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 64933,
+      "sha256": "ae9ab73e44c242690a32d69fd58b76688562c5f241cdaf6606b4fc2db3f04593"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.png",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 194895,
+      "sha256": "3485bb24c9ed35acdae067aeb518420b39358465255ad9b00fc0f71788638658"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.svg",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 128130,
+      "sha256": "08b3a75ce349d55a7beb620d7264e3abd15a65cec35ec211fa4ee3e3962ec4a8"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.pdf",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 46059,
+      "sha256": "3c1835399fc66472c1d2f9df32d08585cea5e3d7864ff41291345d26560ae270"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.png",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 132819,
+      "sha256": "36468fe348e76db99325f754c5d4ca00e545aa8c91363faa4cb2b9c031ea7cc1"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.svg",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 24610,
+      "sha256": "4c73e4441c11d16bfe3a175352fd8444944f1919a28ebce4fdcbffbd8f9ced28"
+    },
+    {
+      "path": "figures/results/three_family_replication.pdf",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 46010,
+      "sha256": "fb58c54194d185dc68fff333c319c0314632247c8d8a0e149f9ee4b8bbc0df6e"
+    },
+    {
+      "path": "figures/results/three_family_replication.png",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 75629,
+      "sha256": "b114254b99fcb0b937cf90302327495915048f497aeacc218f785c813d767081"
+    },
+    {
+      "path": "figures/results/three_family_replication.svg",
+      "archive": "aidmesh-source-2026-10-17.zip",
+      "bytes": 20087,
+      "sha256": "c5462d0960e46f4904568077c614496d040fa2d928161e294d2c053e7c576faf"
     },
     {
       "path": "formal/AidMeshAuthorizationBinding.tla",

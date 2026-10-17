@@ -224,5 +224,97 @@
     "scripts/update-professor-todo-20260929.py"
   ],
   "source_files": 547,
-  "metadata_publication_note": "Authors follow the current manuscript front matter; historical Zenodo source-only metadata are not rewritten."
+  "metadata_publication_note": "Authors follow the current manuscript front matter; historical Zenodo source-only metadata are not rewritten.",
+  "final_result_figures": [
+    {
+      "path": "figures/results/h1_operating_envelope.pdf",
+      "origin": "overleaf/figs/h1_operating_envelope.pdf",
+      "sha256": "ecb6f1e99354833bbfef5a4201d3ca3f21cffbddbdc25117edfc11e1bd73d76d",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/h1_operating_envelope.svg",
+      "origin": "overleaf/figs/h1_operating_envelope.svg",
+      "sha256": "9d613abc8ebe092d530c8818d4b672063e24738f3ac72ef7b0dfbab2bf8a0241",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/h1_operating_envelope.png",
+      "origin": "overleaf/figs/h1_operating_envelope.png",
+      "sha256": "18580fe8d4832468c5dc4e3548ad99779a2fa75bb80a9e5d223b4e2f26d56a82",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/three_family_replication.pdf",
+      "origin": "overleaf/figs/three_family_replication.pdf",
+      "sha256": "fb58c54194d185dc68fff333c319c0314632247c8d8a0e149f9ee4b8bbc0df6e",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/three_family_replication.svg",
+      "origin": "overleaf/figs/three_family_replication.svg",
+      "sha256": "c5462d0960e46f4904568077c614496d040fa2d928161e294d2c053e7c576faf",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/three_family_replication.png",
+      "origin": "overleaf/figs/three_family_replication.png",
+      "sha256": "b114254b99fcb0b937cf90302327495915048f497aeacc218f785c813d767081",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.pdf",
+      "origin": "overleaf/figs/receipt_priority_evidence.pdf",
+      "sha256": "3c1835399fc66472c1d2f9df32d08585cea5e3d7864ff41291345d26560ae270",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.svg",
+      "origin": "overleaf/figs/receipt_priority_evidence.svg",
+      "sha256": "4c73e4441c11d16bfe3a175352fd8444944f1919a28ebce4fdcbffbd8f9ced28",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/receipt_priority_evidence.png",
+      "origin": "overleaf/figs/receipt_priority_evidence.png",
+      "sha256": "36468fe348e76db99325f754c5d4ca00e545aa8c91363faa4cb2b9c031ea7cc1",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/allocation_evidence.pdf",
+      "origin": "overleaf/figs/allocation_evidence.pdf",
+      "sha256": "327409ffe12d4f1f1f6f46f5488e9960d702295493b8615823d494bb499b861d",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/allocation_evidence.svg",
+      "origin": "overleaf/figs/allocation_evidence.svg",
+      "sha256": "527b5501abac47b881efe4d109ef7a2185683b38b21e7088ca32090f2d855b4c",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/allocation_evidence.png",
+      "origin": "overleaf/figs/allocation_evidence.png",
+      "sha256": "9b5c5118a6de38d1f90e96739d21ab37f5b468e18204d2f0e39bde955759141f",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.pdf",
+      "origin": "overleaf/figs/proof_settlement_evidence.pdf",
+      "sha256": "ae9ab73e44c242690a32d69fd58b76688562c5f241cdaf6606b4fc2db3f04593",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.svg",
+      "origin": "overleaf/figs/proof_settlement_evidence.svg",
+      "sha256": "08b3a75ce349d55a7beb620d7264e3abd15a65cec35ec211fa4ee3e3962ec4a8",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    },
+    {
+      "path": "figures/results/proof_settlement_evidence.png",
+      "origin": "overleaf/figs/proof_settlement_evidence.png",
+      "sha256": "3485bb24c9ed35acdae067aeb518420b39358465255ad9b00fc0f71788638658",
+      "adaptation": "unchanged final result figure; no manuscript included"
+    }
+  ]
 }

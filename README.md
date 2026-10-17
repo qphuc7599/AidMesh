@@ -34,6 +34,9 @@ release**. A DOI for this release must be verified after Zenodo processes it.
 
 The exact final root list is in [RELEASE_SCOPE.json](artifacts/RELEASE_SCOPE.json).
 The [evidence guide](EVIDENCE_GUIDE.md) explains provenance and invalidations.
+The five [final result figures](figures/results/) are included as PDF, SVG and
+PNG, copied byte-for-byte from the final recorded presentation. Their data inputs
+are in the evidence ZIPs and their generator is `scripts/journal-result-figures.py`.
 
 ## Download and verify
 
