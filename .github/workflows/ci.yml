@@ -18,6 +18,14 @@ jobs:
           cache: pip
       - name: Install the research package
         run: python -m pip install -e ".[dev,crypto,evm]"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install pinned circuit-input and native BLS dependencies
+        run: |
+          npm ci
+          python -m pip install -r reproducibility/requirements-aggregate-benchmark.txt
       - name: Compile Python sources
         run: python -m compileall -q aidmesh scripts formal tests
       - name: Run portable unit tests
