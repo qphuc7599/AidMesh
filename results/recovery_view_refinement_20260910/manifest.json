@@ -1,0 +1,72 @@
+[
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "executable_view_change",
+    "expected": "verified",
+    "matched": true,
+    "steps": 8,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "certificates_do_not_conflict",
+    "expected": "verified",
+    "matched": true,
+    "steps": 482,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "new_view_preserves_highest_prepared",
+    "expected": "verified",
+    "matched": true,
+    "steps": 8,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "actuation_requires_prior_certificate",
+    "expected": "verified",
+    "matched": true,
+    "steps": 33,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "actuator_at_most_once",
+    "expected": "verified",
+    "matched": true,
+    "steps": 189,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "formal\\AidMeshRecoveryViewRefinement.spthy",
+    "lemma": "settlement_requires_closed_receipt",
+    "expected": "verified",
+    "matched": true,
+    "steps": 33,
+    "returncode": 0,
+    "model_sha256": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "log_sha256": "76b6c1d3e77e9cfa32db1ac3b366f920006ca366c50b10eea4e86b649e5b966b"
+  },
+  {
+    "model": "results\\recovery_view_refinement_20260910\\AidMeshRecoveryViewUnsafeHighestPrepared.spthy",
+    "lemma": "certificates_do_not_conflict",
+    "expected": "falsified",
+    "matched": true,
+    "steps": 8,
+    "returncode": 0,
+    "model_sha256": "f51786b9892af8c79e08c882cd912e992974e609bbd9f195ab7a11d280654f5c",
+    "log_sha256": "4d9d80cbfa66a74c9a8df935ed85d0bc259a8fc4f6e6e44cdedba45dc63aff6b"
+  }
+]

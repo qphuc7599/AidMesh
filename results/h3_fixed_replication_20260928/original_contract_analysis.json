@@ -1,0 +1,56 @@
+{
+  "profile": "inherited original H3 fulfilled-unit contract",
+  "status": "complete",
+  "decision": "supported",
+  "decisionRule": "The inherited original H3 is supported only if both two-sided 95% seed-cluster bootstrap lower bounds for minimum-service improvement are above zero and the one-sided 95% seed-cluster bootstrap upper bound for fulfilled-unit loss is at most 0.03.",
+  "efficiency": {
+    "seedClusters": 640,
+    "meanRelativeFulfilledUnitLoss": 0.0,
+    "oneSided95Upper": 0.0,
+    "twoSided95": [
+      0.0,
+      0.0
+    ],
+    "margin": 0.03
+  },
+  "fairnessContrasts": [
+    {
+      "comparator": "utility-only",
+      "seedClusters": 640,
+      "meanMinimumServiceDifference": 0.235213950108424,
+      "twoSided95": [
+        0.23290753417421542,
+        0.23745938291024304
+      ],
+      "conditionCounts": {
+        "wins": 5547,
+        "ties": 213,
+        "losses": 0
+      }
+    },
+    {
+      "comparator": "demand-proportional",
+      "seedClusters": 640,
+      "meanMinimumServiceDifference": 0.056775918669768735,
+      "twoSided95": [
+        0.05576704893517655,
+        0.0578015721604511
+      ],
+      "conditionCounts": {
+        "wins": 5760,
+        "ties": 0,
+        "losses": 0
+      }
+    }
+  ],
+  "coverage": {
+    "seedClusters": 640,
+    "conditions": 5760,
+    "missingShards": 0
+  },
+  "provenance": {
+    "analysisPlanSha256": "9e847813d7d0f08b465227cb73dd2430434dff5c8a1cdd17034e5ab42f6b9309",
+    "campaignRegistrySha256": "7f7b396d34f2e1aa9378bcebe7d61a65426196956c16f143afea4e82b42fe05b",
+    "campaignSummarySha256": "330893ab23b305f832dd13c334e67feabcc6df54d998c2c5f1c602ed6de754ce"
+  }
+}

@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software and research evidence, cite this release."
+title: "AidMesh: experimental source and research evidence"
+type: software
+version: "artifact-2026-10-17"
+date-released: 2026-10-17
+license: Apache-2.0
+repository-code: "https://github.com/qphuc7599/AidMesh"
+url: "https://github.com/qphuc7599/AidMesh/releases/tag/artifact-2026-10-17"
+authors:
+  - family-names: "Tran"
+    given-names: "Tuan-Dung"
+    affiliation: "University of Information Technology, Vietnam National University Ho Chi Minh City"
+  - family-names: "Quang-Dai"
+    given-names: "Hoang-Phuc"
+    affiliation: "University of Information Technology, Vietnam National University Ho Chi Minh City"
+  - family-names: "Pham"
+    given-names: "Van-Hau"
+    affiliation: "University of Information Technology, Vietnam National University Ho Chi Minh City"
+abstract: >-
+  Source, configurations, formal models, generated experimental evidence,
+  recovery and receipt integration, matched baselines, replay and holdout,
+  allocation replication and staged atomic settlement for AidMesh.
+  Full bulk evidence is distributed in the associated GitHub Release assets.
+  This citation does not assign the older source-only DOI to the new release.
+keywords:
+  - offline vouchers
+  - delay-tolerant networking
+  - formal verification
+  - fair allocation
+  - reproducible research

@@ -1,0 +1,106 @@
+{
+  "profile": "selective unbounded mechanization plus bounded implementation simulation",
+  "allObligationsCovered": true,
+  "obligations": [
+    {
+      "obligation": "value-and-owner-bound admission",
+      "abstractTransition": "Reserve a unique entitlement serial and its exact value atomically",
+      "implementation": "ValueAdmissionRegistry.admit and P1-v3 entitlement leaf",
+      "unboundedEvidence": "five Tamarin lemmas plus four integer VCs",
+      "negativeControl": "reusable serial counterexample; holder/value/public-signal mutations",
+      "status": "passed"
+    },
+    {
+      "obligation": "persist before physical actuation",
+      "abstractTransition": "AUTHORIZED to INTENT before the sole actuator claim",
+      "implementation": "SQLiteReleaseStateStore.persist_intent and Site._authorize_release",
+      "unboundedEvidence": "settlement_has_closed_handoff and actuation_requires_prior_certificate",
+      "negativeControl": "handoff-first TLC mutant and unsafe settlement trace",
+      "status": "passed"
+    },
+    {
+      "obligation": "recovery agreement across views",
+      "abstractTransition": "new view carries the highest prepared value",
+      "implementation": "RecoveryRules.selection and RecoveryReplica.propose/change_view",
+      "unboundedEvidence": "six Tamarin recovery lemmas",
+      "negativeControl": "highest-prepared omission yields conflicting certificates",
+      "status": "passed"
+    },
+    {
+      "obligation": "fresh recovery context",
+      "abstractTransition": "reject stale view/epoch and foreign decision",
+      "implementation": "gateway _validateRecoveryItem and RecoveryRules.check",
+      "unboundedEvidence": "view ordering in the recovery model",
+      "negativeControl": "live epoch/view/decision wire mutations",
+      "status": "passed"
+    },
+    {
+      "obligation": "closed receipt before settlement",
+      "abstractTransition": "CLOSED receipt exports a settlement obligation",
+      "implementation": "SQLiteReleaseStateStore.close and gateway _verifySiteReceipt",
+      "unboundedEvidence": "settlement_requires_closed_receipt and settlement_has_closed_handoff",
+      "negativeControl": "unsafe settlement executes without handoff; six receipt mutations",
+      "status": "passed"
+    },
+    {
+      "obligation": "campaign/domain binding",
+      "abstractTransition": "all proofs, intents, receipts and rights remain in one immutable domain",
+      "implementation": "P1-v3 public signals, proofDomain and proofStatementHash",
+      "unboundedEvidence": "domain-indexed symbolic facts",
+      "negativeControl": "campaign, epoch, chain, gateway and settlement mutations",
+      "status": "passed"
+    },
+    {
+      "obligation": "old obligation retention",
+      "abstractTransition": "migration/reissue retains outstanding and ambiguous value",
+      "implementation": "value-admission journal and permanent staged/spent markers",
+      "unboundedEvidence": "epoch_retains_unresolved and reissue_charges_same_cap VCs",
+      "negativeControl": "cap-reset and drop-outstanding countermodels",
+      "status": "passed"
+    },
+    {
+      "obligation": "conditional liveness boundary",
+      "abstractTransition": "authorization and receipt delivery eventually reach settled/conflict",
+      "implementation": "recovery plus BPv7 retry path",
+      "unboundedEvidence": "TLC temporal property under CanAuthorize and CanDeliver",
+      "negativeControl": "permanent partition violates eventual settlement",
+      "status": "passed with stated eventual-delivery assumption"
+    }
+  ],
+  "evidenceCounts": {
+    "valueTamarinSafeLemmas": 5,
+    "valueIntegerVCs": 4,
+    "valueUnsafeCounterexamples": 3,
+    "recoveryTamarinSafeLemmas": 6,
+    "recoveryUnsafeCounterexamples": 1,
+    "compositionTamarinSafeLemmas": 3,
+    "compositionUnsafeControls": 2,
+    "boundedRiskTransitions": 49152,
+    "boundedWitnessTransitions": 2048,
+    "durableRestarts": 243,
+    "liveWireNegativeControls": 43,
+    "privateWitnessNegativeControls": 150
+  },
+  "boundary": "Tamarin and Z3 prove selected symbolic transition systems; TLC checks the finite liveness abstraction; trace refinement checks executable Python/SQLite/Solidity prefixes. This portfolio does not prove compiler, OS, storage hardware, firmware or physical handoff correctness.",
+  "tools": {
+    "tamarin": "1.12.0",
+    "maude": "3.5.1",
+    "z3": "4.15.4",
+    "tlc": "2.19",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "sourceSha256": {
+    "formal/AidMeshValueAdmission.spthy": "bbf1de9c1a53615b7ce70487c25b0ba2a44d7181282779c183625fa6daf0b4a6",
+    "formal/value_conservation_vcs.py": "0696c52d21509d9a7bcb067b2f554ba12137195a4d9af171fb9bbfbe5ca4efe8",
+    "formal/AidMeshV3Composition.spthy": "8b4f18eccdbbc277b7c60310c82f29660b74bc97d6a2fef4a3ddc25b9249b971",
+    "formal/AidMeshRecoveryViewRefinement.spthy": "85945692c8cb51c5a2a4b571cf8b8d035cfeb20d70cabfcc7733f20a40fc9646",
+    "formal/AidMeshRecoveryLiveness.tla": "bad6d9f197034da6c9bb6379381f5b6021e03843c94cce3f9a23792238663793",
+    "aidmesh/formal/refinement.py": "e1273e992e7d7b911c98cc7761c22093fac91b04f2d9b39fd4580b12da6e8ebc",
+    "aidmesh/protocol/value_admission_registry.py": "06316cc9c8e61d56332b02b1e8ef052b0ea5538cccdb071464117abc05c1b41c",
+    "aidmesh/protocol/terminal_recovery.py": "3549f19b663693a9b4dcd995c11eab0663c0b5444134c10d92f8494359117ea0",
+    "aidmesh/protocol/release.py": "43c1aabd08cac09e9a8c20213d877ec1e6ad1d3f9443a2c50b09d7bba3ad2c4f",
+    "contracts/src/AidMeshSemanticAuthorizationGateway.sol": "b9449e977ab518ee7779ed4f1492733dac9f196c27b402d65f9992946e002cd7",
+    "contracts/src/AidMeshSettlement.sol": "b9cd1b6b72d1983a39336bd9cd936fbc1544fdf5188629a58d132aa18fbfa366"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "registry": "configs/postreview_20260910/matched_protocol_baselines.json",
+  "registrySha256": "e9a25f46d01489cd53ee780f6b6c8f50a671b57d08248f000fc7e0673861522c",
+  "simulatorSha256": "633be9d260230c3ef5703bc62319f4dd56f525b92b0568cec597de14ef258cab",
+  "coconutComponentSummary": "results/coconut_online_final_20260906/summary.json",
+  "coconutComponentSummarySha256": "c2524454cbaf54ebcac40c4b5357efbdebe1b5a2ef3bfa6cb39852288f1cbf04",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "outputs": {
+    "runs.csv": "76f1d223f63ec2231ea6590f4fb6e1d3b26b2dacbcb237f98cc38185ad3baff2",
+    "means.csv": "467cd7c40ae2c79a4c3825fd45a7125bf29759a0d2c68ba7e707b253515e8139",
+    "paired_contrasts.json": "5f5535662c30cabb0c4f1328cbebb4b4e741ec91a863e739c2082bf5148bdc91",
+    "summary.json": "ddc927447470721a8a3c2ee042375f0d8f4514f17737336f888d19b8aad7dd0d"
+  }
+}

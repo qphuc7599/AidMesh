@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "decision": "accept",
+      "status": 1,
+      "gas": 495798,
+      "replay_status": 0
+    },
+    {
+      "decision": "reclaim",
+      "status": 1,
+      "gas": 493026,
+      "replay_status": 0
+    }
+  ],
+  "credits": [
+    1,
+    1
+  ],
+  "real_groth16": true,
+  "bpv7_unchanged": true,
+  "solidity_settlement": true,
+  "committee": {
+    "K": 3,
+    "q": 2,
+    "f": 0
+  },
+  "proof_source_sha256": "c8817a2c486fb0b9a6b44a30dbf87d78a93d413e990c2726db8f099ce5bcb986",
+  "scope": "retained proofs; synthetic EVM-profile signers; no actuator or full recovery-view execution"
+}

@@ -1,0 +1,33 @@
+{
+  "bundle_rule": "synthetic evaluation overlay generated from observed activity timestamps; not a humanitarian deployment or original source label",
+  "bundles_sha256": "bd9b81b8510168f6e22d3a7ef0cdb5a595d1619f0a8e9c4684986cb97489402b",
+  "citation": "John Burgess, Brian Gallagher, David Jensen, and Brian Neil Levine, MaxProp: Routing for Vehicle-Based Disruption-Tolerant Networking, IEEE INFOCOM, 2006.",
+  "contacts_sha256": "1dd7bc92431a6c8bc027d954a700f71643f24d00f7625f6be5c641e0668d8b9c",
+  "context": "dieselnet05",
+  "conversion": {
+    "bundle_size_bytes": 2048,
+    "bundles_per_client": 2,
+    "context": "dieselnet05",
+    "event_window_seconds": 1,
+    "minimum_bytes_per_second": 2048,
+    "relay_count": 3,
+    "site_count": 4,
+    "ttl_hours": 24
+  },
+  "conversion_semantics": "one undirected contact per pair/timestamp; reciprocal exact-time records deduplicated by maximum observed bytes; fixed registered opportunity window; capacity equals observed bytes subject to a minimum payload rate",
+  "dataset": "UMass DieselNet Spring 2005",
+  "excluded_source_fields": "GPS coordinates and route labels, per source README",
+  "family": "umass_dieselnet",
+  "license": "CC BY 4.0 (UMass Trace Repository default, accessed 2026-07-18)",
+  "mapping_sha256": "ed9e74a62e86c3f8578243c2248074da2d71db46b2f63bc5555962ae52245312",
+  "nodes": 30,
+  "normalized_contacts": 45673,
+  "raw_events": 47442,
+  "repository_record": "https://traces.cs.umass.edu/docs/traces/network/",
+  "role_mapping_rule": "rank anonymous bus IDs by total observed contact duration; assign synthetic sites, relays, then clients using deterministic lexical tie-breaking",
+  "schema_version": 1,
+  "source_archive_sha256": "38187d26ae57548df9b47bd6a45f2176e871ef001fde7b934ce55fccc51e8619",
+  "source_directory_sha256": "013e7dfd5ff3bc0659f5b57069898c2b0e9b57ba61a12866c9707f44a9de9554",
+  "source_repository": "UMass Trace Repository",
+  "source_url": "https://skulddata.cs.umass.edu/traces/network/UMassDieselNet_Spring2005.tar.gz"
+}

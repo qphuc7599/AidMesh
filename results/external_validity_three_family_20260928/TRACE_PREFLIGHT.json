@@ -1,0 +1,72 @@
+{
+  "families": 3,
+  "contexts": 5,
+  "allPassed": true,
+  "traces": [
+    {
+      "family": "sociopatterns",
+      "context": "invs13",
+      "rows": 9827,
+      "duplicateRows": 0,
+      "nonPositiveDuration": 0,
+      "selfContacts": 0,
+      "nonPositiveCapacity": 0,
+      "nodes": 92,
+      "startUs": 28820000000,
+      "endUs": 1016460000000,
+      "passed": true
+    },
+    {
+      "family": "sociopatterns",
+      "context": "lh10",
+      "rows": 33070,
+      "duplicateRows": 0,
+      "nonPositiveDuration": 0,
+      "selfContacts": 0,
+      "nonPositiveCapacity": 0,
+      "nodes": 76,
+      "startUs": 40080000000,
+      "endUs": 297400000000,
+      "passed": true
+    },
+    {
+      "family": "sociopatterns",
+      "context": "sfhh",
+      "rows": 70261,
+      "duplicateRows": 0,
+      "nonPositiveDuration": 0,
+      "selfContacts": 0,
+      "nonPositiveCapacity": 0,
+      "nodes": 403,
+      "startUs": 32520000000,
+      "endUs": 146840000000,
+      "passed": true
+    },
+    {
+      "family": "umass_dieselnet",
+      "context": "dieselnet05",
+      "rows": 45673,
+      "duplicateRows": 0,
+      "nonPositiveDuration": 0,
+      "selfContacts": 0,
+      "nonPositiveCapacity": 0,
+      "nodes": 30,
+      "startUs": 23887000000,
+      "endUs": 10156645000000,
+      "passed": true
+    },
+    {
+      "family": "ene5ai",
+      "context": "ene5ai",
+      "rows": 70740,
+      "duplicateRows": 0,
+      "nonPositiveDuration": 0,
+      "selfContacts": 0,
+      "nonPositiveCapacity": 0,
+      "nodes": 14,
+      "startUs": 0,
+      "endUs": 2749000000,
+      "passed": true
+    }
+  ]
+}

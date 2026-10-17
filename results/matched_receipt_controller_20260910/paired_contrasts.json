@@ -1,0 +1,1922 @@
+[
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -2.6170812673393393,
+    "ci95": [
+      -2.900375824152822,
+      -2.3462130461947726
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -26.32205407301495,
+    "ci95": [
+      -28.43026108915124,
+      -24.308762348353834
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.004204130413563689,
+    "ci95": [
+      0.0,
+      0.011446739883437355
+    ],
+    "wins": 0,
+    "ties": 28,
+    "losses": 2
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -2.5146753377302278,
+    "ci95": [
+      -2.761130004044485,
+      -2.2863369975014387
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -27.303672607406913,
+    "ci95": [
+      -29.638236887458707,
+      -25.151389925699792
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.011640079874477275,
+    "ci95": [
+      0.0,
+      0.026125828717151005
+    ],
+    "wins": 0,
+    "ties": 27,
+    "losses": 3
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -3368.8761646460844,
+    "ci95": [
+      -3459.721308299478,
+      -3279.889146858594
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -735.5145873671835,
+    "ci95": [
+      -795.1055931295951,
+      -676.8572962906503
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0010230971646225514,
+    "ci95": [
+      0.00044676217607207637,
+      0.0016955213461117438
+    ],
+    "wins": 8,
+    "ties": 22,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 111.77827027451352,
+    "ci95": [
+      106.14568578652596,
+      117.50373836303183
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -3300.941517891277,
+    "ci95": [
+      -3418.217268827572,
+      -3182.4540347360285
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -710.9157804758835,
+    "ci95": [
+      -769.2688852708164,
+      -656.4200908414113
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.001350380787740672,
+    "ci95": [
+      0.0006050192991897202,
+      0.002210845753443287
+    ],
+    "wins": 9,
+    "ties": 21,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 97.5744493772197,
+    "ci95": [
+      92.39840007973902,
+      102.38899216655714
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.65,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -16.25102452935933,
+    "ci95": [
+      -17.097948144467257,
+      -15.364211569809719
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -93.12176861335679,
+    "ci95": [
+      -103.71787720330188,
+      -83.61941434521898
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.9922318166440534,
+    "ci95": [
+      0.904631750974889,
+      1.0859779159714422
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -15.939746914296697,
+    "ci95": [
+      -16.784706542580675,
+      -15.080591606813053
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -92.4029844935766,
+    "ci95": [
+      -102.26211239298956,
+      -83.26787539106336
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.8450603321194194,
+    "ci95": [
+      0.7578892450303353,
+      0.9359708618064323
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -5464.214663592076,
+    "ci95": [
+      -5569.207539342491,
+      -5361.274321213903
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -902.0938991089549,
+    "ci95": [
+      -987.6016893058088,
+      -816.4655582972536
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.008167132782679165,
+    "ci95": [
+      0.0038003016294247513,
+      0.013682768260470046
+    ],
+    "wins": 16,
+    "ties": 14,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 245.60585323746838,
+    "ci95": [
+      236.12082155178263,
+      255.3901275122903
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -5466.82991815869,
+    "ci95": [
+      -5571.0419056469345,
+      -5363.612387011398
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -911.2245511880413,
+    "ci95": [
+      -999.5653643397025,
+      -826.5096741571555
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.005902583026775025,
+    "ci95": [
+      0.002114375636805315,
+      0.011201437314860695
+    ],
+    "wins": 12,
+    "ties": 18,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 217.6713747383633,
+    "ci95": [
+      209.26507252171274,
+      226.36722803644403
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.85,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -60.96353606059842,
+    "ci95": [
+      -67.5400844156121,
+      -54.8121654289839
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -233.31238075130446,
+    "ci95": [
+      -262.1128527288426,
+      -206.68369270805883
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 3.2826764714249976,
+    "ci95": [
+      2.9291725114974643,
+      3.6501612514385533
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -55.66512819537762,
+    "ci95": [
+      -60.72041913918903,
+      -50.79280773124089
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -217.67051926188725,
+    "ci95": [
+      -241.29462110578595,
+      -195.33164801967837
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 2.6233340065917305,
+    "ci95": [
+      2.3411171836714035,
+      2.930615938916515
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 0.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -6670.980760049423,
+    "ci95": [
+      -6774.527376337309,
+      -6566.041641902077
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -1149.0466260367377,
+    "ci95": [
+      -1235.7012091032354,
+      -1064.6148022005991
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.12200861276935383,
+    "ci95": [
+      0.07343881600808629,
+      0.17620340955119945
+    ],
+    "wins": 27,
+    "ties": 3,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 342.4749871051468,
+    "ci95": [
+      330.8811543421178,
+      354.5849759689425
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.0,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": -6673.245649933455,
+    "ci95": [
+      -6776.995296355784,
+      -6573.753602481317
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": -1176.537781745867,
+    "ci95": [
+      -1266.1947347242713,
+      -1087.5667400590191
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.1156863859795518,
+    "ci95": [
+      0.07418759393715052,
+      0.16112763091779805
+    ],
+    "wins": 27,
+    "ties": 3,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 307.6281211837459,
+    "ci95": [
+      296.9408953481869,
+      318.56055869526534
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "fifo",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_p95_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "receipt_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_median_delay_s",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  },
+  {
+    "load_factor": 0.95,
+    "partition_hours": 2.0,
+    "invalid_priority_fraction": 0.1,
+    "treatment": "receipt_priority",
+    "control": "edf",
+    "endpoint": "background_deadline_completion",
+    "meanDifference": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "wins": 0,
+    "ties": 30,
+    "losses": 0
+  }
+]

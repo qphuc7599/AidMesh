@@ -1,0 +1,100 @@
+{
+  "profile": "staged-atomic",
+  "batchStatus": 1,
+  "gasUsed": 85734940,
+  "maxTransactionGas": 14203542,
+  "chunks": [
+    {
+      "offset": 0,
+      "count": 10,
+      "gasUsed": 7329496,
+      "status": 1,
+      "transactionHash": "f3b7587e478381df2596ebf8c7de179e748b5c88290686d645111090a65de3cb"
+    },
+    {
+      "offset": 10,
+      "count": 10,
+      "gasUsed": 7133693,
+      "status": 1,
+      "transactionHash": "3fc25e25fea9835c9f8b4d957d176dc01e704c132be0a27996fb4ff0d29f10e9"
+    },
+    {
+      "offset": 20,
+      "count": 10,
+      "gasUsed": 7133448,
+      "status": 1,
+      "transactionHash": "b0cc5bc3e3022381353127d656973de7d26347b9e0db7348c2df32b8799ab1af"
+    },
+    {
+      "offset": 30,
+      "count": 10,
+      "gasUsed": 7133562,
+      "status": 1,
+      "transactionHash": "062f758452fac3c97c7259ef6ea43b75cafb879074194472cf225a98e0e023f2"
+    },
+    {
+      "offset": 40,
+      "count": 10,
+      "gasUsed": 7133550,
+      "status": 1,
+      "transactionHash": "5019068a8d201f48ec90afc05b10830708517c4d4bf16bcdadb54b9b51a90373"
+    },
+    {
+      "offset": 50,
+      "count": 10,
+      "gasUsed": 7133527,
+      "status": 1,
+      "transactionHash": "5c0d4610cdba9b5111126c2005bc52c36c1a8a4222a8a18c9c29004fdbb43da8"
+    },
+    {
+      "offset": 60,
+      "count": 10,
+      "gasUsed": 7133580,
+      "status": 1,
+      "transactionHash": "b9c1fe6db472ba84c4ac1f9f824554ed06a9e992c45a106dbd2cc91a7805aed9"
+    },
+    {
+      "offset": 70,
+      "count": 10,
+      "gasUsed": 7133502,
+      "status": 1,
+      "transactionHash": "806471a2535aad5de86c0a815be2a93097babd1b89e11721f93e4afd594c8808"
+    },
+    {
+      "offset": 80,
+      "count": 10,
+      "gasUsed": 7133630,
+      "status": 1,
+      "transactionHash": "4773834d0acbc03c4ecb83f758ba539c5614912c1669128b3eda86574603667f"
+    },
+    {
+      "offset": 90,
+      "count": 10,
+      "gasUsed": 7133410,
+      "status": 1,
+      "transactionHash": "b9b39fae782d4df6ec0aebe2e8340df5af6da2ba6718d8559dd5e51fcce158e3"
+    }
+  ],
+  "finalizeGasUsed": 14203542,
+  "incompleteFinalizeStatus": 0,
+  "blockGasLimit": 60000000,
+  "credits": [
+    100,
+    50
+  ],
+  "uniqueVouchers": 100,
+  "actuatorInvocations": 100,
+  "bpv7Unchanged": true,
+  "committee": {
+    "K": 4,
+    "q": 3,
+    "f": 1
+  },
+  "rootEndorsementVerifiedBeforeRegistration": true,
+  "gethClient": "Geth/v1.17.5-stable-9621c6ad/windows-amd64/go1.25.12",
+  "eip7825Cap": 16777216,
+  "oversizedTransactionRejected": true,
+  "fullBatchAtCapStatus": null,
+  "scope": "single host; fresh Coconut/P1; durable Ed25519 recovery plus participant EVM attestations; synthetic actuator",
+  "replayStatus": 0
+}

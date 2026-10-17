@@ -1,0 +1,79 @@
+{
+  "profile": "coupled-delivered-fairness-v1",
+  "seeds": [
+    99801,
+    99802,
+    99803,
+    99804,
+    99805,
+    99806,
+    99807,
+    99808,
+    99809,
+    99810,
+    99811,
+    99812,
+    99813,
+    99814,
+    99815,
+    99816,
+    99817,
+    99818,
+    99819,
+    99820,
+    99821,
+    99822,
+    99823,
+    99824,
+    99825,
+    99826,
+    99827,
+    99828,
+    99829,
+    99830
+  ],
+  "partitions": [
+    0,
+    6,
+    24,
+    72
+  ],
+  "groups": 6,
+  "categories": 3,
+  "demand_skew": 1,
+  "stock_sufficiency": 0.6,
+  "base_reachability": [
+    "1/4",
+    "2/5",
+    "11/20",
+    "7/10",
+    "17/20",
+    "1"
+  ],
+  "partition_multiplier": {
+    "0": "1",
+    "6": "9/10",
+    "24": "7/10",
+    "72": "2/5"
+  },
+  "ambiguous_probability": "1/25",
+  "settlement_given_delivered": "19/20",
+  "methods": [
+    "progressive-fill",
+    "full-box-leximin",
+    "delivery-aware-leximin"
+  ],
+  "endpoint": [
+    "issued",
+    "delivered",
+    "ambiguous",
+    "settled",
+    "worst_group_normalized_service"
+  ],
+  "scope": "synthetic semantic service coupling; no claim of a measured radio channel",
+  "source_sha256": {
+    "scripts\\run-coupled-delivered-fairness-20260909.py": "6edb3045b14495fcdc18d500c8f647be61afc34f5df08f08596e39c2e2a6b581",
+    "aidmesh\\allocator\\full_box.py": "9ed7d3ab1bcdee599475d1365ff925098acbd4fc11ed9588dfed2271f97b81a1",
+    "aidmesh\\experiments\\allocation.py": "673cd04c74880d0cf592ff7a1e7a2433c041f95d54d8c23ec5a1e75848441ad7"
+  }
+}

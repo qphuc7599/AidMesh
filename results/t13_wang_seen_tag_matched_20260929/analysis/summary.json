@@ -1,0 +1,70 @@
+{
+  "registryId": "T13_WANG_SEENTAG_PHYSICAL_20260929",
+  "registrySha256": "3d0059e32a7f08f67c8ecc17bd9cba3960fd748b5dcd5a898ab822bb79fb4da6",
+  "expectedCells": 1450,
+  "observedCells": 1450,
+  "failedCells": 0,
+  "methods": [
+    "aidmesh_transferable_rights",
+    "wang_seen_tag_sync_1h",
+    "wang_seen_tag_sync_6h",
+    "wang_seen_tag_sync_24h",
+    "first_seen_dtn"
+  ],
+  "checks": {
+    "completeCoverage": true,
+    "fiveMethodsEveryScenario": true,
+    "uniqueScenarioMethodSeed": true,
+    "zeroRiskConservationFailures": true,
+    "zeroSafeQuorumConflicts": true,
+    "seenTagCompletionInvariantAcrossFrequencies": true,
+    "exposureMonotoneWithSyncInterval": true,
+    "sixtyHourPartitionEqualsUnsynchronizedFirstSeen": true
+  },
+  "primaryCoreContrasts": [
+    {
+      "comparison_id": "T13_AIDMESH_VS_WANG6_CORE",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "wang_seen_tag_sync_6h",
+      "metric": "completion_rate",
+      "scenarios": "CONF_CORE_W08_P24",
+      "pairs": 50,
+      "mean_difference": -0.0402,
+      "ci_low": -0.0424,
+      "ci_high": -0.03806,
+      "permutation_p_value": 4.999750012499375e-05,
+      "alternative": "two-sided",
+      "holm_adjusted_p_value": 0.0010499475026248
+    },
+    {
+      "comparison_id": "T13_AIDMESH_VS_WANG6_CORE",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "wang_seen_tag_sync_6h",
+      "metric": "physical_duplicate_exposure",
+      "scenarios": "CONF_CORE_W08_P24",
+      "pairs": 50,
+      "mean_difference": -91.26,
+      "ci_low": -95.82,
+      "ci_high": -86.22,
+      "permutation_p_value": 4.999750012499375e-05,
+      "alternative": "two-sided",
+      "holm_adjusted_p_value": 0.0010499475026248
+    },
+    {
+      "comparison_id": "T13_WANG6_VS_FIRSTSEEN_CORE",
+      "treatment": "wang_seen_tag_sync_6h",
+      "control": "first_seen_dtn",
+      "metric": "physical_duplicate_exposure",
+      "scenarios": "CONF_CORE_W08_P24",
+      "pairs": 50,
+      "mean_difference": -13.34,
+      "ci_low": -14.98,
+      "ci_high": -11.82,
+      "permutation_p_value": 4.999750012499375e-05,
+      "alternative": "two-sided",
+      "holm_adjusted_p_value": 0.0010499475026248
+    }
+  ],
+  "interpretationBoundary": "Wang-style reconstruction from the full-text multi-site discussion; not the original authors' implementation. Synchronization transport and frequency are explicit evaluation assumptions.",
+  "allChecksPassed": true
+}

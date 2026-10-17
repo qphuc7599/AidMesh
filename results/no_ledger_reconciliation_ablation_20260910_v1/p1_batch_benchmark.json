@@ -1,0 +1,131 @@
+{
+  "profile": "sequential verification of the exact final 100 P1-v3 proofs",
+  "trials": 30,
+  "proofsPerTrial": 100,
+  "allValid": true,
+  "warmup": "one valid proof excluded",
+  "proofInputSha256": "5364e8c22c591fb352afb91e3a864dd73645705c37114a3f894ab6f9747e47bc",
+  "verificationKeySha256": "4db54f4c74cfb62624e33b9c51175f2de23ed3aee15644abfcd34c6e4062b062",
+  "measurements": [
+    {
+      "trial": 0,
+      "p1BatchVerificationMs": 634.6062000000001
+    },
+    {
+      "trial": 1,
+      "p1BatchVerificationMs": 589.7506000000001
+    },
+    {
+      "trial": 2,
+      "p1BatchVerificationMs": 579.0908000000004
+    },
+    {
+      "trial": 3,
+      "p1BatchVerificationMs": 621.5799000000002
+    },
+    {
+      "trial": 4,
+      "p1BatchVerificationMs": 665.1234999999997
+    },
+    {
+      "trial": 5,
+      "p1BatchVerificationMs": 652.9589000000005
+    },
+    {
+      "trial": 6,
+      "p1BatchVerificationMs": 637.7138999999997
+    },
+    {
+      "trial": 7,
+      "p1BatchVerificationMs": 652.5789000000004
+    },
+    {
+      "trial": 8,
+      "p1BatchVerificationMs": 649.4123
+    },
+    {
+      "trial": 9,
+      "p1BatchVerificationMs": 650.3747999999996
+    },
+    {
+      "trial": 10,
+      "p1BatchVerificationMs": 641.0387999999994
+    },
+    {
+      "trial": 11,
+      "p1BatchVerificationMs": 639.2999999999993
+    },
+    {
+      "trial": 12,
+      "p1BatchVerificationMs": 646.1797999999999
+    },
+    {
+      "trial": 13,
+      "p1BatchVerificationMs": 654.360999999999
+    },
+    {
+      "trial": 14,
+      "p1BatchVerificationMs": 648.7204000000002
+    },
+    {
+      "trial": 15,
+      "p1BatchVerificationMs": 663.6579000000002
+    },
+    {
+      "trial": 16,
+      "p1BatchVerificationMs": 642.2685000000001
+    },
+    {
+      "trial": 17,
+      "p1BatchVerificationMs": 650.4257999999991
+    },
+    {
+      "trial": 18,
+      "p1BatchVerificationMs": 644.2178000000004
+    },
+    {
+      "trial": 19,
+      "p1BatchVerificationMs": 640.5244999999995
+    },
+    {
+      "trial": 20,
+      "p1BatchVerificationMs": 635.9958999999999
+    },
+    {
+      "trial": 21,
+      "p1BatchVerificationMs": 629.4920000000002
+    },
+    {
+      "trial": 22,
+      "p1BatchVerificationMs": 650.3384999999998
+    },
+    {
+      "trial": 23,
+      "p1BatchVerificationMs": 617.6394999999993
+    },
+    {
+      "trial": 24,
+      "p1BatchVerificationMs": 641.3395
+    },
+    {
+      "trial": 25,
+      "p1BatchVerificationMs": 638.5685999999987
+    },
+    {
+      "trial": 26,
+      "p1BatchVerificationMs": 635.663700000001
+    },
+    {
+      "trial": 27,
+      "p1BatchVerificationMs": 641.0119000000013
+    },
+    {
+      "trial": 28,
+      "p1BatchVerificationMs": 653.3904000000002
+    },
+    {
+      "trial": 29,
+      "p1BatchVerificationMs": 632.6110999999983
+    }
+  ]
+}

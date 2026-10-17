@@ -1,0 +1,17 @@
+{
+  "models": [
+    {
+      "model": "formal/AidMeshClosedReceiptBridge.spthy",
+      "sha256": "0d1e73e338f08bc4c77bb0100a7b123c7f9d776a312824181060f6d1bc56e7de",
+      "expected_outcome": "5 verified"
+    },
+    {
+      "model": "results/baseline_formal_matrix_20260906/unsafe_export.spthy",
+      "sha256": "23ac047a090bedd070d9d3cd08516fe2b68fe37603051e37b8e5214e45e10b46",
+      "expected_outcome": "counterexample found"
+    }
+  ],
+  "scope": "Closed-receipt export submodel; no implementation refinement or view-change proof",
+  "tamarin": "1.12.0",
+  "maude": "3.5.1"
+}

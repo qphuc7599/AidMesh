@@ -1,0 +1,77 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "py_ecc": "8.0.0",
+  "blspy": "2.0.3",
+  "q": 5,
+  "trials": 10,
+  "roster_pop_verify_ms": 1457.2668999971938,
+  "rows": [
+    {
+      "five_sign_ms": 550.869300001068,
+      "five_verify_ms": 1517.7974999969592,
+      "aggregate_ms": 24.42039999732515,
+      "one_hash_to_curve_ms": 71.641800001089
+    },
+    {
+      "five_sign_ms": 500.3320000032545,
+      "five_verify_ms": 1417.0105000011972,
+      "aggregate_ms": 24.389499994867947,
+      "one_hash_to_curve_ms": 73.00340000074357
+    },
+    {
+      "five_sign_ms": 488.90960000426276,
+      "five_verify_ms": 1444.4484999985434,
+      "aggregate_ms": 24.570600005972665,
+      "one_hash_to_curve_ms": 73.6966000040411
+    },
+    {
+      "five_sign_ms": 502.09349999931874,
+      "five_verify_ms": 1378.5081000023638,
+      "aggregate_ms": 25.1401000059559,
+      "one_hash_to_curve_ms": 71.53269999980694
+    },
+    {
+      "five_sign_ms": 481.14860000350745,
+      "five_verify_ms": 1378.9541000005556,
+      "aggregate_ms": 25.06330000323942,
+      "one_hash_to_curve_ms": 71.72979999450035
+    },
+    {
+      "five_sign_ms": 496.1180000027525,
+      "five_verify_ms": 1360.3782999998657,
+      "aggregate_ms": 27.14429999468848,
+      "one_hash_to_curve_ms": 73.47260000096867
+    },
+    {
+      "five_sign_ms": 498.39110000175424,
+      "five_verify_ms": 1389.13219999813,
+      "aggregate_ms": 25.97799999784911,
+      "one_hash_to_curve_ms": 71.6714999944088
+    },
+    {
+      "five_sign_ms": 482.231200003298,
+      "five_verify_ms": 1480.29829999723,
+      "aggregate_ms": 25.360599996929523,
+      "one_hash_to_curve_ms": 72.39729999855626
+    },
+    {
+      "five_sign_ms": 546.0160999937216,
+      "five_verify_ms": 1463.931300000695,
+      "aggregate_ms": 25.56149999873014,
+      "one_hash_to_curve_ms": 81.0851000060211
+    },
+    {
+      "five_sign_ms": 504.2265000010957,
+      "five_verify_ms": 1495.92439999833,
+      "aggregate_ms": 26.29239999805577,
+      "one_hash_to_curve_ms": 73.81800000439398
+    }
+  ],
+  "medians": {
+    "five_sign_ms": 499.3615500025044,
+    "five_verify_ms": 1430.7294999998703,
+    "aggregate_ms": 25.250350001442712,
+    "one_hash_to_curve_ms": 72.70034999964992
+  },
+  "scope": "Supplemental component diagnosis, not replacement for original 100-trial benchmark."
+}

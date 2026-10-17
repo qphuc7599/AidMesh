@@ -1,0 +1,22 @@
+{
+  "bundle_rule": "create a fixed number of client-to-site bundles at observed client contact timestamps; this is an evaluation overlay, not source metadata",
+  "bundles_sha256": "f34b388f51138e48afd6449e9ee6637592ceb7fc737350e8cf2b03a299cc37d3",
+  "contacts_sha256": "f17e6233b750820fb58a8e51df20f8253e32f6a6c63ada4a31e7c05e9f8f58fc",
+  "context": "sociopatterns_invs13_workplace",
+  "conversion": {
+    "bundle_size_bytes": 2048,
+    "bundles_per_client": 1,
+    "bytes_per_second": 256000,
+    "contact_step_seconds": 20,
+    "context": "sociopatterns_invs13_workplace",
+    "relay_count": 3,
+    "site_count": 4,
+    "ttl_hours": 24
+  },
+  "dataset": "SocioPatterns contact.tar.bz2, Zenodo record 2540795",
+  "license": "CC BY-NC 4.0; researcher must confirm intended use complies",
+  "mapping_sha256": "ba4d1dad69151ddcf2aa660f97e44de806105d4ee76969177e583f29fdf62409",
+  "role_mapping_rule": "rank anonymous nodes by total observed contact duration; assign sites, then relays, then clients in deterministic lexical tie order",
+  "source_file": "tij_InVS13.dat",
+  "source_sha256": "4b1c0c4065766e89106bdfca6687488bc38dd38ef48f42a0efa326144ecd0b2b"
+}

@@ -1,0 +1,502 @@
+[
+  {
+    "token": 0,
+    "issuance_ms": 61.586374,
+    "online_redeem_ms": 14.732506
+  },
+  {
+    "token": 1,
+    "issuance_ms": 61.975781,
+    "online_redeem_ms": 27.096123
+  },
+  {
+    "token": 2,
+    "issuance_ms": 64.549973,
+    "online_redeem_ms": 29.476315
+  },
+  {
+    "token": 3,
+    "issuance_ms": 62.470872,
+    "online_redeem_ms": 34.720464
+  },
+  {
+    "token": 4,
+    "issuance_ms": 59.873784,
+    "online_redeem_ms": 32.441871
+  },
+  {
+    "token": 5,
+    "issuance_ms": 60.997095,
+    "online_redeem_ms": 18.761059
+  },
+  {
+    "token": 6,
+    "issuance_ms": 63.321008,
+    "online_redeem_ms": 36.832665
+  },
+  {
+    "token": 7,
+    "issuance_ms": 62.847172,
+    "online_redeem_ms": 34.379231
+  },
+  {
+    "token": 8,
+    "issuance_ms": 62.702828,
+    "online_redeem_ms": 15.678871
+  },
+  {
+    "token": 9,
+    "issuance_ms": 65.051241,
+    "online_redeem_ms": 15.495281
+  },
+  {
+    "token": 10,
+    "issuance_ms": 65.495209,
+    "online_redeem_ms": 27.627478
+  },
+  {
+    "token": 11,
+    "issuance_ms": 60.542562,
+    "online_redeem_ms": 27.857924
+  },
+  {
+    "token": 12,
+    "issuance_ms": 57.247622,
+    "online_redeem_ms": 30.448843
+  },
+  {
+    "token": 13,
+    "issuance_ms": 58.919322,
+    "online_redeem_ms": 19.820919
+  },
+  {
+    "token": 14,
+    "issuance_ms": 60.512859,
+    "online_redeem_ms": 37.481181
+  },
+  {
+    "token": 15,
+    "issuance_ms": 59.652087,
+    "online_redeem_ms": 33.74146
+  },
+  {
+    "token": 16,
+    "issuance_ms": 60.068355,
+    "online_redeem_ms": 25.090311
+  },
+  {
+    "token": 17,
+    "issuance_ms": 59.936483,
+    "online_redeem_ms": 30.106651
+  },
+  {
+    "token": 18,
+    "issuance_ms": 61.303951,
+    "online_redeem_ms": 32.029914
+  },
+  {
+    "token": 19,
+    "issuance_ms": 61.375174,
+    "online_redeem_ms": 16.751024
+  },
+  {
+    "token": 20,
+    "issuance_ms": 59.8181,
+    "online_redeem_ms": 16.57698
+  },
+  {
+    "token": 21,
+    "issuance_ms": 61.816763,
+    "online_redeem_ms": 28.416394
+  },
+  {
+    "token": 22,
+    "issuance_ms": 60.395538,
+    "online_redeem_ms": 26.678308
+  },
+  {
+    "token": 23,
+    "issuance_ms": 60.464676,
+    "online_redeem_ms": 16.761449
+  },
+  {
+    "token": 24,
+    "issuance_ms": 64.026391,
+    "online_redeem_ms": 34.578876
+  },
+  {
+    "token": 25,
+    "issuance_ms": 65.760669,
+    "online_redeem_ms": 24.167603
+  },
+  {
+    "token": 26,
+    "issuance_ms": 62.563805,
+    "online_redeem_ms": 20.398229
+  },
+  {
+    "token": 27,
+    "issuance_ms": 64.33907,
+    "online_redeem_ms": 19.503769
+  },
+  {
+    "token": 28,
+    "issuance_ms": 64.074359,
+    "online_redeem_ms": 30.233712
+  },
+  {
+    "token": 29,
+    "issuance_ms": 65.704523,
+    "online_redeem_ms": 27.455484
+  },
+  {
+    "token": 30,
+    "issuance_ms": 65.306938,
+    "online_redeem_ms": 17.020553
+  },
+  {
+    "token": 31,
+    "issuance_ms": 63.480075,
+    "online_redeem_ms": 26.808437
+  },
+  {
+    "token": 32,
+    "issuance_ms": 61.463838,
+    "online_redeem_ms": 28.520831
+  },
+  {
+    "token": 33,
+    "issuance_ms": 63.331975,
+    "online_redeem_ms": 34.478753
+  },
+  {
+    "token": 34,
+    "issuance_ms": 60.858213,
+    "online_redeem_ms": 27.215296
+  },
+  {
+    "token": 35,
+    "issuance_ms": 65.171838,
+    "online_redeem_ms": 19.043328
+  },
+  {
+    "token": 36,
+    "issuance_ms": 62.802811,
+    "online_redeem_ms": 17.638444
+  },
+  {
+    "token": 37,
+    "issuance_ms": 62.983053,
+    "online_redeem_ms": 17.539161
+  },
+  {
+    "token": 38,
+    "issuance_ms": 64.568398,
+    "online_redeem_ms": 27.405167
+  },
+  {
+    "token": 39,
+    "issuance_ms": 80.134283,
+    "online_redeem_ms": 24.485923
+  },
+  {
+    "token": 40,
+    "issuance_ms": 64.303505,
+    "online_redeem_ms": 19.309305
+  },
+  {
+    "token": 41,
+    "issuance_ms": 65.640522,
+    "online_redeem_ms": 35.526324
+  },
+  {
+    "token": 42,
+    "issuance_ms": 70.068817,
+    "online_redeem_ms": 16.884641
+  },
+  {
+    "token": 43,
+    "issuance_ms": 63.782663,
+    "online_redeem_ms": 31.711182
+  },
+  {
+    "token": 44,
+    "issuance_ms": 61.617835,
+    "online_redeem_ms": 25.603369
+  },
+  {
+    "token": 45,
+    "issuance_ms": 61.183762,
+    "online_redeem_ms": 21.280599
+  },
+  {
+    "token": 46,
+    "issuance_ms": 63.427856,
+    "online_redeem_ms": 22.180786
+  },
+  {
+    "token": 47,
+    "issuance_ms": 63.932748,
+    "online_redeem_ms": 28.77834
+  },
+  {
+    "token": 48,
+    "issuance_ms": 68.017542,
+    "online_redeem_ms": 25.590035
+  },
+  {
+    "token": 49,
+    "issuance_ms": 62.109981,
+    "online_redeem_ms": 17.863371
+  },
+  {
+    "token": 50,
+    "issuance_ms": 61.247418,
+    "online_redeem_ms": 24.28942
+  },
+  {
+    "token": 51,
+    "issuance_ms": 63.222347,
+    "online_redeem_ms": 38.805875
+  },
+  {
+    "token": 52,
+    "issuance_ms": 63.17232,
+    "online_redeem_ms": 18.911731
+  },
+  {
+    "token": 53,
+    "issuance_ms": 63.200484,
+    "online_redeem_ms": 18.459594
+  },
+  {
+    "token": 54,
+    "issuance_ms": 62.947939,
+    "online_redeem_ms": 33.188256
+  },
+  {
+    "token": 55,
+    "issuance_ms": 64.216379,
+    "online_redeem_ms": 20.260842
+  },
+  {
+    "token": 56,
+    "issuance_ms": 62.064801,
+    "online_redeem_ms": 18.86817
+  },
+  {
+    "token": 57,
+    "issuance_ms": 61.922269,
+    "online_redeem_ms": 30.334931
+  },
+  {
+    "token": 58,
+    "issuance_ms": 62.10828,
+    "online_redeem_ms": 27.991648
+  },
+  {
+    "token": 59,
+    "issuance_ms": 64.390457,
+    "online_redeem_ms": 33.729548
+  },
+  {
+    "token": 60,
+    "issuance_ms": 65.891927,
+    "online_redeem_ms": 23.562235
+  },
+  {
+    "token": 61,
+    "issuance_ms": 66.551807,
+    "online_redeem_ms": 26.436582
+  },
+  {
+    "token": 62,
+    "issuance_ms": 61.616202,
+    "online_redeem_ms": 27.978573
+  },
+  {
+    "token": 63,
+    "issuance_ms": 67.046027,
+    "online_redeem_ms": 33.879606
+  },
+  {
+    "token": 64,
+    "issuance_ms": 61.184914,
+    "online_redeem_ms": 36.459626
+  },
+  {
+    "token": 65,
+    "issuance_ms": 64.318212,
+    "online_redeem_ms": 17.333067
+  },
+  {
+    "token": 66,
+    "issuance_ms": 80.833064,
+    "online_redeem_ms": 17.166703
+  },
+  {
+    "token": 67,
+    "issuance_ms": 64.138071,
+    "online_redeem_ms": 16.472487
+  },
+  {
+    "token": 68,
+    "issuance_ms": 64.982404,
+    "online_redeem_ms": 26.752676
+  },
+  {
+    "token": 69,
+    "issuance_ms": 62.217013,
+    "online_redeem_ms": 28.948236
+  },
+  {
+    "token": 70,
+    "issuance_ms": 65.130072,
+    "online_redeem_ms": 24.591256
+  },
+  {
+    "token": 71,
+    "issuance_ms": 63.050269,
+    "online_redeem_ms": 25.199748
+  },
+  {
+    "token": 72,
+    "issuance_ms": 63.62219,
+    "online_redeem_ms": 29.301907
+  },
+  {
+    "token": 73,
+    "issuance_ms": 62.743905,
+    "online_redeem_ms": 27.300313
+  },
+  {
+    "token": 74,
+    "issuance_ms": 66.108172,
+    "online_redeem_ms": 16.607726
+  },
+  {
+    "token": 75,
+    "issuance_ms": 68.72086,
+    "online_redeem_ms": 17.817415
+  },
+  {
+    "token": 76,
+    "issuance_ms": 65.297008,
+    "online_redeem_ms": 33.485648
+  },
+  {
+    "token": 77,
+    "issuance_ms": 67.222014,
+    "online_redeem_ms": 31.442724
+  },
+  {
+    "token": 78,
+    "issuance_ms": 69.405105,
+    "online_redeem_ms": 29.003795
+  },
+  {
+    "token": 79,
+    "issuance_ms": 63.150614,
+    "online_redeem_ms": 24.257209
+  },
+  {
+    "token": 80,
+    "issuance_ms": 67.206643,
+    "online_redeem_ms": 30.985843
+  },
+  {
+    "token": 81,
+    "issuance_ms": 65.900269,
+    "online_redeem_ms": 32.129933
+  },
+  {
+    "token": 82,
+    "issuance_ms": 62.175961,
+    "online_redeem_ms": 30.159081
+  },
+  {
+    "token": 83,
+    "issuance_ms": 65.32664,
+    "online_redeem_ms": 28.029088
+  },
+  {
+    "token": 84,
+    "issuance_ms": 68.104409,
+    "online_redeem_ms": 31.969562
+  },
+  {
+    "token": 85,
+    "issuance_ms": 62.136053,
+    "online_redeem_ms": 27.747356
+  },
+  {
+    "token": 86,
+    "issuance_ms": 63.719115,
+    "online_redeem_ms": 33.313697
+  },
+  {
+    "token": 87,
+    "issuance_ms": 61.195858,
+    "online_redeem_ms": 22.968423
+  },
+  {
+    "token": 88,
+    "issuance_ms": 65.143518,
+    "online_redeem_ms": 33.087792
+  },
+  {
+    "token": 89,
+    "issuance_ms": 64.743924,
+    "online_redeem_ms": 31.497897
+  },
+  {
+    "token": 90,
+    "issuance_ms": 68.676134,
+    "online_redeem_ms": 25.437814
+  },
+  {
+    "token": 91,
+    "issuance_ms": 66.003382,
+    "online_redeem_ms": 42.272576
+  },
+  {
+    "token": 92,
+    "issuance_ms": 61.939059,
+    "online_redeem_ms": 32.060448
+  },
+  {
+    "token": 93,
+    "issuance_ms": 61.345676,
+    "online_redeem_ms": 19.475378
+  },
+  {
+    "token": 94,
+    "issuance_ms": 61.325528,
+    "online_redeem_ms": 21.357357
+  },
+  {
+    "token": 95,
+    "issuance_ms": 61.60503,
+    "online_redeem_ms": 35.680777
+  },
+  {
+    "token": 96,
+    "issuance_ms": 60.824054,
+    "online_redeem_ms": 29.638535
+  },
+  {
+    "token": 97,
+    "issuance_ms": 60.29311,
+    "online_redeem_ms": 33.792741
+  },
+  {
+    "token": 98,
+    "issuance_ms": 60.167001,
+    "online_redeem_ms": 32.934189
+  },
+  {
+    "token": 99,
+    "issuance_ms": 62.668266,
+    "online_redeem_ms": 30.982893
+  }
+]

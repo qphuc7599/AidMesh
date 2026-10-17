@@ -1,0 +1,10 @@
+{
+  "valid_unique_tokens": 100,
+  "duplicate_credits": 0,
+  "field_and_threshold_rejections": 36,
+  "issuance_median_ms": 63.161467,
+  "redemption_median_ms": 27.4303255,
+  "scope": "unit-token Coconut-Online adaptation; true Coconut; single online ledger; no matched network campaign",
+  "original_H1_established": false,
+  "adapter_sha256": "d2e688dd83a53ae8111dd68a6f7d8393e05006235f346aa97cec81d3dae45e5c"
+}

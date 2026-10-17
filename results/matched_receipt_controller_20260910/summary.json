@@ -1,0 +1,206 @@
+{
+  "profile": "matched local receipt scheduling under reconnection bursts",
+  "runs": 1080,
+  "matchedWorkloads": 360,
+  "primaryContrasts": [
+    {
+      "load_factor": 0.65,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -2.6170812673393393,
+      "ci95": [
+        -2.900375824152822,
+        -2.3462130461947726
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.65,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -2.5146753377302278,
+      "ci95": [
+        -2.761130004044485,
+        -2.2863369975014387
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.65,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -3368.8761646460844,
+      "ci95": [
+        -3459.721308299478,
+        -3279.889146858594
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.65,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -3300.941517891277,
+      "ci95": [
+        -3418.217268827572,
+        -3182.4540347360285
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.85,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -16.25102452935933,
+      "ci95": [
+        -17.097948144467257,
+        -15.364211569809719
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.85,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -15.939746914296697,
+      "ci95": [
+        -16.784706542580675,
+        -15.080591606813053
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.85,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -5464.214663592076,
+      "ci95": [
+        -5569.207539342491,
+        -5361.274321213903
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.85,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -5466.82991815869,
+      "ci95": [
+        -5571.0419056469345,
+        -5363.612387011398
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.95,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -60.96353606059842,
+      "ci95": [
+        -67.5400844156121,
+        -54.8121654289839
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.95,
+      "partition_hours": 0.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -55.66512819537762,
+      "ci95": [
+        -60.72041913918903,
+        -50.79280773124089
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.95,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.0,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -6670.980760049423,
+      "ci95": [
+        -6774.527376337309,
+        -6566.041641902077
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "load_factor": 0.95,
+      "partition_hours": 2.0,
+      "invalid_priority_fraction": 0.1,
+      "treatment": "receipt_priority",
+      "control": "fifo",
+      "endpoint": "receipt_median_delay_s",
+      "meanDifference": -6673.245649933455,
+      "ci95": [
+        -6776.995296355784,
+        -6573.753602481317
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    }
+  ],
+  "allPrimaryCellsFavorReceiptPriority": true,
+  "matchingChecks": {
+    "allPolicyWorkloadHashesMatch": true,
+    "allPolicyByteBudgetsMatch": true,
+    "allInvalidPriorityPacketsRejectedBeforeQueue": true
+  },
+  "privacyBoundary": "Authenticated packet class is visible to the local controller; timing and class confidentiality are not claimed."
+}

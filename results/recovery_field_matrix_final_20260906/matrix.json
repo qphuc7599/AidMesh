@@ -1,0 +1,1176 @@
+[
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "amount"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "destination"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "epoch"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "source"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "body",
+      "transfer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "transfer",
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      0,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      1,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      2,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "commits",
+      3,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "release_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "domain_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "epoch"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "nullifier"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "site_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "mode"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "authorization_digest"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "body",
+      "acknowledgment"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "receipt",
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "accept",
+    "field": [
+      "voucher",
+      "unit_fixture"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: voucher substitution"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "amount"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "destination"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "epoch"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "source"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "body",
+      "transfer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "transfer",
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: transfer authentication"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      0,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      1,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      2,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "domain"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "phase"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "view"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "message",
+      "proof"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "commits",
+      3,
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: unauthenticated or wrong-context message"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "release_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "profile"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "domain_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "epoch"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "nullifier"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "slot",
+      "site_id"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "value"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "statement",
+      "mode"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "authorization_digest"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "body",
+      "acknowledgment"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "signer"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "receipt",
+      "signature"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: release authentication/binding"
+  },
+  {
+    "decision": "reclaim",
+    "field": [
+      "voucher",
+      "unit_fixture"
+    ],
+    "rejected": true,
+    "state_unchanged": true,
+    "error": "ValueError: voucher substitution"
+  }
+]

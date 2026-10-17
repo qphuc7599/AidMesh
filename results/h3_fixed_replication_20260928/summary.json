@@ -1,0 +1,82 @@
+{
+  "profile": "fixed-size disjoint-seed H3 replication",
+  "status": "complete",
+  "decision": "supported",
+  "decisionRule": "H3 replication passes only if the one-sided 95% seed-cluster bootstrap upper bound for utility loss is at most 0.03 and every two-sided 95% paired seed-cluster interval for the minimum-service contrast is strictly above zero.",
+  "utilityLoss": {
+    "seedClusters": 640,
+    "meanRelativeLoss": 0.02447678747454993,
+    "oneSided95Upper": 0.025611208083216833,
+    "twoSided95": [
+      0.023125881524235777,
+      0.025828730919658233
+    ],
+    "margin": 0.03
+  },
+  "fairnessContrasts": [
+    {
+      "comparator": "progressive-fill",
+      "seedClusters": 640,
+      "pairedConditions": 5760,
+      "meanMinimumServiceDifference": 0.009028708057784723,
+      "twoSided95": [
+        0.00862930388116869,
+        0.00944069140371916
+      ],
+      "conditionWins": 4124,
+      "conditionTies": 1636,
+      "conditionLosses": 0
+    },
+    {
+      "comparator": "equal-share",
+      "seedClusters": 640,
+      "pairedConditions": 5760,
+      "meanMinimumServiceDifference": 0.07955416041423699,
+      "twoSided95": [
+        0.07865095280754114,
+        0.08046041595580884
+      ],
+      "conditionWins": 5553,
+      "conditionTies": 207,
+      "conditionLosses": 0
+    },
+    {
+      "comparator": "demand-proportional",
+      "seedClusters": 640,
+      "pairedConditions": 5760,
+      "meanMinimumServiceDifference": 0.056775918669768735,
+      "twoSided95": [
+        0.05576704893517655,
+        0.0578015721604511
+      ],
+      "conditionWins": 5760,
+      "conditionTies": 0,
+      "conditionLosses": 0
+    },
+    {
+      "comparator": "utility-only",
+      "seedClusters": 640,
+      "pairedConditions": 5760,
+      "meanMinimumServiceDifference": 0.235213950108424,
+      "twoSided95": [
+        0.23290763548339186,
+        0.23746814205244898
+      ],
+      "conditionWins": 5547,
+      "conditionTies": 213,
+      "conditionLosses": 0
+    }
+  ],
+  "coverage": {
+    "seedClusters": 640,
+    "conditions": 5760,
+    "methodRows": 34560,
+    "missingShards": 0
+  },
+  "runtimeSeconds": 70921.95834800001,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "scope": "Prospectively specified post-review replication; independent of the 30-seed development campaign and historical holdout."
+}

@@ -1,0 +1,27 @@
+{
+  "calibration_contacts": 15658,
+  "citation_doi": "10.1109/ACCESS.2017.2778347",
+  "contacts_sha256": "e2f47633f215ed2dbc8a1ad81620f554f90ae5f273001d09f078cb8f42ecd280",
+  "context": "asturies_wf04_r200",
+  "conversion": {
+    "bytes_per_second": 32000,
+    "communication_range_m": 200,
+    "context": "asturies_wf04_r200",
+    "snapshot_seconds": 30
+  },
+  "conversion_semantics": "one undirected contact per upstream 30-second mobility snapshot when projected Euclidean distance is within the registered radio range; adjacent snapshots of the same pair are losslessly coalesced",
+  "dataset": "Asturies-Wildfires firefighter vehicle mobility traces",
+  "duration_us": 172800000000,
+  "family": "asturies_wildfires",
+  "heldout_contacts": 21120,
+  "nodes_with_contacts": 20,
+  "normalized_contacts": 137,
+  "raw_contact_samples": 36778,
+  "schema_version": 1,
+  "source_file": "WF4_one.csv",
+  "source_repository": "https://github.com/sergiocabrero/asturies-wildfires",
+  "source_sha256": "f929e9ad99701d3b5307bd90cf0520b8772b8901a907a79ca032b7cb78a23651",
+  "synthetic_overlay_boundary": "contacts are incident-derived; AidMesh sites, witnesses, clients, requests, and demand drift remain deterministic evaluation overlays",
+  "upstream_commit": "6180235cfd63dbd78fdd4cb5eda9cc9e97ac21fe",
+  "upstream_readme_terms": "Upstream README invites research use and requests citation; no SPDX license file is present in the inspected commit"
+}

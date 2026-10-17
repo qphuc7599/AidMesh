@@ -1,0 +1,105 @@
+{
+  "profile": "matched no-blockchain signed-evidence reconciliation ablation",
+  "trials": 30,
+  "recordsPerTrial": 100,
+  "validation": {
+    "sameBpv7Bytes": true,
+    "rootEndorsement": true,
+    "p1AllValidEveryTrial": true,
+    "ed25519TransferRecoveryReceipt": true,
+    "evmProfileTransferRecoveryReceipt": true,
+    "semanticCrossBinding": true
+  },
+  "positive": {
+    "settlements": 100,
+    "consumedRights": 100,
+    "credits": [
+      [
+        "0x2a7c7E95Fe9910D6BB7A50f551da1488B28Dc5AE",
+        50
+      ],
+      [
+        "0x7d137602f3bC7e9F7384Bc8197B49CEFF418296d",
+        100
+      ]
+    ],
+    "restartSettlements": 100,
+    "restartConsumedRights": 100,
+    "restartCredits": [
+      [
+        "0x2a7c7E95Fe9910D6BB7A50f551da1488B28Dc5AE",
+        50
+      ],
+      [
+        "0x7d137602f3bC7e9F7384Bc8197B49CEFF418296d",
+        100
+      ]
+    ]
+  },
+  "negativeControls": {
+    "replayRejected": true,
+    "replayCreditsUnchanged": true,
+    "corruptReceiptRejected": true,
+    "corruptBatchRowsAfterRollback": 0,
+    "corruptBatchCreditsAfterRollback": 0,
+    "corruptBatchConsumedRightsAfterRollback": 0
+  },
+  "latencyMs": {
+    "sequentialP1Batch": {
+      "p50": 641.1891499999997,
+      "p95": 659.4742949999996,
+      "p99": 664.6984759999998,
+      "min": 579.0908000000004,
+      "max": 665.1234999999997
+    },
+    "semanticValidationAndSqliteCommit": {
+      "p50": 2909.0475,
+      "p95": 2939.17549,
+      "p99": 2951.012172,
+      "min": 2847.2644,
+      "max": 2955.6212
+    },
+    "trialwiseComponentSum": {
+      "p50": 3559.0411000000004,
+      "p95": 3585.778435,
+      "p99": 3588.3334139999993,
+      "min": 3429.7937000000006,
+      "max": 3588.925999999999
+    },
+    "note": "trialwise sum pairs two measured components; it is not a single-process wall-clock trace"
+  },
+  "storageAndLedgerCost": {
+    "receivedPacketBytes": 536123,
+    "sqliteBytesAfterCheckpoint": 147456,
+    "noLedgerGas": 0,
+    "gethStageCalldataBytes": [
+      21860,
+      21860,
+      21860,
+      21860,
+      21860,
+      21860,
+      21860,
+      21860,
+      21860,
+      21860
+    ],
+    "gethFinalCalldataBytes": 35300,
+    "gethTotalGas": 85734940,
+    "gethFinalGas": 14203542,
+    "feeFormula": "gethTotalGas * feeRate; no current-price or chain-fee claim"
+  },
+  "trustBoundary": {
+    "noLedger": "one honest SQLite authority serializes first-valid order and can equivocate to different readers if corrupt",
+    "geth": "the configured EVM consensus supplies shared finalized order and independently auditable state/events",
+    "physicalFact": "neither alternative proves that the modeled handoff happened"
+  },
+  "inputsSha256": {
+    "packets": "1349168952d027f7ff543545c1bbd6f7a2e7e165fa0b1647194f88af76d2f81f",
+    "received": "1349168952d027f7ff543545c1bbd6f7a2e7e165fa0b1647194f88af76d2f81f",
+    "proofs": "5364e8c22c591fb352afb91e3a864dd73645705c37114a3f894ab6f9747e47bc",
+    "p1BatchReport": "e5cb801f3884f27c17fb8ac00479a0847d06e2fd13a58d8fb703209629cce808",
+    "rootEndorsement": "4a47148d11a87d3d111ee28e0929310b02839f1e3ee8962863554000e4efd7fd"
+  },
+  "allChecksPassed": true
+}

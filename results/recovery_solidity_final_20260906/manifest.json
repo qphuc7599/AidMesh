@@ -1,0 +1,30 @@
+[
+  {
+    "path": "contracts/src/AidMeshSemanticAuthorizationGateway.sol",
+    "sha256": "a14d4670cdc6d85c4ecb1eaf514deabd37287bb620def146e24692f71810aec7"
+  },
+  {
+    "path": "aidmesh/crypto/aggregate_certificate.py",
+    "sha256": "0ed0d5b6cb59aaffc448fec67169087998465d8c812c2d3874f814e5783a2208"
+  },
+  {
+    "path": "scripts/run-recovery-solidity-bpv7.py",
+    "sha256": "faa5409881f635b20cd108f3e4249faedc451f1abeb4d9f2b99135af66806384"
+  },
+  {
+    "path": "scripts/benchmark-aggregate-certificate.py",
+    "sha256": "66c3f51451e211a78025362dfcf0a29fc97b7a0dc1795158ed8f51f0310dcdda"
+  },
+  {
+    "path": "scripts/benchmark-native-aggregate.py",
+    "sha256": "c8aaaf45b4b73f79a31126919d5500456996d3d3a279ece1dc7429bda332e7dd"
+  },
+  {
+    "path": "results/recovery_solidity_final_20260906/summary.json",
+    "sha256": "4af9c69120e863a352be32a989c97eab06daaa7b93fbc06b44c10197c4180ade"
+  },
+  {
+    "path": "results/aggregate_native_20260906/summary.json",
+    "sha256": "87c600fb39e8392de9cfb219ba8e120f9036efc69fa4e000a8556d6d8ae20e67"
+  }
+]

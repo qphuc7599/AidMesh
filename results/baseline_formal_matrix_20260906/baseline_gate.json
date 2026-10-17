@@ -1,0 +1,48 @@
+{
+  "eligible": false,
+  "blocked": {
+    "SnappyAdapted": [
+      "approval BLS/customer signature path",
+      "original contract differential validation",
+      "merchant-specific statekeeper collateral lifecycle",
+      "resolve literal Algorithm 4 equal-value conflict behavior",
+      "connected-only matched issuance/approval/settlement costs"
+    ],
+    "DPDRM": [
+      "full Section 4 equations and defaults",
+      "group encounter update and aging",
+      "inventory refresh and query/response deadlines",
+      "energy state model",
+      "reference vectors or author implementation"
+    ],
+    "CSAR": [
+      "full selector and context feature specification",
+      "performance history and update schedule",
+      "candidate protocol parameter settings",
+      "energy accounting",
+      "reference vectors or author implementation"
+    ],
+    "CoconutOnline": [
+      "account one credential per unit versus quota credential issuance",
+      "matched network/controller integration",
+      "freeze original complete registry"
+    ],
+    "FirstSeenDTN": [
+      "matched enrollment proof verification and receipt settlement",
+      "same exogenous traces and resource budgets"
+    ],
+    "BinarySprayWait": [
+      "original full network population/site/loss registry",
+      "protocol-level receipt settlement endpoint validation"
+    ],
+    "GiniPenalized": [
+      "fixed source objective and penalty tuning rule",
+      "independent optimum checks",
+      "matched allocator registry"
+    ],
+    "A-DREAM": [
+      "original algorithm and parameter validation",
+      "matched allocator registry"
+    ]
+  }
+}

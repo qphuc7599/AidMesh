@@ -1,0 +1,140 @@
+{
+  "profile": "P1-v3 staged privacy composition audit",
+  "holders": 25,
+  "vouchersPerModeWindow": 100,
+  "games": [
+    {
+      "game": "quorum-within-campaign",
+      "pairs": 2450,
+      "positivePairs": 50,
+      "attacks": {
+        "nullifierEquality": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 2400,
+          "fn": 50,
+          "balancedAccuracy": 0.5
+        },
+        "fallbackTagEquality": {
+          "tp": 50,
+          "fp": 2400,
+          "tn": 0,
+          "fn": 0,
+          "balancedAccuracy": 0.5
+        }
+      }
+    },
+    {
+      "game": "fallback-within-window-1",
+      "pairs": 2450,
+      "positivePairs": 50,
+      "attacks": {
+        "nullifierEquality": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 2400,
+          "fn": 50,
+          "balancedAccuracy": 0.5
+        },
+        "fallbackTagEquality": {
+          "tp": 50,
+          "fp": 0,
+          "tn": 2400,
+          "fn": 0,
+          "balancedAccuracy": 1.0
+        }
+      }
+    },
+    {
+      "game": "fallback-cross-window-1-to-2",
+      "pairs": 5000,
+      "positivePairs": 200,
+      "attacks": {
+        "nullifierEquality": {
+          "tp": 100,
+          "fp": 0,
+          "tn": 4800,
+          "fn": 100,
+          "balancedAccuracy": 0.75
+        },
+        "fallbackTagEquality": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 4800,
+          "fn": 200,
+          "balancedAccuracy": 0.5
+        }
+      }
+    },
+    {
+      "game": "quorum-to-fallback-window-1",
+      "pairs": 5000,
+      "positivePairs": 200,
+      "attacks": {
+        "nullifierEquality": {
+          "tp": 100,
+          "fp": 0,
+          "tn": 4800,
+          "fn": 100,
+          "balancedAccuracy": 0.75
+        },
+        "fallbackTagEquality": {
+          "tp": 0,
+          "fp": 0,
+          "tn": 4800,
+          "fn": 200,
+          "balancedAccuracy": 0.5
+        }
+      }
+    }
+  ],
+  "sameVoucherAcrossFallbackWindows": {
+    "pairs": 100,
+    "nullifierEqualityRate": 1.0,
+    "fallbackTagEqualityRate": 0.0,
+    "interpretation": "a replayed voucher remains deliberately linkable and is rejected by first-valid-wins"
+  },
+  "sameHolderCrossWindowPairs": 200,
+  "publicSignals": {
+    "nullifierIndex": 7,
+    "modeIndex": 8,
+    "fallbackWindowIndex": 9,
+    "fallbackTagIndex": 10
+  },
+  "disclosureMatrix": [
+    {
+      "observer": "relay or gateway",
+      "view": "all 17 public signals, proof bytes, mode, window, tag and transaction metadata",
+      "established": "within-window fallback linkage; exact-voucher replay linkage",
+      "notEstablished": "identity recovery from quorum transcripts or cross-window fallback tags"
+    },
+    {
+      "observer": "public ledger",
+      "view": "submitted calldata, sender, block ordering and settlement recipient",
+      "established": "recipient and timing are public after submission",
+      "notEstablished": "network-layer unlinkability"
+    },
+    {
+      "observer": "issuer plus site",
+      "view": "issuance transcript plus a site's release transcript",
+      "established": "attribute/cohort intersection is explicit in the challenge conditioning",
+      "notEstablished": "a composable Coconut-to-Groth16 anonymity theorem against active collusion"
+    },
+    {
+      "observer": "DTN traffic observer",
+      "view": "bundle timing, size and route when observable",
+      "established": "none in this transcript-only experiment",
+      "notEstablished": "timing, location, route or radio-layer anonymity"
+    }
+  ],
+  "negativeControls": {
+    "privateWitnessMutationsRejected": 150,
+    "source": "private_wire_controls.json"
+  },
+  "inputSha256": {
+    "fresh_proofs.json": "d3e6279dd061f88948df7e1989af881f0a9df7b89b80fa16b014662fb596b283",
+    "fallback_window1.json": "29578ae84f110f5f64bd9bcfd93b8022fc6bc4fdec06317a852dac89b4176332",
+    "fallback_window2.json": "d72ca3b345255c13b6b1f55d7ef054d85d5225908deec34e7bb175b121ab0c58"
+  },
+  "inferenceScope": "finite synthetic transcript audit; equality attacks require no training; pair observations share holders and vouchers, so no population confidence interval is reported"
+}

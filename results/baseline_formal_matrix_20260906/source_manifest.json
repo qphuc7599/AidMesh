@@ -1,0 +1,12 @@
+{
+  "aidmesh/protocol/snappy_reference.py": "142e5aad456f83930dd7f05698d715c2a67ee7710fb37ea3bf529d45d88dc32f",
+  "formal/AidMeshClosedReceiptBridge.spthy": "0d1e73e338f08bc4c77bb0100a7b123c7f9d776a312824181060f6d1bc56e7de",
+  "scripts/run-matched-network-grid.py": "34025dde9b2558975e1864e341ba75059bef1fc534f289aad492f71c4a753da5",
+  "scripts/run-recovery-field-matrix.py": "4a8fac03587b8470552fa8c7be9df84deb21a3d0ef3911fc212e998191e3832a",
+  "scripts/check-closed-receipt-proof.py": "bb0b3263f5aede45a92b81c9cfb611ccc84df635138700f506810eb937a526a9",
+  "scripts/audit-public-wire-privacy-matrix.py": "fffa4c0b1935d353a672f4da3eb2548d323c67b644c911a38b5ed669a55e7485",
+  "scripts/check-original-baseline-gate.py": "073e2e3919558eae315cd88fd631b443d217d18208f13250dab51eace826e9e4",
+  "scripts/summarize-matched-network-grid.py": "3210e74225b6778d14a5e062cb478f1785eef7e278e750d9f78a5eaef31c96c3",
+  "configs/development/original_baseline_validation.json": "25cb9b05ab67eee1160a08ce47b8f52a4be8f9401a10e2dd77dd2b09291127d7",
+  "tools/maude-3.5.1/distribution.zip": "72ed1ca87e3b3d0dfc6ee1436baf154bf04c45ff97d521bec040c5e8dfc8f92c"
+}

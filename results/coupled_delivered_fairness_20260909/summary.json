@@ -1,0 +1,36 @@
+{
+  "instances": 120,
+  "rows": 360,
+  "means": {
+    "progressive-fill": {
+      "issued": 138.63333333333333,
+      "delivered": 70.85833333333333,
+      "ambiguous": 5.091666666666667,
+      "settled": 67.64166666666667,
+      "issued_min": 0.2680952863681355,
+      "delivered_min": 0.043400740726168216,
+      "settled_min": 0.04075357439476918
+    },
+    "full-box-leximin": {
+      "issued": 146.0,
+      "delivered": 74.55833333333334,
+      "ambiguous": 5.308333333333334,
+      "settled": 71.20833333333333,
+      "issued_min": 0.28341243850417713,
+      "delivered_min": 0.04275027186675719,
+      "settled_min": 0.04074282129011723
+    },
+    "delivery-aware-leximin": {
+      "issued": 146.0,
+      "delivered": 63.4,
+      "ambiguous": 5.591666666666667,
+      "settled": 60.45,
+      "issued_min": 0.16830351464110874,
+      "delivered_min": 0.07588788673372485,
+      "settled_min": 0.07191538257726487
+    }
+  },
+  "raw_sha256": "ddeef9379febf9933e57574108fd40b6243d1d55cf9c2934cc91b693badb94e8",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "scope": "synthetic semantic service coupling; no claim of a measured radio channel"
+}

@@ -1,0 +1,39 @@
+{
+  "profile": "v3 staged admission, quorum path",
+  "vouchers": 100,
+  "holders": 25,
+  "leakage_cohorts": 2,
+  "cohorts": [
+    {
+      "vouchers": 50,
+      "holders": 25,
+      "maximum_uniform_holder_guess": 0.04
+    },
+    {
+      "vouchers": 50,
+      "holders": 25,
+      "maximum_uniform_holder_guess": 0.04
+    }
+  ],
+  "conditioned_pairs": 2450,
+  "positive_pairs": 50,
+  "attacks": {
+    "nullifier_equality": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 2400,
+      "fn": 50,
+      "balanced_accuracy": 0.5
+    },
+    "fallback_tag_equality": {
+      "tp": 50,
+      "fp": 2400,
+      "tn": 0,
+      "fn": 0,
+      "balanced_accuracy": 0.5
+    }
+  },
+  "public_signal_order": "17-signal P1 v3; conditioning excludes nullifier but retains all declared leakage",
+  "raw_proofs_sha256": "d3e6279dd061f88948df7e1989af881f0a9df7b89b80fa16b014662fb596b283",
+  "scope": "synthetic cryptographic transcripts; no timing, route, issuer/site collusion or physical side channels; pairs dependent"
+}

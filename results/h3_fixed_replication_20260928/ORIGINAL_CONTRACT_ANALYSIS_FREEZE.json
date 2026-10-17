@@ -1,0 +1,9 @@
+{
+  "status": "analysis-frozen before valid-campaign outcomes were inspected",
+  "frozenAt": "2026-09-28T05:05:07.118927+07:00",
+  "sha256": {
+    "configs/postreview_20260928/h3_original_contract_analysis.json": "9e847813d7d0f08b465227cb73dd2430434dff5c8a1cdd17034e5ab42f6b9309",
+    "scripts/analyze-h3-original-contract-20260928.py": "2cc2b2ca23682cb291642e067d5cf71cf18600c16d44f5366730c7bf805c787c",
+    "source/review_and_origin/paper_original_elsevier.tex": "98e9ed9270db6581e1a9b8cd8ca494385ad953ecfc4d2db24acee37dfe57d8d2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "models": [
+    {
+      "name": "safe",
+      "model": "formal/AidMeshValueAdmission.spthy",
+      "sha256": "bbf1de9c1a53615b7ce70487c25b0ba2a44d7181282779c183625fa6daf0b4a6",
+      "outcome": "5 verified"
+    },
+    {
+      "name": "unsafe",
+      "model": "results/value_admission_formal_20260909_v4/unsafe_reusable_serial.spthy",
+      "sha256": "99f42d30cc841298381b30980bc9de7de87c991d3e2222b122a40a64eb9dd315",
+      "outcome": "serial reuse counterexample"
+    }
+  ],
+  "tamarin": "1.12.0",
+  "maude": "3.5.1",
+  "scope": "unbounded symbolic disjoint-serial/holder/value binding; no bytecode or arithmetic sums"
+}

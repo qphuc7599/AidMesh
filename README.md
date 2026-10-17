@@ -1,144 +1,108 @@
-# AidMesh experimental source
+# AidMesh experimental source and research evidence
 
-Source code for modeling and evaluating private, bounded-risk offline vouchers
-under network partitions. This repository contains the implementation, experiment
-designs, formal models and tests. Manuscripts, measured results, figures, downloaded
-datasets, compiled artifacts and cryptographic setup outputs are not included.
+AidMesh studies private, bounded-risk offline vouchers for partitioned edge, fog
+and cloud relief networks. This repository contains the protocol implementation,
+simulators, exact allocation checks, recovery and receipt gateways, Solidity
+settlement, cryptographic circuits, formal models and experiment runners.
 
-## Implementation map
+**The complete retained artifact is distributed in
+[release artifact-2026-10-17](https://github.com/qphuc7599/AidMesh/releases/tag/artifact-2026-10-17).**
+The main branch exposes source and final aggregate results. The release adds
+complete per-run evidence, historical reference events and development ZK
+artifacts as separate overlay archives, with archive and per-file SHA-256 checksums.
+No experiments were rerun to prepare this publication.
 
-| Component | Source |
+The [earlier source-only Zenodo record](https://zenodo.org/records/23037290)
+has DOI [10.5281/zenodo.23037290](https://doi.org/10.5281/zenodo.23037290).
+That DOI identifies the September source snapshot, **not this expanded evidence
+release**. A DOI for this release must be verified after Zenodo processes it.
+
+## Inspect the final evidence
+
+| Study | Final data and recorded result | Reproduction entry point |
+| --- | --- | --- |
+| Original design, replay and holdout | [Evidence and decisions](results/postreview_original_registry_20260910/POST_RUN_EVIDENCE.json): 2,650 replay cells and 2,650 disjoint-seed holdout cells. Core completion difference +0.21306. The 6-hour and witness-0.6 reversals, wrong-direction RMST and null tight-cap completion remain recorded. | `scripts/run-compressed-confirmatory-registry-20260910.py` |
+| Wang-style seen tags | [Final output](results/t13_wang_seen_tag_matched_20260929/): 1,450 cells, five methods, nine scenarios and 21 contrasts. At the core, AidMesh minus Wang-6h completion is -0.0402 and duplicate exposure is -91.26. The witness-0.9 exposure reversal is retained. | CLI and registry in the runbook |
+| Allocation and H3 | [Fixed replication](results/h3_fixed_replication_20260928/summary.json): 640 seed clusters, 5,760 conditions and 34,560 method rows. Weighted-utility loss 2.44768%, one-sided 95% upper bound 2.56112% against a 3% margin. | `scripts/run-h3-fixed-replication-20260928.py` |
+| External validity | [Fixed analysis](results/external_validity_three_family_20260928/fixed_analysis.json): 150 context-seed shards, three families and 12,240 policy rows. Transfer improves over periodic sync in all families, but optimized static placement remains better. | `aidmesh.experiments.independent_trace_campaign` |
+| Protocol baselines | [Summary](results/matched_protocol_baselines_20260910/summary.json): 1,080 runs, nine scenarios, four methods and 30 paired seeds. [Baseline eligibility audit](results/baseline_validation_20260928/audit.json). | `scripts/run-matched-protocol-baselines-20260910.py` |
+| Receipt controller | [Summary](results/matched_receipt_controller_20260910/summary.json): 1,080 runs on 360 matched workloads; lower median delay in all 12 primary cells. | `scripts/run-matched-receipt-controller-20260910.py` |
+| Recovery and staged atomic settlement | [Final settlement](results/geth_eip7825_atomic100_attackmatrix_final4_20260910/summary.json): 100 vouchers, 50 ACCEPT and 50 RECLAIM, ten lock-only stages and one finalizer; credits 100/50; replay and incomplete finalize revert. | `scripts/run-integrated-recovery-batch.py` and settlement audit scripts |
+| Proofs and aggregate certificates | [Timings and controls](results/geth_eip7825_atomic100_attackmatrix_final4_20260910/aggregate_pipeline_benchmark.json): 100 trials per committee profile and 300 rejected certificate mutations. | `scripts/benchmark-final-aggregate-pipeline-20260910.py` |
+| Formal obligations | [Portfolio](results/postreview_formal_20260910/portfolio.json): 14 safe Tamarin lemmas, four Z3 conditions and six unsafe counterexamples, with bounded TLC/refinement evidence. | `formal/`, `aidmesh/formal/`, `scripts/check-*.py` |
+| Crash/restart and privacy | [Crash campaign](results/release_crash_matrix_20260926_py312/), [privacy composition](results/staged_privacy_20260909_v2/privacy_composition_summary.json) and [wire controls](results/public_wire_privacy_matrix_20260906/). | `scripts/run-release-crash-matrix-20260926.py`, `scripts/run-recovery-field-matrix.py` |
+
+The exact final root list is in [RELEASE_SCOPE.json](artifacts/RELEASE_SCOPE.json).
+The [evidence guide](EVIDENCE_GUIDE.md) explains provenance and invalidations.
+
+## Download and verify
+
+Download the four ZIPs, `SHA256SUMS` and `FILE_MANIFEST.json` from the release:
+
+| Archive | Contents |
 | --- | --- |
-| Shared-resource DTN simulation, authorization and seen-tag baselines | `aidmesh/simulator/`, `aidmesh/experiments/` |
-| Quorum certificates, conserved rights, transfer recovery and durable receipts | `aidmesh/protocol/` |
-| Full-box leximin allocation, baselines and exact certificates | `aidmesh/allocator/` |
-| Credential admission, Groth16 integration and BLS aggregate certificates | `aidmesh/crypto/`, `zk/circuits/` |
-| Settlement and semantic authorization gateways | `contracts/src/` |
-| Privacy analysis, paired comparisons and statistical estimators | `aidmesh/privacy/`, `aidmesh/analysis/` |
-| TLA+, Tamarin and executable verification conditions | `formal/`, `aidmesh/formal/` |
-| Registered designs and input validation | `configs/`, `schemas/` |
-| Experiment execution, checks and dependency bootstrapping | `scripts/`, `testbed/` |
-| Unit, property and local-EVM tests | `tests/` |
+| `aidmesh-source-2026-10-17.zip` | Source, registries, documentation, aggregate results and validation tools |
+| `aidmesh-final-evidence-2026-10-17.zip` | Complete final runs, analyses, formal transcripts and execution receipts |
+| `aidmesh-historical-reference-2026-10-17.zip` | Original simulator events and retained supporting/predecessor evidence |
+| `aidmesh-development-zk-2026-10-17.zip` | Development proving keys, verification keys, R1CS/WASM, generated verifier and setup transcripts |
 
-The Wang-style seen-tag and Snappy components are research reconstructions with
-explicit scope, not claims to be the original authors' implementations. The
-upstream Coconut component benchmark requires the original external package.
-Connected component checks, bounded model checks and process-crash experiments
-are distinct from a physical deployment or a complete implementation proof.
+Extract all four into one empty directory, or overlay the three evidence archives
+onto a clone of this release. All use the same root-relative layout.
 
-## Setup and quick start
+```bash
+python scripts/verify-public-artifact.py --archive-dir /path/to/downloads
+python scripts/verify-public-artifact.py --root /path/to/extracted-artifact
+```
 
-Use Python 3.12 or 3.13. Run commands from the repository root.
+The verifier checks every archive and contained file. Hash verification does not
+rerun experiments or establish a security claim.
+
+## Setup
+
+Use Python 3.12 and Node.js 22. See [EXPERIMENT_RUNBOOK.md](EXPERIMENT_RUNBOOK.md)
+for the recorded environment, external tools and reproduction commands.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev,crypto,evm]"
+npm ci
 python -m aidmesh.cli --help
-python -m aidmesh.cli validate configs/development/smoke.yaml
-python -m aidmesh.cli simulate configs/development/smoke.yaml --output results/smoke
 python -m pytest -q tests/unit
 ```
 
-On Windows, activate with `.venv\Scripts\Activate.ps1`. The two requirements lock
-files retain the original Windows/Linux dependency snapshots; the editable
-installation above uses the supported dependency ranges from `pyproject.toml`.
-Some tests are skipped when they require separately generated Groth16 artifacts,
-downloaded trace data, historical result inputs or the manuscript. Property and EVM
-tests additionally require the pinned Solidity compiler and EVM extras.
+On Windows activate with `.venv\Scripts\Activate.ps1`. Python 3.13 is also
+supported by package metadata. The lock files retain the recorded dependency
+snapshots. Solidity/Geth, TLC, Tamarin/Maude and external traces require separate
+tools/inputs. Tests requiring unavailable manuscripts or external traces skip.
 
-Outputs are created locally in ignored directories. Small CSVs under `examples/`
-are input fixtures, not measured results. Dates in script names identify fixed
-experiment designs and preserve the link between runners and configurations.
+## Source map
 
-## Experiments
+| Component | Location |
+| --- | --- |
+| DTN simulation, matched policies and seen tags | `aidmesh/simulator/`, `aidmesh/experiments/` |
+| Quorum, rights, recovery, actuator claim and CLOSED receipt | `aidmesh/protocol/` |
+| Exact full-box leximin allocation | `aidmesh/allocator/` |
+| Admission, Groth16 and BLS | `aidmesh/crypto/`, `zk/circuits/` |
+| Settlement and semantic authorization | `contracts/src/` |
+| TLA+, Tamarin and executable refinement | `formal/`, `aidmesh/formal/` |
+| Fixed designs and analyses | `configs/`, `schemas/`, `aidmesh/analysis/` |
+| Execution and figures | `scripts/`, especially `scripts/journal-result-figures.py` |
+| Functional, property and EVM tests | `tests/` |
 
-### Matched seen-tag baseline
+Dates and profile names preserve links to existing registries. Historical
+authoring/packaging scripts are retained; the runbook identifies current runners.
 
-The current design uses the physical duplicate-exposure endpoint at handoff,
-with 1 h, 6 h and 24 h seen-tag synchronization. The 6 h profile is primary.
+## Scope
 
-```bash
-python scripts/run-compressed-confirmatory-registry-20260910.py --registry configs/postreview_20260929/t13_wang_seen_tag_matched_physical_v2.yaml --output results/t13_wang_seen_tag_matched_20260929/raw --software-snapshot YOUR_GIT_COMMIT --workers 4
-python scripts/analyze-t13-wang-seen-tag-20260929.py
-```
+Snappy and synchronized seen tags are scoped research reconstructions, not the
+original authors' executables. DPDRM and CSAR are related-work comparators, not
+validated full-protocol baselines. Qualified disclosure privacy does not establish
+traffic-analysis resistance. Formal bounded checks, local-EVM runs and process
+crashes do not establish hardware-fault resistance, production trusted setup,
+public-chain congestion tolerance or humanitarian field readiness.
 
-Replace `YOUR_GIT_COMMIT` with `git rev-parse HEAD`. The runner retains failed
-cells, validates event checksums and resumes only completed cells. The registry
-contains all nine scenarios and five methods.
-
-### Reference and disjoint holdout
-
-```bash
-python scripts/freeze-postreview-original-registries-20260910.py
-python scripts/run-compressed-confirmatory-registry-20260910.py --registry configs/postreview_20260910/original_registry_replay_v1.yaml --output results/postreview_original_registry_20260910/replay --software-snapshot YOUR_GIT_COMMIT --workers 4
-python scripts/run-compressed-confirmatory-registry-20260910.py --registry configs/postreview_20260910/original_registry_holdout_v1.yaml --output results/postreview_original_registry_20260910/holdout --software-snapshot YOUR_GIT_COMMIT --workers 4
-```
-
-### Fixed allocation replication
-
-```bash
-python scripts/run-h3-fixed-replication-20260928.py freeze --registry configs/postreview_20260928/h3_fixed_replication.json --output results/h3_fixed_replication_20260928
-python scripts/run-h3-fixed-replication-20260928.py run --registry configs/postreview_20260928/h3_fixed_replication.json --output results/h3_fixed_replication_20260928 --workers 4
-python scripts/run-h3-fixed-replication-20260928.py analyze --registry configs/postreview_20260928/h3_fixed_replication.json --output results/h3_fixed_replication_20260928
-```
-
-### Receipt control, crash recovery and baseline validation
-
-```bash
-python scripts/run-matched-receipt-controller-20260910.py
-python scripts/run-release-crash-matrix-20260926.py --output results/release_crash_matrix --repetitions 30
-python scripts/run-snappy-validation-20260928.py
-```
-
-These scripts may take substantially longer than the smoke run. The full design
-should be executed without changing stopping rules based on intermediate results.
-
-## External trace experiments
-
-Raw traces and normalized contacts must be obtained separately. Their importers
-are in `aidmesh/experiments/trace_preprocess.py`; source URLs and interpretation
-rules are recorded there. Designs under `configs/trace_families/` and
-`configs/postreview_20260928/external_validity_three_family.yaml` specify expected
-paths for Asturies, SocioPatterns, UMass DieselNet and ENE5AI inputs. Use
-`python -m aidmesh.cli --help` to locate the import and trace-family commands.
-Analysis scripts that read earlier results require those results to be generated
-first; this source-only repository does not include the historical measurements.
-
-## Solidity, ZK and transport prerequisites
-
-- `npm ci` installs the pinned Circom/snarkjs JavaScript dependencies.
-- `scripts/Install-PinnedThirdPartyTools.ps1` (Windows) or
-  `scripts/install-pinned-third-party-tools-linux.sh` downloads checksum-verified
-  Solidity 0.8.36 and TLC tools. They are not vendored.
-- `npm run zk:compile` uses `CIRCOM2_BIN` or a native Circom installation in
-  `~/.cargo/bin`. Input generation is available through `npm run zk:inputs`.
-- Groth16 benchmark runs need matching circuit builds, setup keys, verification
-  keys and generated Solidity verifiers. These outputs are intentionally absent;
-  inspect `zk/ceremony/Run-Ceremony.ps1` and the `build-v3-development-key.mjs`
-  script before generating a local development setup. A local development setup
-  is not a production trusted ceremony. Never mix artifacts from different circuits.
-- `testbed/` runs independent dtn7-rs processes; its bootstrap script downloads
-  the pinned transport implementation. Windows transport runners use WSL.
-- Geth settlement runners require a local configured Geth client and freshly
-  generated signed/proved inputs. Local fixture keys are test-only. Do not use
-  real funds or production credentials for experiment fixtures.
-
-## Formal checks
-
-```bash
-python -m pip install -r reproducibility/requirements-formal-vcs.txt
-python formal/recovery_refinement_vcs.py
-python formal/value_conservation_vcs.py
-bash scripts/run-tla-integrated.sh
-```
-
-TLC needs Java. Tamarin models require Tamarin and Maude installed separately;
-the supplied WSL wrappers expect `external/tamarin/tamarin-prover` and
-`tools/maude-3.5.1/bin/maude`. Negative-control configurations intentionally produce
-counterexamples and must not be classified as successful safety proofs.
-
-## License
-
-Apache-2.0, as specified in `LICENSE`. External datasets, tools and original
-third-party implementations retain their own licenses and are not redistributed.
+External contact datasets remain with their providers. See
+[DATA_SOURCES.md](DATA_SOURCES.md) and [LICENSE_SCOPE.md](LICENSE_SCOPE.md).
+Research source and original fixtures retain Apache-2.0. Synthetic enrollment
+secrets and test keys are intentionally public and must never be used in production.

@@ -1,0 +1,8 @@
+{
+  "contrasts": 45,
+  "paired_runs": 1350,
+  "all_capped_mean_differences_zero": true,
+  "all_delivery_differences_zero": true,
+  "original_H4_established": false,
+  "scope": "Synthetic 8-site/250-bundle/zero-loss routing grid. 95% intervals are per-cell descriptive, not simultaneous confirmatory intervals."
+}

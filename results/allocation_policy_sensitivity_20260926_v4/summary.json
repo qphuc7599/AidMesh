@@ -1,0 +1,220 @@
+{
+  "profile": "allocation-policy-sensitivity",
+  "design": {
+    "seeds": [
+      99701,
+      99730
+    ],
+    "demand_skew": [
+      0.2,
+      1.0,
+      5.0
+    ],
+    "stock_sufficiency": [
+      0.35,
+      0.6,
+      0.9
+    ],
+    "policy_profiles": [
+      "registered",
+      "weights-compressed",
+      "weights-cyclic-pm20",
+      "conversion-forward-pm20",
+      "conversion-reverse-pm20",
+      "essential-floor-10pct",
+      "combined-stress"
+    ],
+    "instances_per_profile": 270,
+    "paired_unit": "same seed, demand skew, and supply setting",
+    "interval": "20,000 seed-cluster bootstrap draws",
+    "role": "secondary policy sensitivity; exact rational primary campaign unchanged"
+  },
+  "summaries": [
+    {
+      "profile": "registered",
+      "instances": 270,
+      "mean_minimum_gain": 0.2505330708731574,
+      "minimum_gain_seed_cluster_95": [
+        0.24143150430561897,
+        0.2589301932939569
+      ],
+      "fairness_wins": 267,
+      "fairness_ties": 3,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9280136449181715,
+      "utility_retention_seed_cluster_95": [
+        0.925090976377237,
+        0.9309042655144328
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9720491923185932,
+      "seed_aggregate_utility_retention_95": [
+        0.9659121644412602,
+        0.97813367360908
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9412497386914481,
+      "minimum_utility_retention": 0.7783600614681428,
+      "maximum_feasibility_violation": 2.3283064365386963e-10
+    },
+    {
+      "profile": "weights-compressed",
+      "instances": 270,
+      "mean_minimum_gain": 0.35834670489856385,
+      "minimum_gain_seed_cluster_95": [
+        0.34696608732336387,
+        0.3683715603837296
+      ],
+      "fairness_wins": 269,
+      "fairness_ties": 1,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.930974670623435,
+      "utility_retention_seed_cluster_95": [
+        0.9282101251674588,
+        0.9336738710726038
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9733779697251511,
+      "seed_aggregate_utility_retention_95": [
+        0.9676454244613877,
+        0.9789849967304869
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9453320366786485,
+      "minimum_utility_retention": 0.8007687872381317,
+      "maximum_feasibility_violation": 4.3792081072524525e-10
+    },
+    {
+      "profile": "weights-cyclic-pm20",
+      "instances": 270,
+      "mean_minimum_gain": 0.21755489439198442,
+      "minimum_gain_seed_cluster_95": [
+        0.20853739310945274,
+        0.22590751227087252
+      ],
+      "fairness_wins": 263,
+      "fairness_ties": 7,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9352149136021402,
+      "utility_retention_seed_cluster_95": [
+        0.9323664375289116,
+        0.9379983997384769
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9746215948708021,
+      "seed_aggregate_utility_retention_95": [
+        0.9686592201819282,
+        0.9802870458608435
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9443797581389285,
+      "minimum_utility_retention": 0.7748536190357543,
+      "maximum_feasibility_violation": 2.1645885084353722e-10
+    },
+    {
+      "profile": "conversion-forward-pm20",
+      "instances": 270,
+      "mean_minimum_gain": 0.25133697454715564,
+      "minimum_gain_seed_cluster_95": [
+        0.24247657878963502,
+        0.25951167083553905
+      ],
+      "fairness_wins": 267,
+      "fairness_ties": 3,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9283110317296636,
+      "utility_retention_seed_cluster_95": [
+        0.925436519852482,
+        0.9311056001138912
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9724704296492719,
+      "seed_aggregate_utility_retention_95": [
+        0.9665230077979861,
+        0.9783761791946407
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9424456383546772,
+      "minimum_utility_retention": 0.7782260564908691,
+      "maximum_feasibility_violation": 6.38351593806874e-11
+    },
+    {
+      "profile": "conversion-reverse-pm20",
+      "instances": 270,
+      "mean_minimum_gain": 0.24973208904767086,
+      "minimum_gain_seed_cluster_95": [
+        0.24061537914789521,
+        0.2583082486158723
+      ],
+      "fairness_wins": 267,
+      "fairness_ties": 3,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9276415468577436,
+      "utility_retention_seed_cluster_95": [
+        0.9244826096288016,
+        0.9306536880618526
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9715463315439107,
+      "seed_aggregate_utility_retention_95": [
+        0.9649003231025818,
+        0.977951811897842
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9399373882284345,
+      "minimum_utility_retention": 0.7784956188324099,
+      "maximum_feasibility_violation": 1.6575540939811617e-10
+    },
+    {
+      "profile": "essential-floor-10pct",
+      "instances": 270,
+      "mean_minimum_gain": 0.23199226662345113,
+      "minimum_gain_seed_cluster_95": [
+        0.22431656078038648,
+        0.23912871071685107
+      ],
+      "fairness_wins": 267,
+      "fairness_ties": 3,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9352223532237443,
+      "utility_retention_seed_cluster_95": [
+        0.9324529610241812,
+        0.937875398760858
+      ],
+      "mean_seed_aggregate_utility_retention": 0.9754647662247545,
+      "seed_aggregate_utility_retention_95": [
+        0.9700235394794187,
+        0.9808873124629155
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.945934416692415,
+      "minimum_utility_retention": 0.7985677202425739,
+      "maximum_feasibility_violation": 2.3283064365386963e-10
+    },
+    {
+      "profile": "combined-stress",
+      "instances": 270,
+      "mean_minimum_gain": 0.1999522433665286,
+      "minimum_gain_seed_cluster_95": [
+        0.1926087284784709,
+        0.2071404369564047
+      ],
+      "fairness_wins": 264,
+      "fairness_ties": 6,
+      "fairness_losses": 0,
+      "mean_utility_retention": 0.9421379385613559,
+      "utility_retention_seed_cluster_95": [
+        0.9396776822900963,
+        0.9446037251895005
+      ],
+      "mean_seed_aggregate_utility_retention": 0.978360265107025,
+      "seed_aggregate_utility_retention_95": [
+        0.9735753364548053,
+        0.9831628916626222
+      ],
+      "minimum_seed_aggregate_utility_retention": 0.9556021037099242,
+      "minimum_utility_retention": 0.7941910608108453,
+      "maximum_feasibility_violation": 6.984919309616089e-10
+    }
+  ],
+  "all_feasible": true,
+  "runtime_seconds": 18.7272856999989,
+  "environment": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "source_sha256": {
+    "scripts\\run-allocation-policy-sensitivity-20260926.py": "536f34b131a32c9be015699d5e5a1220ef211ccc5a84de6896c9a0d9452b2cb6",
+    "aidmesh\\experiments\\allocation.py": "673cd04c74880d0cf592ff7a1e7a2433c041f95d54d8c23ec5a1e75848441ad7"
+  },
+  "raw_sha256": "9ddcabe49431eab8007ff566b932ef2b2f900ee4a1421b599c1af1b9d197e1b2"
+}

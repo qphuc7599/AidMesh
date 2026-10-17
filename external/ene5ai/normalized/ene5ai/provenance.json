@@ -1,0 +1,30 @@
+{
+  "bundle_rule": "synthetic evaluation overlay at observed activity timestamps; the source trace is a real firefighter exercise but is not an AidMesh deployment",
+  "bundles_sha256": "f84df80d21036fceb2ae16e70e2c9f693402bf02f12b4e72b88db0b7546114dc",
+  "contacts_sha256": "22f930dec6972d9595a45d51937069dfd0eb055730f93f3ccee809e42966a526",
+  "context": "ene5ai",
+  "conversion": {
+    "bundle_size_bytes": 2048,
+    "bundles_per_client": 2,
+    "context": "ene5ai",
+    "minimum_bytes_per_second": 2048,
+    "relay_count": 3,
+    "site_count": 4,
+    "ttl_hours": 1
+  },
+  "conversion_semantics": "one undirected one-second contact per direct local Wi-Fi pair/slot; requires nl80211 connected-time or signal evidence; routed global, cell, Ethernet and virtual edges excluded; capacity is observed byte-counter lower bound subject to the registered minimum",
+  "dataset": "ENE5AI Dataset (5G and Wi-Fi Mesh Mobility), version 1.0",
+  "dataset_doi": "10.57745/DFMCYS",
+  "family": "ene5ai",
+  "file_doi": "10.57745/ISKJN8",
+  "license": "Etalab Open License 2.0",
+  "mapping_sha256": "b74b850459512352ca75bc2e1256f317d2ac9d8d86af259bbec5d9e150dfac6e",
+  "nodes": 14,
+  "normalized_contacts": 70740,
+  "role_mapping_rule": "rank trace node identifiers by total direct-contact duration; assign synthetic sites, relays, then clients with lexical tie-breaking",
+  "schema_version": 1,
+  "source_archive_md5": "d8511ccf232646014ff16f5e28e486bd",
+  "source_file": "external\\ene5ai\\artifacts\\aggregated-csv\\edges\\all.csv",
+  "source_sha256": "c1ffde9a3e9d2deadbee25828f320a8547be6aa54ded6004eb9e70e7ae2b3335",
+  "source_url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/:persistentId?persistentId=doi:10.57745/ISKJN8"
+}

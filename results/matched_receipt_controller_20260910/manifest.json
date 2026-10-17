@@ -1,0 +1,14 @@
+{
+  "registry": "configs/postreview_20260910/matched_receipt_controller.json",
+  "registrySha256": "444721cb06e44b9b087697d8e25c97348740f8e977f68521dd423ed123a06228",
+  "implementationSha256": "a8a0bc32c88babd5afe2bd0634319f3c3bb491a0907ba0b5988e59605117a074",
+  "runnerSha256": "201c4a8e2840d9190151b6109e1d8008678035893e56e89c23e189f96187a181",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "outputs": {
+    "runs.csv": "d2003316ba6aaebbf815794192104d15fccd7fd693ef1986f69e2c776c12a679",
+    "workloads.csv": "ef5b83ba9d4429f65374a3a6cca6f9837ad56f323726027726279a284c39f0a7",
+    "paired_contrasts.json": "d89a57e10f0ada36c22479ffff5fc84343f7d0404a4da83c5a93d3f45e47c692",
+    "summary.json": "578c7d144f2a11b996efcf32eaa6d52f112782c4a5cdb275edfcc2d5b0c31513"
+  }
+}

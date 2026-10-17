@@ -1,0 +1,35 @@
+{
+  "profile": "preserved-geth-fork-semantics-audit",
+  "gethVersion": [
+    "Geth",
+    "Version: 1.17.5-stable",
+    "Git Commit: 9621c6ad10934a01b5514886fb6fbd87640b6c05",
+    "Git Commit Date: 20260727",
+    "Architecture: amd64",
+    "Go Version: go1.25.12",
+    "Operating System: windows",
+    "GOPATH=",
+    "GOROOT="
+  ],
+  "observed": {
+    "chainId": 1337,
+    "pragueTime": 0,
+    "osakaTime": 0,
+    "gasLimit": 60000000,
+    "eip7825Cap": 16777216,
+    "oversizedTransactionRejected": true,
+    "maxTransactionGas": 14203542
+  },
+  "checks": {
+    "prague_active_at_genesis": true,
+    "osaka_active_at_genesis": true,
+    "block_limit_is_60m": true,
+    "eip7825_cap_is_2_pow_24": true,
+    "over_cap_rejected": true,
+    "finalizer_under_cap": true
+  },
+  "interpretation": "The preserved execution enabled both Prague and Osaka at genesis. EIP-7825 compatibility is attributed to the active post-Prague rules, not to Prague/Pectra alone.",
+  "inputSha256": {
+    "settlementSummary": "34637b1e914206d30b18ea24d0e1640126885b2e7a13ee31d08d88e3cfe96da6"
+  }
+}

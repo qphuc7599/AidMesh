@@ -1,0 +1,7 @@
+{
+  "beneficiaries": 100,
+  "freshProofs": 100,
+  "uniqueIssuedNullifiers": 100,
+  "rootMutationsRejected": 100,
+  "scope": "synthetic allocator-to-Coconut-to-approved-roots-to-P1, requested paths, all issued indices"
+}

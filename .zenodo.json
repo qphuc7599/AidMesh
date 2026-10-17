@@ -1,0 +1,37 @@
+{
+  "title": "AidMesh: experimental source and research evidence",
+  "upload_type": "software",
+  "version": "artifact-2026-10-17",
+  "publication_date": "2026-10-17",
+  "creators": [
+    {
+      "name": "Tran, Tuan-Dung",
+      "affiliation": "University of Information Technology, Vietnam National University Ho Chi Minh City"
+    },
+    {
+      "name": "Quang-Dai, Hoang-Phuc",
+      "affiliation": "University of Information Technology, Vietnam National University Ho Chi Minh City"
+    },
+    {
+      "name": "Pham, Van-Hau",
+      "affiliation": "University of Information Technology, Vietnam National University Ho Chi Minh City"
+    }
+  ],
+  "description": "AidMesh source, fixed experiment registries, formal models, aggregate results and reproduction tools. The associated GitHub Release provides four checksummed overlay ZIPs containing source, complete final per-run evidence, historical synthetic reference events and development cryptographic artifacts. Automatic GitHub-to-Zenodo ingestion archives the repository snapshot; do not assume it also preserves attached bulk release assets. See the release links, per-file manifest and evidence guide. No new experiments were run for this publication. Manuscripts, external contact datasets, dependency runtimes and service credentials are excluded. Negative and null valid outcomes are retained; invalidated local runs are explicitly documented and excluded from final analyses.",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "offline vouchers",
+    "delay-tolerant networking",
+    "formal verification",
+    "privacy",
+    "fair allocation",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/qphuc7599/AidMesh/releases/tag/artifact-2026-10-17",
+      "relation": "isSupplementedBy"
+    }
+  ]
+}

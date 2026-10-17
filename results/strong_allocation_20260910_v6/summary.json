@@ -1,0 +1,52 @@
+{
+  "instances": 270,
+  "rows": 1620,
+  "methods": [
+    "progressive-fill",
+    "fair-floor-completion",
+    "demand-proportional",
+    "utility-only",
+    "full-box-leximin-then-weighted-utility",
+    "weighted-utility-optimum-then-leximin"
+  ],
+  "means": {
+    "progressive-fill": {
+      "minimum": 0.2540929410783972,
+      "weighted_utility": 41386.72375435631,
+      "fulfillment": 21462.88614581453
+    },
+    "fair-floor-completion": {
+      "minimum": 0.2540929410783972,
+      "weighted_utility": 49451.932775975074,
+      "fulfillment": 27384.118518518517
+    },
+    "demand-proportional": {
+      "minimum": 0.20476114188917188,
+      "weighted_utility": 49233.07301889944,
+      "fulfillment": 27384.118518518517
+    },
+    "utility-only": {
+      "minimum": 0.0385874156429446,
+      "weighted_utility": 50259.83703703704,
+      "fulfillment": 27384.118518518517
+    },
+    "full-box-leximin-then-weighted-utility": {
+      "minimum": 0.2635190928684803,
+      "weighted_utility": 49863.48887203924,
+      "fulfillment": 27384.118518518517
+    },
+    "weighted-utility-optimum-then-leximin": {
+      "minimum": 0.1143341850705866,
+      "weighted_utility": 50259.83703703704,
+      "fulfillment": 27384.118518518517
+    }
+  },
+  "counterexample_checked_by_unit_test": true,
+  "raw_sha256": "270245aeee7cb87066982d9b74f701959593e44ccbfec37570e53912a0d8934d",
+  "runtime_seconds": 2040.2939139000155,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "scope": "post-review prospective synthetic suite; not the original H3 holdout"
+}

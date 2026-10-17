@@ -1,0 +1,73 @@
+{
+  "profile": "compact staged verification, atomic 100-voucher settlement",
+  "checks": {
+    "batchCommitted": true,
+    "batchCount100": true,
+    "batchValue150": true,
+    "noPriorSettlementEventsForDomain": true,
+    "creditsZeroBeforeFinalize": true,
+    "creditsExactAfterFinalize": true,
+    "allWinningReceiptsRecorded": true,
+    "allRightsPermanentlyBoundToCommittedBatch": true,
+    "authorizationListCommitted": true,
+    "finalizeBelowEip7825": true,
+    "allStagesBelowEip7825": true,
+    "replayRejected": true,
+    "incompleteFinalizeRejected": true,
+    "bpv7Unchanged": true
+  },
+  "batchId": "84d5664575c43afce691857a7646c94066849399374ac6b2e8be84d3396bea0b",
+  "commitBlock": 4925,
+  "commitTransactionHash": "f2bcd3aff84ed101827d4823358d6a16cea647b4293b26bb795cb5c8855b237b",
+  "commitCalldataBytes": 35300,
+  "commitGasUsed": 14203542,
+  "eip7825TransactionGasCap": 16777216,
+  "creditsBeforeCommit": [
+    0,
+    0
+  ],
+  "preCommitStateWitness": {
+    "method": "absence of all credit-mutating settlement events for the domain",
+    "throughBlock": 4924,
+    "priorReceiptSettledEvents": 0,
+    "priorBatchAuthorizationCommittedEvents": 0
+  },
+  "creditsAfterCommit": [
+    100,
+    50
+  ],
+  "nullifierListHash": "e566e5a7f67637d2160e0d880e4e82f48120671278638abe04d9a0184bed9291",
+  "authorizationListHash": "4e724735f33d29472d26943620657964fe45fbbd3fb665619ff9e26e0f1f3a50",
+  "stageGasUsed": [
+    7329496,
+    7133693,
+    7133448,
+    7133562,
+    7133550,
+    7133527,
+    7133580,
+    7133502,
+    7133630,
+    7133410
+  ],
+  "stageCalldataBytes": [
+    21860,
+    21860,
+    21860,
+    21860,
+    21860,
+    21860,
+    21860,
+    21860,
+    21860,
+    21860
+  ],
+  "gethClient": "Geth/v1.17.5-stable-9621c6ad/windows-amd64/go1.25.12",
+  "sourceSha256": {
+    "contracts\\src\\AidMeshSemanticAuthorizationGateway.sol": "b9449e977ab518ee7779ed4f1492733dac9f196c27b402d65f9992946e002cd7",
+    "contracts\\src\\AidMeshSettlement.sol": "b9cd1b6b72d1983a39336bd9cd936fbc1544fdf5188629a58d132aa18fbfa366",
+    "zk\\circuits\\aidmesh_voucher_v3.circom": "28caaabcb3327b4cb1ca605f6fc3e2fcd7450830be7f9307399551a93f4071da",
+    "scripts\\run-integrated-recovery-batch.py": "971b9dea75841bffb5232e152070635bd1896d14bd58069519ceafd73ca5d2a4"
+  },
+  "scope": "all proof/certificate checks precede a single final transaction; the committed batch lock is the spent marker for staged rights; synthetic actuator and single host"
+}

@@ -1,0 +1,8 @@
+{
+  "cases": 102,
+  "rejected": 102,
+  "unchanged": 102,
+  "positive_profiles": 2,
+  "restart_replay_profiles": 2,
+  "scope": "Exhaustive scalar-field tampering of both recovery decisions, off-chain gate.\n\nReal Ed25519 and durable journals; authorization is an explicit unit fixture.\nThis does not replace the real-P1 Solidity attack campaign.\n"
+}

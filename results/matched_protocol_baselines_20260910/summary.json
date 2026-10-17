@@ -1,0 +1,166 @@
+{
+  "profile": "prospective matched protocol-model baseline matrix",
+  "runs": 1080,
+  "scenarios": 9,
+  "pairedSeedsPerScenario": 30,
+  "methods": [
+    "coconut_online",
+    "first_seen_dtn",
+    "aidmesh_quorum_only",
+    "aidmesh_transferable_rights"
+  ],
+  "primaryContrasts": [
+    {
+      "mean": 0.24730000000000002,
+      "median": 0.247,
+      "ci95": [
+        0.24186666666666665,
+        0.25286666666666663
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_ADV_05",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.18190000000000003,
+      "median": 0.18450000000000005,
+      "ci95": [
+        0.1753666666666667,
+        0.18870000000000003
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_ADV_30",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.21153333333333327,
+      "median": 0.21349999999999997,
+      "ci95": [
+        0.2051333333333333,
+        0.21806666666666663
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_CORE_W08_P24",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": -0.0443666666666667,
+      "median": -0.04400000000000004,
+      "ci95": [
+        -0.047533333333333386,
+        -0.041200000000000035
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 30,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_PART_06H",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.7249333333333332,
+      "median": 0.725,
+      "ci95": [
+        0.7191333333333333,
+        0.7308999999999999
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_PART_48H",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.9556333333333332,
+      "median": 0.956,
+      "ci95": [
+        0.9524666666666666,
+        0.9587999999999999
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_PART_60H",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": -0.1501666666666667,
+      "median": -0.15300000000000002,
+      "ci95": [
+        -0.15719999999999998,
+        -0.14263250000000008
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 30,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_WIT_06",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.053566666666666686,
+      "median": 0.053499999999999936,
+      "ci95": [
+        0.04696666666666669,
+        0.06026666666666669
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_WIT_07",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    },
+    {
+      "mean": 0.25520000000000004,
+      "median": 0.2555,
+      "ci95": [
+        0.2501333333333334,
+        0.26043333333333335
+      ],
+      "wins": 30,
+      "ties": 0,
+      "losses": 0,
+      "pairedSeeds": 30,
+      "scenarioId": "CONF_WIT_09",
+      "treatment": "aidmesh_transferable_rights",
+      "control": "coconut_online",
+      "endpoint": "completion_rate"
+    }
+  ],
+  "allScenarioPrimaryMarginPassed": false,
+  "safety": {
+    "riskConservationFailures": 0,
+    "safeQuorumConflicts": 0,
+    "aidmeshExposureCapViolations": 0
+  },
+  "allSafetyRulesPassed": true,
+  "interpretation": "End-to-end network state-transition model calibrated by separately executed cryptographic components; not a field deployment or per-request cryptographic replay."
+}

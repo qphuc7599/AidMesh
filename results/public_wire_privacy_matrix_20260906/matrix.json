@@ -1,0 +1,89 @@
+{
+  "measured": [
+    {
+      "attack": "nullifier_equality",
+      "observer": "plaintext relay/gateway/chain calldata",
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 3750,
+        "fn": 1200
+      },
+      "precision": null,
+      "recall": 0.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "attack": "window_equality",
+      "observer": "plaintext relay/gateway/chain calldata",
+      "confusion": {
+        "tp": 1200,
+        "fp": 3750,
+        "tn": 0,
+        "fn": 0
+      },
+      "precision": 0.24242424242424243,
+      "recall": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "attack": "fallback_tag_within_window",
+      "observer": "plaintext relay/gateway/chain calldata",
+      "confusion": {
+        "tp": 1200,
+        "fp": 0,
+        "tn": 3750,
+        "fn": 0
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "balanced_accuracy": 1.0
+    },
+    {
+      "attack": "always_same_control",
+      "observer": "plaintext relay/gateway/chain calldata",
+      "confusion": {
+        "tp": 1200,
+        "fp": 3750,
+        "tn": 0,
+        "fn": 0
+      },
+      "precision": 0.24242424242424243,
+      "recall": 1.0,
+      "balanced_accuracy": 0.5
+    },
+    {
+      "attack": "always_different_control",
+      "observer": "plaintext relay/gateway/chain calldata",
+      "confusion": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 3750,
+        "fn": 1200
+      },
+      "precision": null,
+      "recall": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  ],
+  "input_sha256": {
+    "results\\integrated_batch100_20260906\\fresh_proofs.json": "9320cd638b25253a88708fad026d664af946334b041ab7fa64a64cfc26fdefb3",
+    "results\\integrated_batch100_20260906\\execution_default\\bpv7\\received.json": "2d1d808eff0d6a9cb6000ab1f759f1c6ac3ae75fb6a116698bb823c2828bcc0b"
+  },
+  "vouchers": 100,
+  "holders": 4,
+  "windows": 1,
+  "independent_pairs": false,
+  "scope": "Descriptive finite-fixture audit; pairs share vouchers, no population confidence interval.",
+  "unmeasured": [
+    "cross-window unlinkability",
+    "issuer-observer collusion",
+    "timing/location correlation",
+    "encrypted transport observer",
+    "membership inference",
+    "attribute inference",
+    "network-size/holder-count generalization",
+    "independent confirmatory holdout"
+  ],
+  "full_privacy_matrix_complete": false
+}

@@ -1,0 +1,146 @@
+{
+  "profile": "fixed three-family, disjoint-overlay-seed replication",
+  "rows": 12240,
+  "families": 3,
+  "contexts": 5,
+  "seeds": 30,
+  "effects": [
+    {
+      "level": "family",
+      "family": "ene5ai",
+      "control": "optimized_static",
+      "mean": -0.04603174603174603,
+      "ci95": [
+        -0.0642857142857143,
+        -0.025396825396825404
+      ],
+      "seeds": 30,
+      "wins": 4,
+      "ties": 1,
+      "losses": 25
+    },
+    {
+      "level": "family",
+      "family": "sociopatterns",
+      "control": "optimized_static",
+      "mean": -0.010033743425762206,
+      "ci95": [
+        -0.012219766621615214,
+        -0.0076310070721749175
+      ],
+      "seeds": 30,
+      "wins": 3,
+      "ties": 0,
+      "losses": 27
+    },
+    {
+      "level": "family",
+      "family": "umass_dieselnet",
+      "control": "optimized_static",
+      "mean": -0.04035087719298247,
+      "ci95": [
+        -0.05282651072124756,
+        -0.02787524366471735
+      ],
+      "seeds": 30,
+      "wins": 2,
+      "ties": 1,
+      "losses": 27
+    },
+    {
+      "level": "family-balanced",
+      "family": "all-three",
+      "control": "optimized_static",
+      "mean": -0.032138788883496895,
+      "ci95": [
+        -0.039788192938965634,
+        -0.0239588805823105
+      ],
+      "seeds": 30,
+      "wins": 1,
+      "ties": 0,
+      "losses": 29
+    },
+    {
+      "level": "family",
+      "family": "ene5ai",
+      "control": "periodic_sync",
+      "mean": 0.2563492063492064,
+      "ci95": [
+        0.23174603174603176,
+        0.28095238095238095
+      ],
+      "seeds": 30,
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "level": "family",
+      "family": "sociopatterns",
+      "control": "periodic_sync",
+      "mean": 0.13317291797925598,
+      "ci95": [
+        0.13073210016270462,
+        0.13569549451591706
+      ],
+      "seeds": 30,
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "level": "family",
+      "family": "umass_dieselnet",
+      "control": "periodic_sync",
+      "mean": 0.05048732943469787,
+      "ci95": [
+        0.03411306042884991,
+        0.0672514619883041
+      ],
+      "seeds": 30,
+      "wins": 26,
+      "ties": 0,
+      "losses": 4
+    },
+    {
+      "level": "family-balanced",
+      "family": "all-three",
+      "control": "periodic_sync",
+      "mean": 0.14666981792105338,
+      "ci95": [
+        0.13570577775085746,
+        0.15772615912731794
+      ],
+      "seeds": 30,
+      "wins": 30,
+      "ties": 0,
+      "losses": 0
+    }
+  ],
+  "safety": {
+    "riskCapViolations": 0,
+    "generatedRequests": 1468080,
+    "duplicateExposure": 5348.0
+  },
+  "checks": {
+    "mergedRowsMatchShards": true,
+    "thirtySeeds": true,
+    "threeFamilies": true,
+    "fiveContexts": true,
+    "noDuplicateCells": true,
+    "zeroRiskCapViolations": true
+  },
+  "freeze": {
+    "checks": {
+      "registryHash": true,
+      "analysisScriptHash": true,
+      "sourceHashes": true,
+      "traceHashes": true,
+      "registeredSeeds": true
+    },
+    "passed": true
+  },
+  "allChecksPassed": true,
+  "inferenceBoundary": "Intervals resample the 30 synthetic-overlay seeds after averaging contexts within family. The three observed trace families are fixed and do not support population-wide mobility-dataset inference."
+}

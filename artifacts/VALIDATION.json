@@ -1,0 +1,36 @@
+{
+  "publication_date": "2026-10-17",
+  "stage": "prepublication local checks",
+  "new_experimental_runs": false,
+  "unit_suite": {
+    "passed": 249,
+    "skipped": 7,
+    "warnings": 1,
+    "scope": "source checkout before bulk evidence extraction",
+    "skip_reasons": [
+      "external normalized trace inputs",
+      "separately distributed Groth16 outputs",
+      "retrospective result input",
+      "excluded manuscript and historical audit report"
+    ],
+    "warning": "inherited websockets.legacy deprecation"
+  },
+  "python_compileall": "passed",
+  "final_aggregate_checks": {
+    "passed": 15,
+    "scope": "published aggregate coverage, disjoint seeds, replay drift, H3 margin, external-validity counts, atomic state/credit/replay, attack controls, formal portfolio, crash campaign and T13 analysis coverage",
+    "runner": "scripts/check-published-evidence.py"
+  },
+  "verifier_controls": {
+    "valid_synthetic_fixture_accepted": true,
+    "corrupt_member_rejected_even_after_outer_archive_checksum_recomputed": true
+  },
+  "service_credential_scan": {
+    "findings": 0,
+    "patterns": ["GitHub tokens", "AWS access keys", "private-key PEM blocks", "literal service credential assignments"],
+    "scope": "selected source and original textual evidence; not a proof of absence of every possible credential",
+    "synthetic_fixtures": "public research enrollment/signing inputs are explicitly documented"
+  },
+  "full_archive_integrity": "verified separately after packaging; see release publication verification asset",
+  "limitations": "Packaging and hash verification are not new benchmarks, independent reproduction or a complete implementation-security audit. No third-party contact dataset is redistributed."
+}

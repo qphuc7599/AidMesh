@@ -1,0 +1,378 @@
+{
+  "profile": "final P1-v3, recovery and atomic-settlement executable attack matrix",
+  "positiveControls": 2,
+  "negativeControls": 43,
+  "allPassed": true,
+  "preStageBlock": "latest",
+  "preCommitBlock": null,
+  "livePreSettlement": true,
+  "rows": [
+    {
+      "attack": "valid_recovery_control",
+      "layer": "EVM end-to-end",
+      "expected": "accept",
+      "accepted": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "attack": "groth16_coordinate_mutation",
+      "layer": "P1 proof",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_campaign_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_epoch_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_cell_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_group_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_value_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_credential_root_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_entitlement_root_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_nullifier_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_mode_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_fallback_window_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_fallback_tag_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_chain_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_CHAIN', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b57524f4e475f434841494e000000000000000000000000000000000000000000'"
+    },
+    {
+      "attack": "public_gateway_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_GATEWAY', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d57524f4e475f474154455741590000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_settlement_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_SETTLEMENT', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001057524f4e475f534554544c454d454e540000000000000000000000000000"
+    },
+    {
+      "attack": "public_header_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_policy_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "public_committee_mutation",
+      "layer": "P1 public/context wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_PROOF', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d494e56414c49445f50524f4f460000000000000000000000000000000000000"
+    },
+    {
+      "attack": "receipt_receipt_id_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_SITE_SIGNATURE', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001457524f4e475f534954455f5349474e41545552450000000000000000"
+    },
+    {
+      "attack": "receipt_site_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_RECOVERY_RECIPIENT', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001857524f4e475f5245434f564552595f524543495049454e540000"
+    },
+    {
+      "attack": "receipt_release_intent_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RECEIPT_SKELETON_MISMATCH', '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000019524543454950545f534b454c45544f4e5f4d49534d415443480"
+    },
+    {
+      "attack": "receipt_skeleton_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RECEIPT_SKELETON_MISMATCH', '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000019524543454950545f534b454c45544f4e5f4d49534d415443480"
+    },
+    {
+      "attack": "receipt_authorization_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: AUTHORIZATION_HASH_MISMATCH', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001b415554484f52495a4154494f4e5f484153485f4d49534d415"
+    },
+    {
+      "attack": "receipt_site_signature_mutation",
+      "layer": "closed receipt wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: BAD_SIGNATURE_V', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f4241445f5349474e41545552455f560000000000000000000000000000000"
+    },
+    {
+      "attack": "recovery_right_id_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INVALID_OR_SPENT_RIGHT', '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000016494e56414c49445f4f525f5350454e545f52494748540000000000"
+    },
+    {
+      "attack": "recovery_transfer_id_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_RECOVERY_SOURCE', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001557524f4e475f5245434f564552595f534f555243450000000000000"
+    },
+    {
+      "attack": "recovery_source_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RECOVERY_RIGHT_MISMATCH', '0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000175245434f564552595f52494748545f4d49534d415443480000000"
+    },
+    {
+      "attack": "recovery_destination_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: WRONG_RECOVERY_SOURCE', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001557524f4e475f5245434f564552595f534f555243450000000000000"
+    },
+    {
+      "attack": "recovery_epoch_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: STALE_EPOCH', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000b5354414c455f45504f4348000000000000000000000000000000000000000000'"
+    },
+    {
+      "attack": "recovery_nonce_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RECOVERY_RIGHT_MISMATCH', '0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000175245434f564552595f52494748545f4d49534d415443480000000"
+    },
+    {
+      "attack": "recovery_view_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: FOREIGN_WITNESS', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f464f524549474e5f5749544e4553530000000000000000000000000000000"
+    },
+    {
+      "attack": "recovery_decision_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: FOREIGN_WITNESS', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f464f524549474e5f5749544e4553530000000000000000000000000000000"
+    },
+    {
+      "attack": "recovery_source_signature_mutation",
+      "layer": "terminal recovery wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: BAD_SIGNATURE_V', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f4241445f5349474e41545552455f560000000000000000000000000000000"
+    },
+    {
+      "attack": "insufficient_commit_quorum",
+      "layer": "recovery quorum",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: INSUFFICIENT_QUORUM', '0x08c379a000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000013494e53554646494349454e545f51554f52554d0000000000000000000"
+    },
+    {
+      "attack": "duplicate_commit_signer",
+      "layer": "recovery quorum",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: DUPLICATE_WITNESS_SIGNATURE', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001b4455504c49434154455f5749544e4553535f5349474e41545"
+    },
+    {
+      "attack": "corrupt_commit_signature",
+      "layer": "recovery quorum",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: BAD_SIGNATURE_V', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000f4241445f5349474e41545552455f560000000000000000000000000000000"
+    },
+    {
+      "attack": "proof_receipt_certificate_cross_binding",
+      "layer": "composition wire",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RECOVERY_RIGHT_MISMATCH', '0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000175245434f564552595f52494748545f4d49534d415443480000000"
+    },
+    {
+      "attack": "unauthorized_batch_stager",
+      "layer": "atomic batch",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: ONLY_OWNER', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a4f4e4c595f4f574e455200000000000000000000000000000000000000000000')"
+    },
+    {
+      "attack": "duplicate_item_same_stage",
+      "layer": "atomic batch",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "('execution reverted: RIGHT_ALREADY_STAGED', '0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001452494748545f414c52454144595f5354414745440000000000000000"
+    },
+    {
+      "attack": "valid_root_endorsement_control",
+      "layer": "root endorsement",
+      "expected": "accept",
+      "accepted": true,
+      "passed": true,
+      "error": null
+    },
+    {
+      "attack": "insufficient_root_quorum",
+      "layer": "root endorsement",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "insufficient root endorsements"
+    },
+    {
+      "attack": "duplicate_root_signer",
+      "layer": "root endorsement",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "invalid root endorsement"
+    },
+    {
+      "attack": "malicious_entitlement_root",
+      "layer": "root endorsement",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "invalid root endorsement"
+    },
+    {
+      "attack": "corrupt_root_signature",
+      "layer": "root endorsement",
+      "expected": "reject",
+      "accepted": false,
+      "passed": true,
+      "error": "invalid root endorsement"
+    }
+  ],
+  "stateMutation": "eth_call at retained historical states; actual incomplete/replay transactions are in summary.json",
+  "inputsSha256": {
+    "packets": "1349168952d027f7ff543545c1bbd6f7a2e7e165fa0b1647194f88af76d2f81f",
+    "proofs": "5364e8c22c591fb352afb91e3a864dd73645705c37114a3f894ab6f9747e47bc",
+    "endorsement": "4a47148d11a87d3d111ee28e0929310b02839f1e3ee8962863554000e4efd7fd"
+  },
+  "scope": "cryptographic/context/recovery/receipt/batch fields; denial-of-service and physical compromise remain separate"
+}

@@ -1,0 +1,392 @@
+{
+  "method": "paired percentile bootstrap over the 30 independent seed clusters; settings remain paired within seed",
+  "bootstrapReplicates": 20000,
+  "rngSeed": 20260910,
+  "strongAllocation": [
+    {
+      "left": "full-box-leximin-then-weighted-utility",
+      "right": "progressive-fill",
+      "endpoint": "minimum",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 0.009426151790083064,
+      "clusterBootstrap95": [
+        0.007522288055565161,
+        0.011756378312286299
+      ],
+      "wins": 192,
+      "ties": 78,
+      "losses": 0
+    },
+    {
+      "left": "full-box-leximin-then-weighted-utility",
+      "right": "progressive-fill",
+      "endpoint": "weighted_utility",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 8476.765117682935,
+      "clusterBootstrap95": [
+        1878.9233830712062,
+        17837.00086633728
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "full-box-leximin-then-weighted-utility",
+      "right": "progressive-fill",
+      "endpoint": "fulfillment",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 5921.232372703989,
+      "clusterBootstrap95": [
+        1264.775960987795,
+        12261.74948637463
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "weighted-utility-optimum-then-leximin",
+      "right": "progressive-fill",
+      "endpoint": "minimum",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": -0.13975875600781065,
+      "clusterBootstrap95": [
+        -0.15078022744336328,
+        -0.12854113369345455
+      ],
+      "wins": 8,
+      "ties": 75,
+      "losses": 187
+    },
+    {
+      "left": "weighted-utility-optimum-then-leximin",
+      "right": "progressive-fill",
+      "endpoint": "weighted_utility",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 8873.113282680726,
+      "clusterBootstrap95": [
+        2233.365447388664,
+        18225.602746482862
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "weighted-utility-optimum-then-leximin",
+      "right": "progressive-fill",
+      "endpoint": "fulfillment",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 5921.232372703989,
+      "clusterBootstrap95": [
+        1264.775960987795,
+        12261.74948637463
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "fair-floor-completion",
+      "right": "progressive-fill",
+      "endpoint": "minimum",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 0.0,
+      "clusterBootstrap95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 270,
+      "losses": 0
+    },
+    {
+      "left": "fair-floor-completion",
+      "right": "progressive-fill",
+      "endpoint": "weighted_utility",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 8065.209021618767,
+      "clusterBootstrap95": [
+        1533.9128190912734,
+        17432.124016436177
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "fair-floor-completion",
+      "right": "progressive-fill",
+      "endpoint": "fulfillment",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 5921.232372703989,
+      "clusterBootstrap95": [
+        1264.775960987795,
+        12261.74948637463
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "full-box-leximin-then-weighted-utility",
+      "right": "demand-proportional",
+      "endpoint": "minimum",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 0.05875795097930842,
+      "clusterBootstrap95": [
+        0.053836060224859296,
+        0.06388285203652669
+      ],
+      "wins": 270,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "left": "full-box-leximin-then-weighted-utility",
+      "right": "utility-only",
+      "endpoint": "minimum",
+      "pairedObservations": 270,
+      "seedClusters": 30,
+      "meanDifference": 0.22493167722553575,
+      "clusterBootstrap95": [
+        0.21336406807883893,
+        0.2359929189319319
+      ],
+      "wins": 253,
+      "ties": 17,
+      "losses": 0
+    }
+  ],
+  "strongAllocationUtilityLoss": {
+    "method": "full-box-leximin-then-weighted-utility",
+    "optimum": "weighted-utility-optimum-then-leximin",
+    "endpoint": "weighted_utility",
+    "seedClusters": 30,
+    "meanSeedAggregateRelativeLoss": 0.027950807681406904,
+    "clusterBootstrap95": [
+      0.021766144464833558,
+      0.03418606576988484
+    ]
+  },
+  "coupledDeliveredFairness": [
+    {
+      "left": "delivery-aware-leximin",
+      "right": "progressive-fill",
+      "endpoint": "delivered",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": -7.458333333333333,
+      "clusterBootstrap95": [
+        -8.891666666666667,
+        -6.175
+      ],
+      "wins": 8,
+      "ties": 0,
+      "losses": 112
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "progressive-fill",
+      "endpoint": "settled",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": -7.191666666666666,
+      "clusterBootstrap95": [
+        -8.558333333333334,
+        -5.958333333333333
+      ],
+      "wins": 5,
+      "ties": 5,
+      "losses": 110
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "progressive-fill",
+      "endpoint": "delivered_min",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": 0.03248714600755662,
+      "clusterBootstrap95": [
+        0.02637399752004114,
+        0.038408914197901226
+      ],
+      "wins": 90,
+      "ties": 15,
+      "losses": 15
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "progressive-fill",
+      "endpoint": "settled_min",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": 0.031161808182495702,
+      "clusterBootstrap95": [
+        0.02526739776889513,
+        0.03687051745706228
+      ],
+      "wins": 90,
+      "ties": 16,
+      "losses": 14
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "full-box-leximin",
+      "endpoint": "delivered",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": -11.158333333333333,
+      "clusterBootstrap95": [
+        -12.616666666666667,
+        -9.841666666666667
+      ],
+      "wins": 1,
+      "ties": 2,
+      "losses": 117
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "full-box-leximin",
+      "endpoint": "settled",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": -10.758333333333333,
+      "clusterBootstrap95": [
+        -12.175,
+        -9.458333333333334
+      ],
+      "wins": 2,
+      "ties": 2,
+      "losses": 116
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "full-box-leximin",
+      "endpoint": "delivered_min",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": 0.03313761486696764,
+      "clusterBootstrap95": [
+        0.027157569432003124,
+        0.039099317440831
+      ],
+      "wins": 90,
+      "ties": 21,
+      "losses": 9
+    },
+    {
+      "left": "delivery-aware-leximin",
+      "right": "full-box-leximin",
+      "endpoint": "settled_min",
+      "pairedObservations": 120,
+      "seedClusters": 30,
+      "meanDifference": 0.03117256128714764,
+      "clusterBootstrap95": [
+        0.02449996093836927,
+        0.03768276216875379
+      ],
+      "wins": 85,
+      "ties": 22,
+      "losses": 13
+    }
+  ],
+  "coupledMeansByPartitionHours": {
+    "0": {
+      "progressive-fill": {
+        "delivered": 94.63333333333334,
+        "settled": 90.63333333333334,
+        "delivered_min": 0.060042813395055565,
+        "settled_min": 0.057505469746338404
+      },
+      "full-box-leximin": {
+        "delivered": 99.6,
+        "settled": 95.16666666666667,
+        "delivered_min": 0.062150062817427555,
+        "settled_min": 0.05981440647461407
+      },
+      "delivery-aware-leximin": {
+        "delivered": 84.63333333333334,
+        "settled": 80.7,
+        "delivered_min": 0.10950076603535258,
+        "settled_min": 0.10234650885020279
+      }
+    },
+    "6": {
+      "progressive-fill": {
+        "delivered": 85.83333333333333,
+        "settled": 81.56666666666666,
+        "delivered_min": 0.056251501689034686,
+        "settled_min": 0.054049491795482504
+      },
+      "full-box-leximin": {
+        "delivered": 89.96666666666667,
+        "settled": 85.73333333333333,
+        "delivered_min": 0.050875805590455445,
+        "settled_min": 0.049547291693314094
+      },
+      "delivery-aware-leximin": {
+        "delivered": 76.56666666666666,
+        "settled": 72.66666666666667,
+        "delivered_min": 0.09726980756394021,
+        "settled_min": 0.09150795693825316
+      }
+    },
+    "24": {
+      "progressive-fill": {
+        "delivered": 65.93333333333334,
+        "settled": 63.43333333333333,
+        "delivered_min": 0.04294198769374083,
+        "settled_min": 0.037709959861031296
+      },
+      "full-box-leximin": {
+        "delivered": 69.7,
+        "settled": 67.03333333333333,
+        "delivered_min": 0.042342392752722814,
+        "settled_min": 0.03877078553457884
+      },
+      "delivery-aware-leximin": {
+        "delivered": 59.333333333333336,
+        "settled": 57.06666666666667,
+        "delivered_min": 0.07043434515027851,
+        "settled_min": 0.06854718452268992
+      }
+    },
+    "72": {
+      "progressive-fill": {
+        "delivered": 37.03333333333333,
+        "settled": 34.93333333333333,
+        "delivered_min": 0.014366660126841787,
+        "settled_min": 0.013749376176224504
+      },
+      "full-box-leximin": {
+        "delivered": 38.96666666666667,
+        "settled": 36.9,
+        "delivered_min": 0.01563282630642297,
+        "settled_min": 0.014838801457961924
+      },
+      "delivery-aware-leximin": {
+        "delivered": 33.06666666666667,
+        "settled": 31.366666666666667,
+        "delivered_min": 0.026346628185328066,
+        "settled_min": 0.025259879997913633
+      }
+    }
+  },
+  "inputSha256": {
+    "strong": "270245aeee7cb87066982d9b74f701959593e44ccbfec37570e53912a0d8934d",
+    "coupled": "ddeef9379febf9933e57574108fd40b6243d1d55cf9c2934cc91b693badb94e8"
+  },
+  "scope": "post-review prospective synthetic experiments; intervals do not retrofit the original H1/H3/H4 holdout"
+}

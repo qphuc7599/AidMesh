@@ -1,0 +1,115 @@
+{
+  "scope": "Baseline evidence and label-eligibility audit",
+  "evidence": {
+    "matchedProtocolModel": {
+      "classification": "matched end-to-end protocol-state model",
+      "checks": {
+        "rows": true,
+        "uniqueCells": true,
+        "completeCells": true,
+        "fourMethods": true,
+        "safety": true
+      },
+      "provenance": {
+        "registry": true,
+        "simulator": true,
+        "coconutComponent": true,
+        "outputs": true
+      },
+      "outputHashes": {
+        "runs.csv": true,
+        "means.csv": true,
+        "paired_contrasts.json": true,
+        "summary.json": true
+      },
+      "passed": true,
+      "boundary": "End-to-end network state-transition model calibrated by separately executed cryptographic components; not a field deployment or per-request cryptographic replay."
+    },
+    "matchedRouting": {
+      "classification": "matched routing component",
+      "checks": {
+        "rows": true,
+        "rawHash": true,
+        "matched": true,
+        "pairedRuns": true,
+        "contrasts": true,
+        "sourceHashes": true
+      },
+      "sourceHashes": {
+        "scripts/run-matched-network-grid.py": true,
+        "aidmesh/simulator/dtn.py": true
+      },
+      "passed": true,
+      "finding": "Risk-priority and equal-copy Binary Spray-and-Wait tie on both reported endpoints in every paired cell; this grid does not establish H4.",
+      "boundary": "Routing factorial only; fixed 8 sites/250 bundles/zero loss. No DPDRM, CSAR, cryptographic online baseline or original holdout."
+    },
+    "coconutOnline": {
+      "classification": "cryptographic unit-token adapter",
+      "checks": {
+        "freshSummaryPresent": true,
+        "adapterHash": true,
+        "uniqueTokens": true,
+        "noDuplicateCredits": true,
+        "negativeControls": true
+      },
+      "passed": true,
+      "boundary": "unit-token Coconut-Online adaptation; true Coconut; single online ledger; no matched network campaign"
+    },
+    "snappy": {
+      "classification": "connected approval/accounting component",
+      "checks": {
+        "summaryPresent": true,
+        "threeCommitteeProfiles": true,
+        "majorityThresholds": true,
+        "positivePayments": true,
+        "fieldMutationRejections": true,
+        "connectedOnlyDeclared": true,
+        "equalValueBoundaryRetained": true
+      },
+      "passed": true,
+      "boundary": "Not the authors' original contract and not an offline-network comparator. The literal equal-value Algorithm 4 boundary remains unresolved."
+    }
+  },
+  "allExecutedEvidencePassed": true,
+  "eligibleMatchedProtocolLabels": [
+    "CoconutOnline",
+    "FirstSeenDTN"
+  ],
+  "blockedOriginalProtocolLabels": {
+    "SnappyAdapted": [
+      "original contract differential validation",
+      "merchant-specific statekeeper collateral lifecycle",
+      "resolve literal Algorithm 4 equal-value conflict behavior",
+      "connected-only matched issuance/approval/settlement costs"
+    ],
+    "DPDRM": [
+      "authors' The ONE scenario and code",
+      "complete group-delivery predictability update and aging defaults",
+      "inventory refresh and query/response deadlines",
+      "energy state model",
+      "reference vectors or author implementation"
+    ],
+    "CSAR": [
+      "authors' The ONE scenario and code",
+      "complete selector weights and calibration procedure",
+      "performance-history window and update schedule",
+      "candidate protocol parameter settings",
+      "energy accounting",
+      "reference vectors or author implementation"
+    ],
+    "BinarySprayWait": [
+      "original full network population/site/loss registry",
+      "protocol-level receipt settlement endpoint validation"
+    ],
+    "GiniPenalized": [
+      "fixed source objective and penalty tuning rule",
+      "independent optimum checks",
+      "matched allocator registry"
+    ],
+    "A-DREAM": [
+      "original algorithm and parameter validation",
+      "matched allocator registry"
+    ]
+  },
+  "decision": "CoconutOnline and FirstSeenDTN may be reported as matched protocol-model comparators. Snappy may be reported only as a connected component reconstruction. DPDRM and CSAR remain related-work comparators because their available primary specifications do not support faithful execution."
+}

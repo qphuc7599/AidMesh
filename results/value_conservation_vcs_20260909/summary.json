@@ -1,0 +1,38 @@
+{
+  "solver": "4.15.4",
+  "obligations": [
+    {
+      "name": "admission_reserve",
+      "result": "unsat",
+      "countermodel": null
+    },
+    {
+      "name": "authorization_spend",
+      "result": "unsat",
+      "countermodel": null
+    },
+    {
+      "name": "epoch_retains_unresolved",
+      "result": "unsat",
+      "countermodel": null
+    },
+    {
+      "name": "reissue_charges_same_cap",
+      "result": "unsat",
+      "countermodel": null
+    },
+    {
+      "name": "unsafe_reissue_after_cap_reset",
+      "result": "sat",
+      "countermodel": "[reserved = 0,\n cap = 1,\n value = 1,\n outstanding = 1,\n spent = 0,\n unassigned = 0]"
+    },
+    {
+      "name": "unsafe_drop_outstanding",
+      "result": "sat",
+      "countermodel": "[reserved = 0,\n cap = 1,\n value = 1,\n outstanding = 1,\n spent = 0,\n unassigned = 0]"
+    }
+  ],
+  "safe_vcs": 4,
+  "unsafe_counterexamples": 2,
+  "scope": "unbounded integer transition algebra; assumes atomic unique-serial assignment"
+}

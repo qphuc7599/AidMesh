@@ -1,0 +1,119 @@
+{
+  "profile": "paper-faithful Snappy connected approval and claim reconstruction",
+  "status": "component-validated",
+  "profiles": [
+    {
+      "members": 4,
+      "majority": 3,
+      "trials": 100,
+      "wireBytes": [
+        230
+      ],
+      "negativeControlsRejected": 400,
+      "timingMs": {
+        "shares": {
+          "median": 293.59590000000003,
+          "p95": 345.0573
+        },
+        "aggregate": {
+          "median": 836.1931,
+          "p95": 929.4499
+        },
+        "customerSign": {
+          "median": 4.30345,
+          "p95": 5.014
+        },
+        "jointVerify": {
+          "median": 298.9185,
+          "p95": 331.3478
+        }
+      }
+    },
+    {
+      "members": 7,
+      "majority": 4,
+      "trials": 100,
+      "wireBytes": [
+        230
+      ],
+      "negativeControlsRejected": 400,
+      "timingMs": {
+        "shares": {
+          "median": 388.24775,
+          "p95": 398.0545
+        },
+        "aggregate": {
+          "median": 1107.94275,
+          "p95": 1128.8943
+        },
+        "customerSign": {
+          "median": 4.1134,
+          "p95": 4.7242
+        },
+        "jointVerify": {
+          "median": 303.16634999999997,
+          "p95": 314.5836
+        }
+      }
+    },
+    {
+      "members": 10,
+      "majority": 6,
+      "trials": 100,
+      "wireBytes": [
+        231
+      ],
+      "negativeControlsRejected": 400,
+      "timingMs": {
+        "shares": {
+          "median": 582.26135,
+          "p95": 596.5741
+        },
+        "aggregate": {
+          "median": 1663.6542,
+          "p95": 1721.428
+        },
+        "customerSign": {
+          "median": 4.122199999999999,
+          "p95": 4.8899
+        },
+        "jointVerify": {
+          "median": 317.2253,
+          "p95": 335.7418
+        }
+      }
+    }
+  ],
+  "accountingVectors": {
+    "algorithm3CustomerClaim": [
+      3,
+      2,
+      5
+    ],
+    "algorithm4DifferentValue": [
+      2,
+      3,
+      {
+        "1": 8
+      }
+    ],
+    "algorithm4EqualValue": [
+      0,
+      5,
+      {
+        "1": 10
+      }
+    ],
+    "equalValueBoundary": "Published Algorithm 4 computes an absolute value difference, hence an equal-value conflict debits zero in the literal reconstruction. This retained boundary prevents claiming full original-contract validation."
+  },
+  "coverage": {
+    "positivePayments": 300,
+    "fieldMutationRejections": 1200,
+    "connectedOnly": true
+  },
+  "boundary": "Not the authors' original contract and not an offline-network comparator. The literal equal-value Algorithm 4 boundary remains unresolved.",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

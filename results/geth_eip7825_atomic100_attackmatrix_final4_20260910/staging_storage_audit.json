@@ -1,0 +1,30 @@
+{
+  "profile": "direct Geth storage audit of final staged-atomic batch",
+  "client": "Geth/v1.17.5-stable-9621c6ad/windows-amd64/go1.25.12",
+  "gateway": "0x92072707Dd2818371fDb30dB5F2a0867F39f92b0",
+  "batchId": "84d5664575c43afce691857a7646c94066849399374ac6b2e8be84d3396bea0b",
+  "storageLayoutSource": "solc 0.8.36 --storage-layout; declaration slots 6..9",
+  "logicalStagingStorage": {
+    "batchHeaderWords": 5,
+    "rightLockWords": 100,
+    "nullifierLockWords": 100,
+    "digestArrayLengthWords": 1,
+    "digestDataWords": 100,
+    "totalWords": 306,
+    "logicalBytes": 9792,
+    "scope": "nonzero EVM storage words retained by the gateway staging manifest; excludes trie/database overhead and final settlement-contract state"
+  },
+  "checks": {
+    "bpv7Unchanged": true,
+    "headerPrefixMatches": true,
+    "headerCommitted": true,
+    "headerDeadlineNonzero": true,
+    "allRightLocksEqualBatch": true,
+    "allNullifierLocksEqualBatch": true,
+    "digestArrayLength100": true,
+    "allDigestWordsMatchRecords": true,
+    "logicalWordCount306": true
+  },
+  "inputSha256": "1349168952d027f7ff543545c1bbd6f7a2e7e165fa0b1647194f88af76d2f81f",
+  "allChecksPassed": true
+}

@@ -1,0 +1,705 @@
+{
+  "profile": "warm P1-v3 verification of final admitted proofs",
+  "rows": [
+    {
+      "trial": 0,
+      "verificationMs": 8.048299999999927,
+      "proofGenerationMs": 1242.2722999999996,
+      "proofWireBytes": 1480,
+      "statementSha256": "7737a8039e6be5a73ddd0ecb5928bdc6c24f7a2fe434d237a124316afe4a941e"
+    },
+    {
+      "trial": 1,
+      "verificationMs": 8.869800000000055,
+      "proofGenerationMs": 822.5176999999999,
+      "proofWireBytes": 1481,
+      "statementSha256": "0fb9cc34ac8c94bec85bd77f5ed13dadf6a853b462b9b074a2d93a56141d4c53"
+    },
+    {
+      "trial": 2,
+      "verificationMs": 8.22580000000005,
+      "proofGenerationMs": 820.0221999999999,
+      "proofWireBytes": 1482,
+      "statementSha256": "e212530917d4e1401e95847105241091c6bba8c1292708ddec5fc66832b7a23e"
+    },
+    {
+      "trial": 3,
+      "verificationMs": 7.531600000000026,
+      "proofGenerationMs": 848.3230000000003,
+      "proofWireBytes": 1480,
+      "statementSha256": "fe92c998371a65e7aadacd8a174796c12ab5e6c98e51f72addf5fd3657494fc0"
+    },
+    {
+      "trial": 4,
+      "verificationMs": 7.797700000000077,
+      "proofGenerationMs": 840.7752,
+      "proofWireBytes": 1484,
+      "statementSha256": "a30d47233c0efa57361322dc958172bf9b219e02a33855e8e4994171df8ee264"
+    },
+    {
+      "trial": 5,
+      "verificationMs": 7.56880000000001,
+      "proofGenerationMs": 787.8089999999993,
+      "proofWireBytes": 1477,
+      "statementSha256": "8bd4a2e9e8a3658713a8abddd71c768923de3bd8277055f71a357294b20889ac"
+    },
+    {
+      "trial": 6,
+      "verificationMs": 7.740700000000061,
+      "proofGenerationMs": 751.7255000000005,
+      "proofWireBytes": 1477,
+      "statementSha256": "33e10ffcf5142a772209f711557def7bd8686d844bf8f56a3d0334a1f5e4d0ad"
+    },
+    {
+      "trial": 7,
+      "verificationMs": 7.95920000000001,
+      "proofGenerationMs": 738.2800000000007,
+      "proofWireBytes": 1480,
+      "statementSha256": "6a24c0056758f46f3b74f4ffaf410a1914f81cb4585f143ea3cde5713c546cfc"
+    },
+    {
+      "trial": 8,
+      "verificationMs": 7.717700000000036,
+      "proofGenerationMs": 745.4809999999998,
+      "proofWireBytes": 1481,
+      "statementSha256": "a6cca6ca87722b0f8fb07cbf20eafb37e545df0d081009a89fdb19d826763145"
+    },
+    {
+      "trial": 9,
+      "verificationMs": 7.196399999999926,
+      "proofGenerationMs": 750.3955999999998,
+      "proofWireBytes": 1480,
+      "statementSha256": "75fae661060d5f683ce61c8f17a61f9ce94cc4192497a85acc1c06991c612f02"
+    },
+    {
+      "trial": 10,
+      "verificationMs": 7.670499999999947,
+      "proofGenerationMs": 797.1828999999998,
+      "proofWireBytes": 1481,
+      "statementSha256": "0c2b2c41bba56a290f3d70ac4bf96f9b566a49d4ae1e43022bf344a5600b6e45"
+    },
+    {
+      "trial": 11,
+      "verificationMs": 7.6819000000000415,
+      "proofGenerationMs": 774.8627000000015,
+      "proofWireBytes": 1484,
+      "statementSha256": "cdf01ec80db5287267022f5402431ead880c4bcd7cf9c8b8bf5e7dd203934376"
+    },
+    {
+      "trial": 12,
+      "verificationMs": 7.108499999999935,
+      "proofGenerationMs": 747.5198999999993,
+      "proofWireBytes": 1479,
+      "statementSha256": "e7ff7d0164ab02278d11901ccf292fae4f20deac446dc7ee6e4da17f58417a5e"
+    },
+    {
+      "trial": 13,
+      "verificationMs": 7.016300000000001,
+      "proofGenerationMs": 738.0482999999986,
+      "proofWireBytes": 1480,
+      "statementSha256": "34d50aa932ad556b4b464ff17f8e738e9e79edb00d6da8fd005a6c88a94bc749"
+    },
+    {
+      "trial": 14,
+      "verificationMs": 6.864399999999932,
+      "proofGenerationMs": 759.6095000000005,
+      "proofWireBytes": 1485,
+      "statementSha256": "020cc767bd2402254118e6ba010396f52bc3998c5e350759985f714ddb591842"
+    },
+    {
+      "trial": 15,
+      "verificationMs": 7.334699999999998,
+      "proofGenerationMs": 760.0878000000012,
+      "proofWireBytes": 1484,
+      "statementSha256": "106e022e9d1b011e121f8ba57030fa5ba70eb438d37530483aea8bf0573bffb8"
+    },
+    {
+      "trial": 16,
+      "verificationMs": 7.243499999999926,
+      "proofGenerationMs": 773.5453999999991,
+      "proofWireBytes": 1482,
+      "statementSha256": "e94f42e17c526fb7b7c1547889143986ab9203f9bdc4e370b08605a05bb0349e"
+    },
+    {
+      "trial": 17,
+      "verificationMs": 8.261299999999892,
+      "proofGenerationMs": 804.8796000000002,
+      "proofWireBytes": 1483,
+      "statementSha256": "0cf7c134df298fbd45f34cdd5355cd37e14f94e6473c7e0b3ff23dba2f3733c1"
+    },
+    {
+      "trial": 18,
+      "verificationMs": 7.796199999999999,
+      "proofGenerationMs": 760.7582999999977,
+      "proofWireBytes": 1480,
+      "statementSha256": "e96041128adbdfcc904c4c451c8c1252727d1d62432c25dd9c1b09273ffec8bb"
+    },
+    {
+      "trial": 19,
+      "verificationMs": 7.597499999999968,
+      "proofGenerationMs": 711.1015000000007,
+      "proofWireBytes": 1483,
+      "statementSha256": "52666b06104a7ab0e60f48db52ab7b317bc18e86696ffcf70d66120b76b638ad"
+    },
+    {
+      "trial": 20,
+      "verificationMs": 7.113100000000031,
+      "proofGenerationMs": 762.0580000000009,
+      "proofWireBytes": 1483,
+      "statementSha256": "f6f9c0a47a6377729e9d2ec6997d0552a819b413f45a35df7a776b1d618d8885"
+    },
+    {
+      "trial": 21,
+      "verificationMs": 9.101699999999937,
+      "proofGenerationMs": 724.8438999999998,
+      "proofWireBytes": 1480,
+      "statementSha256": "0e610967ce1b5b8e9a024be440ece88e1fe3cb897c3c53deb31321110abeb8fd"
+    },
+    {
+      "trial": 22,
+      "verificationMs": 6.857200000000034,
+      "proofGenerationMs": 723.6162999999979,
+      "proofWireBytes": 1482,
+      "statementSha256": "382b9274b5afd4485210ffff3a22b8adca88f5998aa45c794a461ebebbb13795"
+    },
+    {
+      "trial": 23,
+      "verificationMs": 6.889999999999986,
+      "proofGenerationMs": 750.1985999999997,
+      "proofWireBytes": 1479,
+      "statementSha256": "bc1d2d34a13f125bf3514fd49014ea63f09764576c66e2704c6eca9798c6fb2a"
+    },
+    {
+      "trial": 24,
+      "verificationMs": 6.926099999999906,
+      "proofGenerationMs": 735.9554000000026,
+      "proofWireBytes": 1482,
+      "statementSha256": "4230f4da5abd625f2726f95fb3f030184fe8d10228beed1b37748ef12b99dcb5"
+    },
+    {
+      "trial": 25,
+      "verificationMs": 6.791600000000017,
+      "proofGenerationMs": 732.6391000000003,
+      "proofWireBytes": 1480,
+      "statementSha256": "1ea8e3b20b972844aecad6445ab873dc5c08e269b6f815e7624da28c948a88b7"
+    },
+    {
+      "trial": 26,
+      "verificationMs": 6.850999999999999,
+      "proofGenerationMs": 728.0678999999982,
+      "proofWireBytes": 1481,
+      "statementSha256": "f2dda196b18a6310761d05ddda84585727a68b170f2cc14e480604f399fd9626"
+    },
+    {
+      "trial": 27,
+      "verificationMs": 6.776700000000005,
+      "proofGenerationMs": 728.6544999999969,
+      "proofWireBytes": 1476,
+      "statementSha256": "d752c9140ad6b4e0f89ec865a244de1823e5ef940672324aa075b7f58574a61e"
+    },
+    {
+      "trial": 28,
+      "verificationMs": 7.432299999999941,
+      "proofGenerationMs": 713.612000000001,
+      "proofWireBytes": 1481,
+      "statementSha256": "a4165a6613b7d2bdaa850cf2109a6a1ced2496960691a875c0e90a6c67f6ecb5"
+    },
+    {
+      "trial": 29,
+      "verificationMs": 6.813200000000052,
+      "proofGenerationMs": 798.5977999999996,
+      "proofWireBytes": 1484,
+      "statementSha256": "8033fcbf1948116de93c25ba6070d97d0b7581dd25b2aca132e2c832c29d5e00"
+    },
+    {
+      "trial": 30,
+      "verificationMs": 6.7128999999999905,
+      "proofGenerationMs": 773.6965000000018,
+      "proofWireBytes": 1483,
+      "statementSha256": "2c5b110ee1023428ad8a705ee36f6253c83940f4604a4a6fb6ddc30e619ef1bd"
+    },
+    {
+      "trial": 31,
+      "verificationMs": 6.801000000000045,
+      "proofGenerationMs": 776.1630999999979,
+      "proofWireBytes": 1481,
+      "statementSha256": "b219f426d009760da14deb6d82bd08b4561b3086a76a2c4ec09cc7163d52d8a1"
+    },
+    {
+      "trial": 32,
+      "verificationMs": 7.2771999999999935,
+      "proofGenerationMs": 777.567500000001,
+      "proofWireBytes": 1482,
+      "statementSha256": "7df24c95bc5c9d8ba22e0d3ceb9b4f83e871475c12e0c5c8b722c7abf362050d"
+    },
+    {
+      "trial": 33,
+      "verificationMs": 7.060200000000009,
+      "proofGenerationMs": 764.9959999999992,
+      "proofWireBytes": 1478,
+      "statementSha256": "39f01edbfe29b6c7c422bad7450b627f638b39729b753185a5f553edc3a03c7d"
+    },
+    {
+      "trial": 34,
+      "verificationMs": 6.752499999999941,
+      "proofGenerationMs": 737.9089999999997,
+      "proofWireBytes": 1483,
+      "statementSha256": "a1c7211ff059bf949a3b4f639d6512401182a03bd12f8afb348af3b384ed82ba"
+    },
+    {
+      "trial": 35,
+      "verificationMs": 6.905399999999986,
+      "proofGenerationMs": 779.2480999999971,
+      "proofWireBytes": 1480,
+      "statementSha256": "c3c73cff57ff3d9d036c1cd429f4f9fa1514a259748f390d5112c4727db5910b"
+    },
+    {
+      "trial": 36,
+      "verificationMs": 6.5149000000000115,
+      "proofGenerationMs": 748.3646999999983,
+      "proofWireBytes": 1477,
+      "statementSha256": "2652fff0c7963ab210a8980ba5d023f5fea3ee2ca4a4b0a82ea6fd397ee42ec8"
+    },
+    {
+      "trial": 37,
+      "verificationMs": 7.406700000000001,
+      "proofGenerationMs": 716.0841,
+      "proofWireBytes": 1484,
+      "statementSha256": "ea9afe3fdb3fcc468d398b73456d81a4e0093f89ba295790cde5e62b93d3c94c"
+    },
+    {
+      "trial": 38,
+      "verificationMs": 7.0371000000000095,
+      "proofGenerationMs": 724.524300000001,
+      "proofWireBytes": 1482,
+      "statementSha256": "d65233071bf29ab50892fac662ddf80a0e0c7e08d55e281907f8716a0fe707f0"
+    },
+    {
+      "trial": 39,
+      "verificationMs": 7.470800000000054,
+      "proofGenerationMs": 709.6026999999995,
+      "proofWireBytes": 1483,
+      "statementSha256": "a870403ac01d79466c70e26ddaac137cf306b7860bcdf388aad389f436919741"
+    },
+    {
+      "trial": 40,
+      "verificationMs": 6.758600000000001,
+      "proofGenerationMs": 730.2325000000019,
+      "proofWireBytes": 1482,
+      "statementSha256": "0a1f331f55f8d0476f19de5ed76a366d3e51673650c0d5f6da4f3d2a2df9159e"
+    },
+    {
+      "trial": 41,
+      "verificationMs": 7.772899999999936,
+      "proofGenerationMs": 720.7762000000002,
+      "proofWireBytes": 1479,
+      "statementSha256": "3a08f6e7f51c39d1f701983964023ff6dca34c11f57b9b08a8d6f185c4c4a52b"
+    },
+    {
+      "trial": 42,
+      "verificationMs": 10.515899999999988,
+      "proofGenerationMs": 739.4516000000003,
+      "proofWireBytes": 1478,
+      "statementSha256": "69de647c0e369b9f4ecf18d527c77f84cdbdcfb488b1d983351d047c896ecd0e"
+    },
+    {
+      "trial": 43,
+      "verificationMs": 8.435899999999947,
+      "proofGenerationMs": 725.8941999999952,
+      "proofWireBytes": 1482,
+      "statementSha256": "97827e2de7d42962ab1515e14fe850472e0333f7124f1b6ee405a672d0a21e33"
+    },
+    {
+      "trial": 44,
+      "verificationMs": 7.196699999999964,
+      "proofGenerationMs": 723.2824000000037,
+      "proofWireBytes": 1481,
+      "statementSha256": "8ff614c1baddc91642d6854cac391ef4695b032d4f15157b4acda7401ebea502"
+    },
+    {
+      "trial": 45,
+      "verificationMs": 6.636200000000031,
+      "proofGenerationMs": 722.6249000000025,
+      "proofWireBytes": 1482,
+      "statementSha256": "51ae4e66605284fe2fba6d386b989b15f6d24c30b1eeb193b756273c1c12c73d"
+    },
+    {
+      "trial": 46,
+      "verificationMs": 6.561399999999935,
+      "proofGenerationMs": 725.4753999999957,
+      "proofWireBytes": 1481,
+      "statementSha256": "7d37f57c49835cfe9c79438cee120c6c3a7116486e9fa57feea91b76650555f0"
+    },
+    {
+      "trial": 47,
+      "verificationMs": 7.055100000000039,
+      "proofGenerationMs": 732.3977999999988,
+      "proofWireBytes": 1482,
+      "statementSha256": "7532f62b36aad3109b8a99ac81de9d70626949ad0361d82016850dc540397a76"
+    },
+    {
+      "trial": 48,
+      "verificationMs": 6.475900000000024,
+      "proofGenerationMs": 726.8855999999942,
+      "proofWireBytes": 1484,
+      "statementSha256": "a114c6914ea0840e18b95d6d9c2355b1e146ed4e855112e25638d1e538b07374"
+    },
+    {
+      "trial": 49,
+      "verificationMs": 6.456099999999992,
+      "proofGenerationMs": 737.0778999999966,
+      "proofWireBytes": 1478,
+      "statementSha256": "686e3bca2a467bb9c709811c85609ec44cf168b7203ce5e184999f26134b226b"
+    },
+    {
+      "trial": 50,
+      "verificationMs": 6.53690000000006,
+      "proofGenerationMs": 728.9877000000051,
+      "proofWireBytes": 1484,
+      "statementSha256": "64d865e3f1332cc2a874ad2abc73c67233bfd663724e145a5918ef5e7e89a82c"
+    },
+    {
+      "trial": 51,
+      "verificationMs": 6.617600000000039,
+      "proofGenerationMs": 734.3623999999982,
+      "proofWireBytes": 1481,
+      "statementSha256": "daa0b228fd762423397c04199fd8eb4ac44bc41ac5ad9921eebf9649bcb0e4b9"
+    },
+    {
+      "trial": 52,
+      "verificationMs": 6.187000000000012,
+      "proofGenerationMs": 719.5996999999988,
+      "proofWireBytes": 1484,
+      "statementSha256": "1a031a90adcfac781dfaa4e95de83e707a024cecc81f32018a54826bd910e797"
+    },
+    {
+      "trial": 53,
+      "verificationMs": 6.533800000000042,
+      "proofGenerationMs": 721.0066999999981,
+      "proofWireBytes": 1481,
+      "statementSha256": "26823f7d6b22d1d81b82ad68eced4f82649393ce8f21510caf5f0cc065244aa8"
+    },
+    {
+      "trial": 54,
+      "verificationMs": 6.822999999999979,
+      "proofGenerationMs": 743.7758000000031,
+      "proofWireBytes": 1482,
+      "statementSha256": "01a4caadb65e5e541c73e4c04c98ef7e97b6993f7cd91b177bb900b8705f49b8"
+    },
+    {
+      "trial": 55,
+      "verificationMs": 6.615099999999984,
+      "proofGenerationMs": 748.9477000000043,
+      "proofWireBytes": 1485,
+      "statementSha256": "5a7f902bf9a1356bad7f9857cf345f3908a43af69b57f97ff4a14915af52e00b"
+    },
+    {
+      "trial": 56,
+      "verificationMs": 7.001300000000015,
+      "proofGenerationMs": 732.8482000000004,
+      "proofWireBytes": 1477,
+      "statementSha256": "a3f270de8a88f62aebc857c1a7242c269f29fbb101b4ed6a47a59bf5c68ac14a"
+    },
+    {
+      "trial": 57,
+      "verificationMs": 6.80379999999991,
+      "proofGenerationMs": 745.7805999999982,
+      "proofWireBytes": 1484,
+      "statementSha256": "2dfa93bee4d6b68e35a347a6b5822514c88a015c2704680210a50800f749961c"
+    },
+    {
+      "trial": 58,
+      "verificationMs": 6.773599999999988,
+      "proofGenerationMs": 741.7125999999989,
+      "proofWireBytes": 1481,
+      "statementSha256": "1bd64ac254bafd085cf66beab7d4cc8a829aca781e89fdc7ff2c2852de5233bb"
+    },
+    {
+      "trial": 59,
+      "verificationMs": 6.680600000000027,
+      "proofGenerationMs": 726.6922999999952,
+      "proofWireBytes": 1482,
+      "statementSha256": "c36aab8554c8ecfaeba67fd04fc0bf5c8a364dea0036400cfb25c10b76b73a51"
+    },
+    {
+      "trial": 60,
+      "verificationMs": 7.0067000000000235,
+      "proofGenerationMs": 717.0886000000028,
+      "proofWireBytes": 1483,
+      "statementSha256": "15d54ae6fc7fec8588516738f2ee9de66e6d0fd91557173213e7069141d8e9b9"
+    },
+    {
+      "trial": 61,
+      "verificationMs": 6.705600000000004,
+      "proofGenerationMs": 753.303899999999,
+      "proofWireBytes": 1484,
+      "statementSha256": "b7e97a76f986572488cd791e8d24b09dc07900b5dc46dbcee4165e462041b96f"
+    },
+    {
+      "trial": 62,
+      "verificationMs": 6.820699999999988,
+      "proofGenerationMs": 743.4622999999992,
+      "proofWireBytes": 1478,
+      "statementSha256": "fdd89f4c6bf1f445cc1dcefaf700e8211b9a0857eba1a28f8d1b1a653756889d"
+    },
+    {
+      "trial": 63,
+      "verificationMs": 6.605200000000195,
+      "proofGenerationMs": 763.5578000000023,
+      "proofWireBytes": 1481,
+      "statementSha256": "86e78995c8348661674e8d3b8f67e1db8951cc0f79574c95def94b836712c039"
+    },
+    {
+      "trial": 64,
+      "verificationMs": 6.792400000000043,
+      "proofGenerationMs": 727.8130999999994,
+      "proofWireBytes": 1481,
+      "statementSha256": "8a7ebf4802aab760a94a4b27c3b5f6b50794e4489362e4af06b267b77c6a3e50"
+    },
+    {
+      "trial": 65,
+      "verificationMs": 6.867500000000064,
+      "proofGenerationMs": 722.0071000000025,
+      "proofWireBytes": 1482,
+      "statementSha256": "c37cb879c5a1db04b5fbd4957bffa1bdd5ce92dc6cfb47115341af4703bcda87"
+    },
+    {
+      "trial": 66,
+      "verificationMs": 7.167100000000119,
+      "proofGenerationMs": 739.5613999999987,
+      "proofWireBytes": 1482,
+      "statementSha256": "059cdf5be990a58fa91d9310013a34155efd18e43e51d5e17bb49954356e06be"
+    },
+    {
+      "trial": 67,
+      "verificationMs": 6.675599999999804,
+      "proofGenerationMs": 732.3761000000013,
+      "proofWireBytes": 1481,
+      "statementSha256": "8b67f49c51d7cc5bee4f5a7e7efde33594bdf29f7aaf9c348b98c291155fc533"
+    },
+    {
+      "trial": 68,
+      "verificationMs": 6.703099999999949,
+      "proofGenerationMs": 712.552499999998,
+      "proofWireBytes": 1478,
+      "statementSha256": "436f9c0518c0a990dd2b3fada31a9b10e5a3cb6ffa8f8243add577373e0f5728"
+    },
+    {
+      "trial": 69,
+      "verificationMs": 6.502099999999928,
+      "proofGenerationMs": 704.7782999999981,
+      "proofWireBytes": 1484,
+      "statementSha256": "5094e1d1a9650cfa79ca6f2fc29f3a44752852d372a76b04a6e723b61ef2cc03"
+    },
+    {
+      "trial": 70,
+      "verificationMs": 6.783999999999878,
+      "proofGenerationMs": 722.8972999999969,
+      "proofWireBytes": 1478,
+      "statementSha256": "9029d06297bc43e84a7126706cf10aff8723cf73245af3940f8f39f994f22a39"
+    },
+    {
+      "trial": 71,
+      "verificationMs": 6.5090000000000146,
+      "proofGenerationMs": 772.3691000000035,
+      "proofWireBytes": 1484,
+      "statementSha256": "7faa15b58baa50c1f6cccabc957b54f741d8852014e11774aed64dbe068f554c"
+    },
+    {
+      "trial": 72,
+      "verificationMs": 6.228800000000092,
+      "proofGenerationMs": 773.4931999999972,
+      "proofWireBytes": 1479,
+      "statementSha256": "8882b2581ceb9126f73c1ad2f389d5ade3267e320d8d9416c22c3215e8eaa1d6"
+    },
+    {
+      "trial": 73,
+      "verificationMs": 6.2637999999999465,
+      "proofGenerationMs": 760.2609000000011,
+      "proofWireBytes": 1482,
+      "statementSha256": "13856323c28b54130d4873d4ccf82aed9119f54b90c5a90bef8c0ab32ccf457d"
+    },
+    {
+      "trial": 74,
+      "verificationMs": 6.4430999999999585,
+      "proofGenerationMs": 776.0642999999982,
+      "proofWireBytes": 1481,
+      "statementSha256": "81870a02f453862bc420aff05e948a0468943436f47f0ed44124142a33171335"
+    },
+    {
+      "trial": 75,
+      "verificationMs": 6.442800000000034,
+      "proofGenerationMs": 749.8513999999996,
+      "proofWireBytes": 1482,
+      "statementSha256": "08b36444782c1f0ff5df825a44ef3c17adaad238e25b63d2318c64645c07955d"
+    },
+    {
+      "trial": 76,
+      "verificationMs": 6.8840000000000146,
+      "proofGenerationMs": 743.8875999999946,
+      "proofWireBytes": 1484,
+      "statementSha256": "893eeb809419a4098c64b34463e4d955adfcf8c8ef964839c7043f0b7f5ad9a4"
+    },
+    {
+      "trial": 77,
+      "verificationMs": 6.400499999999965,
+      "proofGenerationMs": 742.4760000000024,
+      "proofWireBytes": 1480,
+      "statementSha256": "a28211ff11900a495840e60df4fd830cbd83051cee3adf34e3503ac692b14377"
+    },
+    {
+      "trial": 78,
+      "verificationMs": 6.406999999999925,
+      "proofGenerationMs": 744.5501000000004,
+      "proofWireBytes": 1481,
+      "statementSha256": "867f076d2ca6d4e37dc2335773776d8f3f42a074e315d9a22d80edc47b9ad65d"
+    },
+    {
+      "trial": 79,
+      "verificationMs": 6.488000000000056,
+      "proofGenerationMs": 733.7465999999986,
+      "proofWireBytes": 1483,
+      "statementSha256": "52f6317214dda71ff82286646ac59a9016270f4227f73bbe4b5bfc586bc4650a"
+    },
+    {
+      "trial": 80,
+      "verificationMs": 6.224500000000035,
+      "proofGenerationMs": 733.8237999999983,
+      "proofWireBytes": 1481,
+      "statementSha256": "5a0074e7ecde83307d048f12d7f2bea4a06141b67d4f41e2ab26e1b63a5c1528"
+    },
+    {
+      "trial": 81,
+      "verificationMs": 6.3016999999999825,
+      "proofGenerationMs": 737.4968999999983,
+      "proofWireBytes": 1481,
+      "statementSha256": "d5b98f3f2813bfa04f48d9569b91cab8f1775fcdcee2d0faa4f2e686f3fd117d"
+    },
+    {
+      "trial": 82,
+      "verificationMs": 6.483199999999897,
+      "proofGenerationMs": 729.2644999999975,
+      "proofWireBytes": 1481,
+      "statementSha256": "b1ea62ad8ad36bf07b1173902d21c9550e4a6017362b9bca66139531c6a1c096"
+    },
+    {
+      "trial": 83,
+      "verificationMs": 6.707500000000209,
+      "proofGenerationMs": 734.7923999999912,
+      "proofWireBytes": 1482,
+      "statementSha256": "e762e22ede4b1639aaeee98eda25172c1c028aae7204d1cc8717022d1b1347e5"
+    },
+    {
+      "trial": 84,
+      "verificationMs": 6.7771000000000186,
+      "proofGenerationMs": 721.880799999999,
+      "proofWireBytes": 1478,
+      "statementSha256": "e492903bda7233275c2548dfda7ca6c8b6db04c51ab11ee0e8b3db21e3981046"
+    },
+    {
+      "trial": 85,
+      "verificationMs": 6.735100000000102,
+      "proofGenerationMs": 772.9631999999983,
+      "proofWireBytes": 1481,
+      "statementSha256": "fa4764f82e13a8d11ea5536dad7b5b8e15b0baca003b290893b22e8ed8444d5a"
+    },
+    {
+      "trial": 86,
+      "verificationMs": 7.040199999999913,
+      "proofGenerationMs": 754.1892999999982,
+      "proofWireBytes": 1482,
+      "statementSha256": "5f319519d5590e9a810a77c7d761dce52b3fb1c5dbbf8c4132d8395020c84ee2"
+    },
+    {
+      "trial": 87,
+      "verificationMs": 7.093899999999849,
+      "proofGenerationMs": 771.8816000000079,
+      "proofWireBytes": 1480,
+      "statementSha256": "c14e102d92155b0f9be8a5fcb502e0354226532a34716ab20dd0b08b52311aeb"
+    },
+    {
+      "trial": 88,
+      "verificationMs": 6.9401000000000295,
+      "proofGenerationMs": 734.1836000000039,
+      "proofWireBytes": 1480,
+      "statementSha256": "54ae7a352e481d8cdadfa9f129f51c57b57075acdccd04f10a247dd89fbad44f"
+    },
+    {
+      "trial": 89,
+      "verificationMs": 6.54320000000007,
+      "proofGenerationMs": 715.372199999998,
+      "proofWireBytes": 1475,
+      "statementSha256": "94d74f33da9eeefa443faffcaac0bf9bee7db21654d43115b04ed7c851728756"
+    },
+    {
+      "trial": 90,
+      "verificationMs": 7.001700000000028,
+      "proofGenerationMs": 742.7404999999999,
+      "proofWireBytes": 1480,
+      "statementSha256": "2d4b823c6ec9097340aad73811f2739b0f9aa40eb93d7a76c0a21edf843567d9"
+    },
+    {
+      "trial": 91,
+      "verificationMs": 6.726400000000012,
+      "proofGenerationMs": 730.3997999999992,
+      "proofWireBytes": 1479,
+      "statementSha256": "c06f79fcbfecb50a5e219117deb03472989f544dd861a9ba19814c5374581c0b"
+    },
+    {
+      "trial": 92,
+      "verificationMs": 6.990300000000161,
+      "proofGenerationMs": 720.7566999999981,
+      "proofWireBytes": 1482,
+      "statementSha256": "0224b4ee054b08563fe5cd40a105be0aa13347cd98722f4cb2f74d396f37e69e"
+    },
+    {
+      "trial": 93,
+      "verificationMs": 6.903299999999945,
+      "proofGenerationMs": 725.9821000000084,
+      "proofWireBytes": 1479,
+      "statementSha256": "7c871f6bf80ca0af7933c4dd7410d9f7c49600a56dc7ff94c1de8ab3f440f24c"
+    },
+    {
+      "trial": 94,
+      "verificationMs": 6.569500000000062,
+      "proofGenerationMs": 734.7881000000052,
+      "proofWireBytes": 1478,
+      "statementSha256": "c0ae02cd475c3d3362a8ae0ce9494fc8d8233a0c0f3be5b02da4d51c052ad50b"
+    },
+    {
+      "trial": 95,
+      "verificationMs": 6.806699999999864,
+      "proofGenerationMs": 733.9111999999877,
+      "proofWireBytes": 1483,
+      "statementSha256": "aa3c3486d64452c20f93da3a8d700661ea94f6ccb427d80deb6da11fee10fcf8"
+    },
+    {
+      "trial": 96,
+      "verificationMs": 7.019999999999982,
+      "proofGenerationMs": 738.1180999999924,
+      "proofWireBytes": 1480,
+      "statementSha256": "96f15d7933f387a07584270c36afde947509dc1d8e937165e889239d9724caff"
+    },
+    {
+      "trial": 97,
+      "verificationMs": 6.915400000000091,
+      "proofGenerationMs": 746.5881999999983,
+      "proofWireBytes": 1482,
+      "statementSha256": "c0077ca139fd1e7f88bcc5b63fb5a97bdd32f6e1b3a6ba736d11632066c1e0e6"
+    },
+    {
+      "trial": 98,
+      "verificationMs": 6.767900000000054,
+      "proofGenerationMs": 750.945000000007,
+      "proofWireBytes": 1481,
+      "statementSha256": "d73f6e448048f4a5b1409774929628150ba1f279a9643abe898d5a99a43b1ac1"
+    },
+    {
+      "trial": 99,
+      "verificationMs": 6.898300000000063,
+      "proofGenerationMs": 736.0258000000031,
+      "proofWireBytes": 1481,
+      "statementSha256": "1a2e6b420541b9f00117b5baff0f5a653dfe11fa7f52d0380c2efc3ece20446e"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "primary",
+  "files": {
+    "family_forest": "bow_primary_family_forest.csv",
+    "family_forest_plot": "bow_primary_family_forest.png",
+    "regret_runs": "bow_primary_regret_runs.csv",
+    "regret_summary": "bow_primary_regret_summary.csv"
+  },
+  "sha256": {
+    "family_forest": "296452e0bd5eabdf104a923c77177546adeb49f01bc87e6a8e9f7bd951d9a71a",
+    "family_forest_plot": "f561447e57b114f0d611ec809a005b7fe5e3460d1fcfffec9cf037630d477a10",
+    "regret_runs": "14c982b4b8394efb401e0bff095889e018264e2a02ce5d059e1990c153d4d6c8",
+    "regret_summary": "1d82653c004fd9886193eefe4ae107a19cf488d7981ed2d149d5c07d86ca9091"
+  }
+}

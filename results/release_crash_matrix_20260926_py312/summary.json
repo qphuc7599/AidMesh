@@ -1,0 +1,59 @@
+{
+  "profile": "release-crash-matrix",
+  "repetitions_per_boundary": 30,
+  "boundary_trials": 120,
+  "all_boundary_trials_safe": true,
+  "by_boundary": {
+    "before_actuator": {
+      "trials": 30,
+      "safe": 30,
+      "actuator_calls": 0,
+      "replay_actuator_calls": 0
+    },
+    "after_actuator": {
+      "trials": 30,
+      "safe": 30,
+      "actuator_calls": 30,
+      "replay_actuator_calls": 0
+    },
+    "before_receipt_sign": {
+      "trials": 30,
+      "safe": 30,
+      "actuator_calls": 30,
+      "replay_actuator_calls": 0
+    },
+    "after_close": {
+      "trials": 30,
+      "safe": 30,
+      "actuator_calls": 30,
+      "replay_actuator_calls": 0
+    }
+  },
+  "rollback_negative_control": {
+    "control": "restore_pre_intent_snapshot",
+    "actuator_calls": 2,
+    "reinvocation_observed": true,
+    "interpretation": "non-rollback storage is a necessary recovery-agreement assumption"
+  },
+  "corruption_negative_control": {
+    "control": "corrupt_database_header",
+    "startup_rejected": true,
+    "error_type": "DatabaseError",
+    "interpretation": "detectable corruption fails closed; arbitrary media recovery is not claimed"
+  },
+  "storage_profile": {
+    "sqlite": "3.53.1",
+    "journal_mode": "WAL",
+    "synchronous": "FULL"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel"
+  },
+  "source_sha256": {
+    "scripts\\run-release-crash-matrix-20260926.py": "c09496becd3c00d9120933e3268117fd49fefef7834bd5ee0a728a3e22f90602",
+    "aidmesh\\protocol\\recovered_release.py": "7f0e60635ec1437b62c0b9634782b7bb09f502f11db062053484ba39a617a6c7"
+  },
+  "raw_sha256": "a8f6db8841d5236a64c2fe1ac64b0b47e11a2e946b2361087c4b8bd711c5c769"
+}

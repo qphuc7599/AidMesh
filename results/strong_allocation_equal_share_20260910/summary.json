@@ -1,0 +1,35 @@
+{
+  "profile": "post-review equal-share addition to exact 270-instance suite",
+  "instances": 270,
+  "problemRegenerationChecks": 810,
+  "allProblemRegenerationChecksPassed": true,
+  "equalShareMeans": {
+    "minimum": 0.18553847057821313,
+    "weighted_utility": 49219.401388888895,
+    "fulfillment": 27384.118518518517
+  },
+  "fullBoxLeximinMinusEqualShare": {
+    "minimum": {
+      "mean": 0.07798062229026717,
+      "seedClusterBootstrap95": [
+        0.07404588777559,
+        0.0819168303836285
+      ],
+      "winsTiesLosses": [
+        259,
+        11,
+        0
+      ]
+    },
+    "weightedUtility": {
+      "mean": 644.0874831503561,
+      "seedClusterBootstrap95": [
+        360.92762639682445,
+        993.7824811430182
+      ]
+    }
+  },
+  "sourceRunsSha256": "270245aeee7cb87066982d9b74f701959593e44ccbfec37570e53912a0d8934d",
+  "rawSha256": "146f2fd288fece3cefcd6e6d5ba6a5cfe2f545a57f60e05bd66777f2f0d541da",
+  "scope": "same immutable problems and endpoint definitions as strong_allocation_20260910_v6"
+}

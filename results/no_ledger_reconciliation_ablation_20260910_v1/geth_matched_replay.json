@@ -1,0 +1,112 @@
+{
+  "profile": "fresh Geth replay for matched settlement-layer ablation",
+  "sameBpv7Bytes": true,
+  "records": 100,
+  "deploymentAddressesMatchFinalEvidence": true,
+  "deploymentNonce": 621,
+  "noncePaddingTransactions": 617,
+  "client": "Geth/v1.17.5-stable-9621c6ad/windows-amd64/go1.25.12",
+  "chainId": 1337,
+  "blockGasLimit": 60000000,
+  "eip7825TransactionGasCap": 16777216,
+  "setupWallMs": 111429.3453,
+  "stageTransactions": [
+    {
+      "offset": 0,
+      "count": 10,
+      "wallMs": 971.0553,
+      "gasUsed": 7329496,
+      "calldataBytes": 21860,
+      "blockNumber": 261
+    },
+    {
+      "offset": 10,
+      "count": 10,
+      "wallMs": 970.6664,
+      "gasUsed": 7133693,
+      "calldataBytes": 21860,
+      "blockNumber": 262
+    },
+    {
+      "offset": 20,
+      "count": 10,
+      "wallMs": 1074.9187,
+      "gasUsed": 7133448,
+      "calldataBytes": 21860,
+      "blockNumber": 263
+    },
+    {
+      "offset": 30,
+      "count": 10,
+      "wallMs": 972.2065,
+      "gasUsed": 7133562,
+      "calldataBytes": 21860,
+      "blockNumber": 264
+    },
+    {
+      "offset": 40,
+      "count": 10,
+      "wallMs": 1075.3243,
+      "gasUsed": 7133550,
+      "calldataBytes": 21860,
+      "blockNumber": 265
+    },
+    {
+      "offset": 50,
+      "count": 10,
+      "wallMs": 968.2753,
+      "gasUsed": 7133527,
+      "calldataBytes": 21860,
+      "blockNumber": 266
+    },
+    {
+      "offset": 60,
+      "count": 10,
+      "wallMs": 1019.3394,
+      "gasUsed": 7133580,
+      "calldataBytes": 21860,
+      "blockNumber": 267
+    },
+    {
+      "offset": 70,
+      "count": 10,
+      "wallMs": 971.5329,
+      "gasUsed": 7133502,
+      "calldataBytes": 21860,
+      "blockNumber": 268
+    },
+    {
+      "offset": 80,
+      "count": 10,
+      "wallMs": 970.3835,
+      "gasUsed": 7133630,
+      "calldataBytes": 21860,
+      "blockNumber": 269
+    },
+    {
+      "offset": 90,
+      "count": 10,
+      "wallMs": 1075.915,
+      "gasUsed": 7133410,
+      "calldataBytes": 21860,
+      "blockNumber": 270
+    }
+  ],
+  "stageWallMs": 10069.6173,
+  "finalize": {
+    "wallMs": 891.8354,
+    "gasUsed": 14203542,
+    "calldataBytes": 35300,
+    "blockNumber": 271
+  },
+  "settlementWallMs": 10961.4527,
+  "totalGas": 85734940,
+  "totalCalldataBytes": 253900,
+  "credits": [
+    100,
+    50
+  ],
+  "inputSha256": "1349168952d027f7ff543545c1bbd6f7a2e7e165fa0b1647194f88af76d2f81f",
+  "scope": "single fresh Geth development chain with one-second block period; setup excludes campaign/right issuance; settlement wall time is one execution",
+  "allChecksPassed": true
+}

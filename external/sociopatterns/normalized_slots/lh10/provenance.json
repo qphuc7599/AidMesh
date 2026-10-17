@@ -1,0 +1,23 @@
+{
+  "bundle_rule": "create a fixed number of client-to-site bundles at observed client contact timestamps; this is an evaluation overlay, not source metadata",
+  "bundles_sha256": "282779c2f24fdb170fb6ada5132972a648220c4c742a26f4126e8f773957d199",
+  "contacts_sha256": "25d538271101310b4c4d1e7c9a930b4982dca102896873c150fbd508bbf97bf8",
+  "context": "sociopatterns_lh10_hospital_slots",
+  "conversion": {
+    "bundle_size_bytes": 2048,
+    "bundles_per_client": 1,
+    "bytes_per_second": 256000,
+    "collapse_contiguous": false,
+    "contact_step_seconds": 20,
+    "context": "sociopatterns_lh10_hospital_slots",
+    "relay_count": 3,
+    "site_count": 4,
+    "ttl_hours": 24
+  },
+  "dataset": "SocioPatterns contact.tar.bz2, Zenodo record 2540795",
+  "license": "CC BY-NC 4.0; researcher must confirm intended use complies",
+  "mapping_sha256": "b86d24b55d207e0068dfab24dca792f5f64ed181d9dab6100a94a3864f36fe66",
+  "role_mapping_rule": "rank anonymous nodes by total observed contact duration; assign sites, then relays, then clients in deterministic lexical tie order",
+  "source_file": "tij_LH10.dat",
+  "source_sha256": "e419c29cb9dfc0756a7b6b250a9c41bc41d943265e591380a9ec9732f14447b3"
+}

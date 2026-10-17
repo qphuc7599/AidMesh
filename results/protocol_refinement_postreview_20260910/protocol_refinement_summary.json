@@ -1,0 +1,40 @@
+{
+  "action_mapping_is_explicit_in_raw_events": true,
+  "escrow_risk_rights": {
+    "accepted": 4764,
+    "all_states_conserved": true,
+    "all_states_refine_oracle": true,
+    "rejected": 44388,
+    "seed": 20260718,
+    "steps_per_trace": 96,
+    "traces": 512,
+    "transitions": 49152
+  },
+  "limitations": [
+    "Refinement is trace-based and bounded; it is not an unbounded theorem.",
+    "The Solidity P2 adapter assumes an external receipt/proof verifier."
+  ],
+  "model": "formal/AidMeshProtocol.tla",
+  "overall_refinement_pass": true,
+  "persistent_witness": {
+    "all_states_refine_oracle": true,
+    "crash_before_commit_fail_closed": true,
+    "durable_restarts": 243,
+    "seed": 20260719,
+    "steps_per_trace": 64,
+    "traces": 32,
+    "transitions": 2048
+  },
+  "schema_version": 1,
+  "settlement": {
+    "final_credits": {
+      "site-a": 6,
+      "site-b": 4
+    },
+    "final_escrow": 0,
+    "python_reference_matches_oracle": true,
+    "solidity_local_evm_matches_oracle": true,
+    "solidity_profile": "P2 verifier-adapter; proof verification is outside this boundary",
+    "transitions": 6
+  }
+}

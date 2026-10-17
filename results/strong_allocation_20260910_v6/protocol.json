@@ -1,0 +1,70 @@
+{
+  "profile": "post-review-strong-allocation-v1",
+  "seeds": [
+    99701,
+    99702,
+    99703,
+    99704,
+    99705,
+    99706,
+    99707,
+    99708,
+    99709,
+    99710,
+    99711,
+    99712,
+    99713,
+    99714,
+    99715,
+    99716,
+    99717,
+    99718,
+    99719,
+    99720,
+    99721,
+    99722,
+    99723,
+    99724,
+    99725,
+    99726,
+    99727,
+    99728,
+    99729,
+    99730
+  ],
+  "groups": 12,
+  "categories": 3,
+  "skew": [
+    0.2,
+    1,
+    5
+  ],
+  "supply": [
+    0.35,
+    0.6,
+    0.9
+  ],
+  "methods": [
+    "progressive-fill",
+    "fair-floor-completion",
+    "demand-proportional",
+    "utility-only",
+    "full-box-leximin-then-weighted-utility",
+    "weighted-utility-optimum-then-leximin"
+  ],
+  "primary": [
+    "minimum_normalized_service",
+    "weighted_utility"
+  ],
+  "estimand": "paired method contrasts within exact same generated problem",
+  "tie_break": "canonical group/category order; exact SymPy simplex",
+  "scope": "post-review prospective synthetic suite; not the original H3 holdout",
+  "source_sha256": {
+    "scripts\\run-strong-allocation-20260909.py": "e4ce1398e87bc25eb8cf9304a3f1d4be07211ac647356b083a2aba0e9fb2bddb",
+    "aidmesh\\allocator\\full_box.py": "9ed7d3ab1bcdee599475d1365ff925098acbd4fc11ed9588dfed2271f97b81a1",
+    "aidmesh\\allocator\\completion.py": "88bb747764fc4cde1b1e4b07fd6858c3cf64fe019ef1d0189ffe37ae8ea04829",
+    "aidmesh\\allocator\\progressive_fill.py": "1c3ab244aeadd791610116d1a4b44abe82749be306b1b62413a0eb42bbece4dd",
+    "aidmesh\\allocator\\baselines.py": "60b1e8f0237df3d423c6f24e4ef02af3a5caa6df16beb47c9c917fec1aa7f549",
+    "aidmesh\\experiments\\allocation.py": "673cd04c74880d0cf592ff7a1e7a2433c041f95d54d8c23ec5a1e75848441ad7"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "must_back_matter_unchanged": true,
+  "front_matter_unchanged": true,
+  "figure1_bytes_unchanged": true,
+  "figure1_is_pdf_include": true,
+  "no_control_chars": true,
+  "no_undefined_references": true,
+  "no_overfull": true,
+  "pdf_pages": 32,
+  "theory_and_formal_sections_unchanged": true
+}

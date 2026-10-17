@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "registry": "D:/DoAnChuyenNganh/AirProof/configs/postreview_20260928/h3_fixed_replication.json",
+  "registrySha256": "7f7b396d34f2e1aa9378bcebe7d61a65426196956c16f143afea4e82b42fe05b",
+  "sourceSha256": {
+    "scripts/run-h3-fixed-replication-20260928.py": "bc2962f05ad06fdf67abdf386184114ea36353b62f7cb91a44e36589ffea0e3a",
+    "aidmesh/allocator/full_box.py": "39bda104637637cce398a1c234dabc570baddf7683ca9eb800d597b76d9a9489",
+    "aidmesh/allocator/progressive_fill.py": "1c3ab244aeadd791610116d1a4b44abe82749be306b1b62413a0eb42bbece4dd",
+    "aidmesh/allocator/baselines.py": "60b1e8f0237df3d423c6f24e4ef02af3a5caa6df16beb47c9c917fec1aa7f549",
+    "aidmesh/experiments/allocation.py": "673cd04c74880d0cf592ff7a1e7a2433c041f95d54d8c23ec5a1e75848441ad7"
+  },
+  "expectedSeeds": 640,
+  "expectedConditions": 5760,
+  "summarySha256": "330893ab23b305f832dd13c334e67feabcc6df54d998c2c5f1c602ed6de754ce"
+}

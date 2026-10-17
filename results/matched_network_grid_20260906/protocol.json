@@ -1,0 +1,71 @@
+{
+  "seeds": [
+    99601,
+    99602,
+    99603,
+    99604,
+    99605,
+    99606,
+    99607,
+    99608,
+    99609,
+    99610,
+    99611,
+    99612,
+    99613,
+    99614,
+    99615,
+    99616,
+    99617,
+    99618,
+    99619,
+    99620,
+    99621,
+    99622,
+    99623,
+    99624,
+    99625,
+    99626,
+    99627,
+    99628,
+    99629,
+    99630
+  ],
+  "partitions": [
+    0,
+    1,
+    6,
+    24,
+    72
+  ],
+  "bandwidth_kbit": [
+    64,
+    256,
+    1024
+  ],
+  "buffer_mb": [
+    10,
+    50,
+    200
+  ],
+  "policies": [
+    "fifo_single_copy",
+    "epidemic",
+    "binary_spray_wait",
+    "risk_priority_spray"
+  ],
+  "sites": 8,
+  "relays": 3,
+  "bundles": 250,
+  "horizon_hours": 168,
+  "ttl_hours": 72,
+  "copies": 4,
+  "loss": 0,
+  "source_sha256": {
+    "scripts\\run-matched-network-grid.py": "34025dde9b2558975e1864e341ba75059bef1fc534f289aad492f71c4a753da5",
+    "aidmesh\\simulator\\dtn.py": "e8ae7efb14cda9f119e770a11fc2fd16f5c25c58508eab57a529db384eedd5be"
+  },
+  "scope": "Routing factorial only; fixed 8 sites/250 bundles/zero loss. No DPDRM, CSAR, cryptographic online baseline or original holdout.",
+  "endpoint": "50th percentile including failures at infinity; TTL-capped mean secondary",
+  "matching": "Identical contacts and bundles across policies; capacity is full duplex. Epidemic is an unbounded-copy diagnostic, excluded from equal-copy claims."
+}

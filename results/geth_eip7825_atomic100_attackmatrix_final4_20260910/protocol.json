@@ -1,0 +1,14 @@
+{
+  "vouchers": 100,
+  "K": 4,
+  "q": 3,
+  "f": 1,
+  "blockGasLimit": 60000000,
+  "requestedBlockGasLimit": 60000000,
+  "batchSize": 10,
+  "atomicBatch": false,
+  "rpc": "http://127.0.0.1:18545",
+  "singleHost": true,
+  "actuator": "synthetic fsync journal",
+  "proofs": "fresh admitted fixtures"
+}

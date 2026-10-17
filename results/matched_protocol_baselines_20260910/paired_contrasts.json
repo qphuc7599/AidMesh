@@ -1,0 +1,1730 @@
+[
+  {
+    "mean": 0.24730000000000002,
+    "median": 0.247,
+    "ci95": [
+      0.24186666666666665,
+      0.25286666666666663
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 338.96666666666664,
+    "median": 340.0,
+    "ci95": [
+      333.06666666666666,
+      345.1
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.237388980248842,
+    "median": -3.3273374182704503,
+    "ci95": [
+      -3.433333729988126,
+      -3.040636005700251
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 93.66666666666667,
+    "median": 98.5,
+    "ci95": [
+      89.2,
+      97.93333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.008600000000000007,
+    "median": -0.008000000000000007,
+    "ci95": [
+      -0.010366666666666675,
+      -0.006966666666666673
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -12.166666666666666,
+    "median": -11.0,
+    "ci95": [
+      -14.633333333333333,
+      -9.833333333333334
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.00831610076424576,
+    "median": -0.007788562358947426,
+    "ci95": [
+      -0.010462800157707966,
+      -0.006255386804300089
+    ],
+    "wins": 1,
+    "ties": 0,
+    "losses": 29,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -8.066666666666666,
+    "median": -7.5,
+    "ci95": [
+      -10.2,
+      -6.0
+    ],
+    "wins": 0,
+    "ties": 2,
+    "losses": 28,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.1413666666666667,
+    "median": 0.14150000000000001,
+    "ci95": [
+      0.13900000000000004,
+      0.1437
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 189.76666666666668,
+    "median": 191.5,
+    "ci95": [
+      186.96666666666667,
+      192.33333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.0026050810242526532,
+    "median": -0.0038290757617172044,
+    "ci95": [
+      -0.009008124915764465,
+      0.0038728578828742047
+    ],
+    "wins": 12,
+    "ties": 0,
+    "losses": 18,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 93.66666666666667,
+    "median": 98.5,
+    "ci95": [
+      89.2,
+      97.9
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_05",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.18190000000000003,
+    "median": 0.18450000000000005,
+    "ci95": [
+      0.1753666666666667,
+      0.18870000000000003
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 367.53333333333336,
+    "median": 365.5,
+    "ci95": [
+      360.23333333333335,
+      375.1333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.357910719456425,
+    "median": -3.4452099867381247,
+    "ci95": [
+      -3.555338831924455,
+      -3.1682152573677205
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 266.76666666666665,
+    "median": 268.5,
+    "ci95": [
+      262.0,
+      271.3666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.07399999999999998,
+    "median": -0.07599999999999996,
+    "ci95": [
+      -0.0773333333333333,
+      -0.07059999999999998
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -231.63333333333333,
+    "median": -229.0,
+    "ci95": [
+      -239.4675,
+      -223.43333333333334
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.1343723796015795,
+    "median": -0.13578656387650745,
+    "ci95": [
+      -0.14057864763216216,
+      -0.12756673046861147
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -324.3,
+    "median": -324.0,
+    "ci95": [
+      -335.6333333333333,
+      -312.79916666666674
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.07033333333333337,
+    "median": 0.069,
+    "ci95": [
+      0.0678666666666667,
+      0.0728666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 212.7,
+    "median": 212.5,
+    "ci95": [
+      210.13333333333333,
+      215.13333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.12387599563795727,
+    "median": -0.1248379092084222,
+    "ci95": [
+      -0.12951868244054598,
+      -0.11807491625939887
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 266.76666666666665,
+    "median": 268.5,
+    "ci95": [
+      261.9,
+      271.43333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_ADV_30",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.21153333333333327,
+    "median": 0.21349999999999997,
+    "ci95": [
+      0.2051333333333333,
+      0.21806666666666663
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 359.53333333333336,
+    "median": 357.5,
+    "ci95": [
+      352.6,
+      366.6666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.2926442228706225,
+    "median": -3.378061900280649,
+    "ci95": [
+      -3.4897694960651426,
+      -3.092523222473726
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.66666666666666,
+      203.73333333333332
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0443666666666667,
+    "median": -0.04400000000000004,
+    "ci95": [
+      -0.04753333333333338,
+      -0.04123333333333337
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -91.0,
+    "median": -91.0,
+    "ci95": [
+      -96.7,
+      -85.13333333333334
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.06380066789222118,
+    "median": -0.06338332781616274,
+    "ci95": [
+      -0.06901402387554681,
+      -0.05850597231066892
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -101.7,
+    "median": -101.0,
+    "ci95": [
+      -108.6,
+      -94.83333333333333
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.1033,
+    "median": 0.10449999999999998,
+    "ci95": [
+      0.1008333333333333,
+      0.1057333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 208.03333333333333,
+    "median": 207.5,
+    "ci95": [
+      206.13333333333333,
+      210.06666666666666
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.058294357728492806,
+    "median": -0.056371122627778325,
+    "ci95": [
+      -0.06564774133898953,
+      -0.05093031450791066
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.7,
+      203.76666666666668
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_CORE_W08_P24",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0443666666666667,
+    "median": -0.04400000000000004,
+    "ci95": [
+      -0.047533333333333386,
+      -0.041200000000000035
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 60.36666666666667,
+    "median": 59.0,
+    "ci95": [
+      56.13333333333333,
+      64.73333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.10693095204135433,
+    "median": -0.10151667669778863,
+    "ci95": [
+      -0.12474198579110982,
+      -0.0907320160159715
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.76666666666668,
+      203.86666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0443666666666667,
+    "median": -0.04400000000000004,
+    "ci95": [
+      -0.047533333333333365,
+      -0.04110000000000004
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -91.0,
+    "median": -91.0,
+    "ci95": [
+      -96.76666666666667,
+      -85.13250000000008
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.01699580179018031,
+    "median": -0.017609209754598343,
+    "ci95": [
+      -0.021064178247678613,
+      -0.012885119007254989
+    ],
+    "wins": 3,
+    "ties": 0,
+    "losses": 27,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -101.7,
+    "median": -101.0,
+    "ci95": [
+      -108.63333333333334,
+      -94.96666666666667
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.1033,
+    "median": 0.10449999999999998,
+    "ci95": [
+      0.10086666666666666,
+      0.10576666666666666
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 208.03333333333333,
+    "median": 207.5,
+    "ci95": [
+      206.13333333333333,
+      210.03333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.010672450494224621,
+    "median": -0.0055241218031278905,
+    "ci95": [
+      -0.01690170917627246,
+      -0.004743134349148223
+    ],
+    "wins": 9,
+    "ties": 0,
+    "losses": 21,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.6,
+      203.73333333333332
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_06H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.7249333333333332,
+    "median": 0.725,
+    "ci95": [
+      0.7191333333333333,
+      0.7308999999999999
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 867.6333333333333,
+    "median": 867.0,
+    "ci95": [
+      862.4333333333333,
+      873.0666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -4.520400044196294,
+    "median": -4.369081773049652,
+    "ci95": [
+      -4.816723496138454,
+      -4.235133532664162
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.7,
+      203.93333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0443666666666667,
+    "median": -0.04400000000000004,
+    "ci95": [
+      -0.04756666666666671,
+      -0.041233333333333365
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -91.0,
+    "median": -91.0,
+    "ci95": [
+      -96.7,
+      -85.06666666666666
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.0002633462520846804,
+    "median": -0.001022614546802303,
+    "ci95": [
+      -0.0015244475944018458,
+      0.0010308808173667638
+    ],
+    "wins": 13,
+    "ties": 0,
+    "losses": 17,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -101.7,
+    "median": -101.0,
+    "ci95": [
+      -108.6,
+      -94.83333333333333
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.1033,
+    "median": 0.10449999999999998,
+    "ci95": [
+      0.10083333333333332,
+      0.10573333333333332
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 208.03333333333333,
+    "median": 207.5,
+    "ci95": [
+      206.1,
+      210.03333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.0005050237805435231,
+    "median": 0.0006937308352941152,
+    "ci95": [
+      -0.002558768129059994,
+      0.0015041025393696453
+    ],
+    "wins": 17,
+    "ties": 0,
+    "losses": 13,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.63333333333333,
+      203.83333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_48H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.9556333333333332,
+    "median": 0.956,
+    "ci95": [
+      0.9524666666666666,
+      0.9587999999999999
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 1060.3666666666666,
+    "median": 1059.0,
+    "ci95": [
+      1056.0666666666666,
+      1064.6333333333334
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": 0.8417662632443766,
+    "median": 0.8391163372934765,
+    "ci95": [
+      0.8363167000419771,
+      0.8473853856315
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.73333333333332,
+      203.76666666666668
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0443666666666667,
+    "median": -0.04400000000000004,
+    "ci95": [
+      -0.047533333333333386,
+      -0.041266666666666695
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -91.0,
+    "median": -91.0,
+    "ci95": [
+      -96.73333333333333,
+      -85.16666666666667
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": 0.0011058526904492974,
+    "median": 0.0008841628150978442,
+    "ci95": [
+      -0.00012654594761198973,
+      0.0023207164026029614
+    ],
+    "wins": 19,
+    "ties": 0,
+    "losses": 11,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -101.7,
+    "median": -101.0,
+    "ci95": [
+      -108.5,
+      -94.93333333333334
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.1033,
+    "median": 0.10449999999999998,
+    "ci95": [
+      0.10083333333333332,
+      0.10576666666666662
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 208.03333333333333,
+    "median": 207.5,
+    "ci95": [
+      206.13333333333333,
+      210.06666666666666
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.0003663642950423577,
+    "median": 0.0005148801592448349,
+    "ci95": [
+      -0.0025153564034282143,
+      0.0017025491403221988
+    ],
+    "wins": 16,
+    "ties": 0,
+    "losses": 14,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 198.7,
+    "median": 197.0,
+    "ci95": [
+      193.73333333333332,
+      203.8
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_PART_60H",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.1501666666666667,
+    "median": -0.15300000000000002,
+    "ci95": [
+      -0.15719999999999998,
+      -0.14263250000000008
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -64.76666666666667,
+    "median": -68.0,
+    "ci95": [
+      -72.76666666666667,
+      -56.56666666666667
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.4750110982376845,
+    "median": -3.562260970682851,
+    "ci95": [
+      -3.667789555100552,
+      -3.278092375428846
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 81.0,
+    "median": 79.0,
+    "ci95": [
+      76.9,
+      85.26666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.40606666666666674,
+    "median": -0.41000000000000003,
+    "ci95": [
+      -0.4114000000000001,
+      -0.4005666666666667
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -515.3,
+    "median": -517.5,
+    "ci95": [
+      -521.9008333333333,
+      -508.7
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.24616754325928325,
+    "median": -0.243673305295264,
+    "ci95": [
+      -0.2545746182642719,
+      -0.237661633514923
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -219.4,
+    "median": -220.5,
+    "ci95": [
+      -225.46666666666667,
+      -213.6
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.16899999999999998,
+    "median": 0.16999999999999998,
+    "ci95": [
+      0.16636666666666666,
+      0.17159999999999995
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 211.13333333333333,
+    "median": 209.5,
+    "ci95": [
+      208.93333333333334,
+      213.36666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.2429406813070998,
+    "median": -0.24215783565231186,
+    "ci95": [
+      -0.25029336112791317,
+      -0.23526656498273038
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 81.0,
+    "median": 79.0,
+    "ci95": [
+      77.0,
+      85.33333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_06",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.053566666666666686,
+    "median": 0.053499999999999936,
+    "ci95": [
+      0.04696666666666669,
+      0.06026666666666669
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 159.43333333333334,
+    "median": 161.0,
+    "ci95": [
+      151.93333333333334,
+      166.9
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.4000732614572824,
+    "median": -3.4729213119793205,
+    "ci95": [
+      -3.59229446386459,
+      -3.2067171030540655
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 118.93333333333334,
+    "median": 115.0,
+    "ci95": [
+      114.33333333333333,
+      123.73333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.20233333333333328,
+    "median": -0.20399999999999996,
+    "ci95": [
+      -0.2070333333333333,
+      -0.1976
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -291.1,
+    "median": -292.0,
+    "ci95": [
+      -297.46666666666664,
+      -284.76666666666665
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.1712297064788811,
+    "median": -0.17439717240236396,
+    "ci95": [
+      -0.17947488136400958,
+      -0.1628498366685557
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -181.46666666666667,
+    "median": -180.5,
+    "ci95": [
+      -187.66666666666666,
+      -175.3
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.14859999999999998,
+    "median": 0.14850000000000002,
+    "ci95": [
+      0.1461,
+      0.15109999999999998
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 211.2,
+    "median": 210.0,
+    "ci95": [
+      208.86666666666667,
+      213.56666666666666
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.16831582617605345,
+    "median": -0.1675848201298098,
+    "ci95": [
+      -0.17313598649313228,
+      -0.16325496580133914
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 118.93333333333334,
+    "median": 115.0,
+    "ci95": [
+      114.26666666666667,
+      123.7
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_07",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.25520000000000004,
+    "median": 0.2555,
+    "ci95": [
+      0.2501333333333334,
+      0.26043333333333335
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 445.1666666666667,
+    "median": 444.5,
+    "ci95": [
+      439.06666666666666,
+      451.3666666666667
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -3.2318052884176764,
+    "median": -3.320813003430684,
+    "ci95": [
+      -3.4251149306812234,
+      -3.031226927608806
+    ],
+    "wins": 0,
+    "ties": 0,
+    "losses": 30,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 289.43333333333334,
+    "median": 293.5,
+    "ci95": [
+      282.2991666666667,
+      296.2
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "coconut_online",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": -0.0007000000000000006,
+    "median": 0.0,
+    "ci95": [
+      -0.0010333333333333342,
+      -0.00040000000000000034
+    ],
+    "wins": 0,
+    "ties": 16,
+    "losses": 14,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": -5.366666666666666,
+    "median": -5.0,
+    "ci95": [
+      -6.4,
+      -4.4
+    ],
+    "wins": 0,
+    "ties": 1,
+    "losses": 29,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.002961733439274609,
+    "median": -0.00193183535164565,
+    "ci95": [
+      -0.0042610478187733464,
+      -0.001835235123124187
+    ],
+    "wins": 5,
+    "ties": 1,
+    "losses": 24,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": -10.966666666666667,
+    "median": -9.0,
+    "ci95": [
+      -13.4,
+      -8.7
+    ],
+    "wins": 0,
+    "ties": 1,
+    "losses": 29,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "first_seen_dtn",
+    "endpoint": "duplicate_exposure"
+  },
+  {
+    "mean": 0.02400000000000002,
+    "median": 0.02350000000000002,
+    "ci95": [
+      0.02240000000000002,
+      0.025600000000000022
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "completion_rate"
+  },
+  {
+    "mean": 170.7,
+    "median": 169.0,
+    "ci95": [
+      167.33333333333334,
+      174.13333333333333
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "settled_receipts"
+  },
+  {
+    "mean": -0.0015985936981000556,
+    "median": -0.00314914869359606,
+    "ci95": [
+      -0.007429783724121922,
+      0.004303455055679862
+    ],
+    "wins": 11,
+    "ties": 0,
+    "losses": 19,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "rmst_hours"
+  },
+  {
+    "mean": 289.43333333333334,
+    "median": 293.5,
+    "ci95": [
+      282.3666666666667,
+      296.2
+    ],
+    "wins": 30,
+    "ties": 0,
+    "losses": 0,
+    "pairedSeeds": 30,
+    "scenarioId": "CONF_WIT_09",
+    "treatment": "aidmesh_transferable_rights",
+    "control": "aidmesh_quorum_only",
+    "endpoint": "duplicate_exposure"
+  }
+]

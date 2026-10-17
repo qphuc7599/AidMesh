@@ -1,0 +1,13 @@
+demand_drift,policy,runs,mean_completion_rate,transfers_started,transfers_delivered,transfers_accepted,transfers_reclaimed,transfers_final_locked,cap_violations
+shifting,adatransfer,5888,0.24781897508657047,2828,910,910,0,1918,0
+shifting,catr,5888,0.21011849683774236,0,0,0,0,0,0
+shifting,optimized_static,5888,0.21011849683774236,0,0,0,0,0,0
+shifting,periodic_sync,5888,0.02227088185817805,0,0,0,0,0,0
+shifting,reclaimable_transfer,5888,0.2043554822538208,3248,999,13,24,3211,0
+shifting,robust_static,5888,0.2427809151133964,0,0,0,0,0,0
+stable,adatransfer,5888,0.2304563731174442,3120,992,992,0,2128,0
+stable,catr,5888,0.25953573325493134,0,0,0,0,0,0
+stable,optimized_static,5888,0.25953573325493134,0,0,0,0,0,0
+stable,periodic_sync,5888,0.024769647639301465,0,0,0,0,0,0
+stable,reclaimable_transfer,5888,0.25413850177478525,1624,392,2,8,1614,0
+stable,robust_static,5888,0.23228383577387834,0,0,0,0,0,0

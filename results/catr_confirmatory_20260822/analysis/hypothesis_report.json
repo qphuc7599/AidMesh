@@ -1,0 +1,38 @@
+{
+  "activation": {
+    "catr_candidate_decisions": 8056,
+    "catr_positive_margin_decisions": 0,
+    "catr_started": 0
+  },
+  "campaign_integrity": {
+    "factorial_cells": 256,
+    "factorial_rows": 70656,
+    "factorial_seeds": 2,
+    "incidents": 23,
+    "primary_rows": 2304
+  },
+  "h1_stable_noninferiority": {
+    "estimate": 0.0,
+    "lower_95": 0.0,
+    "margin": -0.01,
+    "passed": true
+  },
+  "h2_shifting_superiority": {
+    "estimate": 0.0,
+    "lower_95": 0.0,
+    "margin": 0.0,
+    "passed": false
+  },
+  "h3_stranding_reduction": {
+    "adatransfer_final_locks": 4046,
+    "catr_final_locks": 0,
+    "interpretation_guard": "CATR initiated no transfers; this is abstention, not successful recovery.",
+    "passed": true,
+    "ratio": 0.0
+  },
+  "h4_safety": {
+    "cap_violations": 0,
+    "conservation_failures": 0,
+    "passed": true
+  }
+}

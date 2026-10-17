@@ -1,0 +1,31 @@
+{
+  "profile": "matched settlement-layer ablation over exact final signed evidence",
+  "records": 100,
+  "sameInputSha256": true,
+  "sameCredits": true,
+  "sameGethExecutionReceipts": true,
+  "sqliteAuthority": {
+    "trials": 30,
+    "componentSumP50Ms": 3559.0411000000004,
+    "componentSumP95Ms": 3585.778435,
+    "authorityDatabaseBytes": 147456,
+    "gas": 0,
+    "atomicBatch": true,
+    "replayRejected": true,
+    "corruptBatchRolledBack": true,
+    "trust": "one honest SQLite authority serializes first-valid order and can equivocate to different readers if corrupt"
+  },
+  "geth": {
+    "freshExecutions": 1,
+    "settlementWallMs": 10961.4527,
+    "blockPeriodSeconds": 1,
+    "submittedCalldataBytes": 253900,
+    "totalGas": 85734940,
+    "finalizerGas": 14203542,
+    "feeFormula": "85734940 * feeRate",
+    "trust": "the configured EVM consensus supplies shared finalized order and independently auditable state/events"
+  },
+  "measurementBoundary": "SQLite reports 30 trialwise sums of separate Node P1 and Python semantic/commit components; Geth reports one fresh 11-transaction execution with a one-second block period. Values characterize the two configured profiles and are not an inferential speedup estimate.",
+  "physicalFactBoundary": "neither alternative proves that the modeled handoff happened",
+  "allChecksPassed": true
+}
