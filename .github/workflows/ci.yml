@@ -17,7 +17,7 @@ jobs:
           python-version: "3.12"
           cache: pip
       - name: Install the research package
-        run: python -m pip install -e ".[dev,crypto]"
+        run: python -m pip install -e ".[dev,crypto,evm]"
       - name: Compile Python sources
         run: python -m compileall -q aidmesh scripts formal tests
       - name: Run portable unit tests
